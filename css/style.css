@@ -406,6 +406,26 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-art span { padding: clamp(1.4rem, 4vw, 3rem); font: 500 clamp(2.3rem, 5vw, 4.6rem)/.93 Georgia, serif; letter-spacing: -.065em; text-shadow: 0 2px 15px #391322; }
 
 .cf-home .cf-levels { list-style: none; display: grid; grid-template-columns: 1.34fr 1fr 1fr; gap: .85rem; margin: 1.6rem 0 0; padding: 0; }
+.cf-home .cf-levels-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: .85rem; margin: 1.6rem 0 0; }
+.cf-home .cf-level-card { border-radius: var(--radius); background: var(--cream); padding: clamp(1.2rem, 3vw, 2.3rem); }
+.cf-home .cf-level-card--wide { background: linear-gradient(145deg, var(--wine), var(--deep)); color: white; }
+.cf-home .cf-level-card--wide :is(.cf-index, .cf-label, h3, p) { color: white; }
+.cf-home .cf-level-card--wide .cf-label { color: #ffd3d6; }
+.cf-home .cf-details { margin-top: 1rem; }
+.cf-home .cf-details summary { cursor: pointer; color: var(--wine); font-weight: 700; font-size: .9rem; }
+.cf-home .cf-level-card--wide .cf-details summary { color: #ffd3d6; }
+.cf-home .cf-details p { margin-top: .75rem; font-size: .9rem; }
+.cf-home .cf-orient-band { margin-top: 1.5rem; padding: 1.2rem 1.5rem; border-radius: 1rem; background: var(--rose); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem; }
+.cf-home .cf-orient-band span { font-weight: 600; color: var(--deep); }
+.cf-home .cf-collab { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 2rem; padding: var(--pad); border-radius: var(--radius); background: var(--rose); }
+.cf-home .cf-collab-left h2 { max-width: 19ch; }
+.cf-home .cf-collab-art { display: flex; align-items: center; justify-content: center; }
+.cf-home .cf-collab-art svg { width: 100%; max-width: 320px; height: auto; }
+@media (max-width: 52rem) {
+  .cf-home .cf-levels-grid { grid-template-columns: 1fr; }
+  .cf-home .cf-collab { grid-template-columns: 1fr; }
+  .cf-home .cf-collab-art { display: none; }
+}
 .cf-home .cf-levels li { border-radius: var(--radius); background: var(--cream); padding: clamp(1.2rem, 3vw, 2.3rem); }
 .cf-home .cf-levels li:first-child { background: linear-gradient(145deg, var(--wine), var(--deep)); color: white; }
 .cf-home .cf-levels li:first-child h3 { color: white; }
@@ -434,9 +454,7 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-art-studies i { width: 68%; height: 73%; right: -5%; top: -8%; border: 1px solid #ffc4c8; border-radius: 45% 45% 0 0; transform: rotate(31deg); }
 .cf-home .cf-art-studies i:nth-child(2) { right: 2%; top: -2%; }
 .cf-home .cf-art-studies i:nth-child(3) { right: 9%; top: 4%; }
-.cf-home .cf-collab { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 1.2rem; padding: var(--pad); border-radius: var(--radius); background: var(--rose); }
 .cf-home .cf-collab h2 { max-width: 19ch; }
-.cf-home .cf-collab p:last-child { margin-bottom: 0; }
 .cf-home .cf-footer { margin-top: clamp(3rem, 8vw, 7rem); background: var(--deep); color: white; }
 .cf-home .cf-footer-inner { padding-block: 2rem; }
 .cf-home .cf-footer p { margin: .45rem 0 0; }

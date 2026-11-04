@@ -51,27 +51,42 @@
     <section id="percorsi" class="cf-section" aria-labelledby="livelli">
       <p class="cf-label">I nostri percorsi</p>
       <h2 id="livelli">Tre livelli di intervento.</h2>
-      <ol class="cf-levels">
-        <li>
+      <div class="cf-levels-grid">
+        <article class="cf-level-card cf-level-card--wide">
           <span class="cf-index" aria-hidden="true">01</span>
           <p class="cf-label">Accoglienza e sostegno</p>
           <h3>Nelle crisi familiari</h3>
-          <p>Uno spazio di ascolto e orientamento per famiglie e coppie che attraversano momenti di difficoltà. Quando una coppia valuta una separazione, un confronto con professionisti qualificati può favorire scelte più consapevoli e rispettose di tutte le persone coinvolte. Il percorso può coinvolgere avvocati, psicologi, mediatori familiari e altre competenze specialistiche, indicando la modalità più adeguata per una separazione non distruttiva. La mediazione non è appropriata in ogni circostanza, in particolare in presenza di violenza o coercizione.</p>
-        </li>
-        <li>
+          <p>Uno spazio di ascolto e orientamento per famiglie e coppie che attraversano momenti di difficoltà.</p>
+          <details class="cf-details">
+            <summary>Approfondisci</summary>
+            <p>Quando una coppia valuta una separazione, un confronto con professionisti qualificati può favorire scelte più consapevoli e rispettose di tutte le persone coinvolte. Il percorso può coinvolgere avvocati, psicologi, mediatori familiari e altre competenze specialistiche, indicando la modalità più adeguata per una separazione non distruttiva. La mediazione non è appropriata in ogni circostanza, in particolare in presenza di violenza o coercizione.</p>
+          </details>
+        </article>
+        <article class="cf-level-card">
           <span class="cf-index" aria-hidden="true">02</span>
           <p class="cf-label">Orientamento e confronto</p>
           <h3>Per i genitori</h3>
-          <p>La possibilità di confrontarsi su comunicazione familiare, responsabilità genitoriale, prevenzione dei conflitti e difficoltà quotidiane. Trovare punti di riferimento e non sentirsi soli fa la differenza. Il lavoro di azione e prevenzione è trasversale e multidisciplinare.</p>
-        </li>
-        <li>
+          <p>La possibilità di confrontarsi su comunicazione familiare, responsabilità genitoriale e prevenzione dei conflitti.</p>
+          <details class="cf-details">
+            <summary>Approfondisci</summary>
+            <p>Trovare punti di riferimento e non sentirsi soli fa la differenza. Il lavoro di azione e prevenzione è trasversale e multidisciplinare.</p>
+          </details>
+        </article>
+        <article class="cf-level-card">
           <span class="cf-index" aria-hidden="true">03</span>
           <p class="cf-label">Conoscenza e condivisione</p>
           <h3>Incontri tematici</h3>
-          <p>Incontri informativi, attività formative e laboratori creativi come strumenti di consapevolezza e coesione sociale. Rassicurazione, accoglienza senza giudizio, condivisione e consapevolezza.</p>
-          <p style="margin-top:12px;font-size:.85rem;color:#777;">Stiamo preparando i primi incontri e le attività dell'associazione.</p>
-        </li>
-      </ol>
+          <p>Incontri informativi, attività formative e laboratori creativi come strumenti di consapevolezza.</p>
+          <details class="cf-details">
+            <summary>Approfondisci</summary>
+            <p>Rassicurazione, accoglienza senza giudizio, condivisione e consapevolezza. Stiamo preparando i primi incontri e le attività dell'associazione.</p>
+          </details>
+        </article>
+      </div>
+      <div class="cf-orient-band">
+        <span>Hai bisogno di orientarti?</span>
+        <a class="cf-link" href="chi-siamo.html#contatti">Contattaci <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
 
     <section id="metodo" class="cf-section cf-method" aria-labelledby="principi">
@@ -132,12 +147,19 @@
     </section>
 
     <section id="collaborazioni" class="cf-section cf-collab" aria-labelledby="collabora">
-      <div>
+      <div class="cf-collab-left">
         <p class="cf-label">Collaborazioni</p>
         <h2 id="collabora">Il valore di un progetto cresce attraverso il confronto.</h2>
         <p>Invitiamo professionisti interessati a conoscere e contribuire al progetto a mettersi in contatto con l'associazione.</p>
+        <a class="cf-button" href="chi-siamo.html?cat=professionista#contatti">Collabora con noi <span aria-hidden="true">↗</span></a>
       </div>
-      <a class="cf-button" href="chi-siamo.html?cat=professionista#contatti">Collabora con noi <span aria-hidden="true">↗</span></a>
+      <div class="cf-collab-art" aria-hidden="true">
+        <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="110" cy="100" rx="70" ry="45" fill="none" stroke="#7A1F3D" stroke-width="1.2" opacity=".7"/>
+          <ellipse cx="150" cy="100" rx="70" ry="45" fill="none" stroke="#7A1F3D" stroke-width="1.2" opacity=".5" transform="rotate(20 150 100)"/>
+          <ellipse cx="190" cy="100" rx="70" ry="45" fill="none" stroke="#7A1F3D" stroke-width="1.2" opacity=".35" transform="rotate(-15 190 100)"/>
+        </svg>
+      </div>
     </section>
   </main>
   <footer class="cf-footer">
@@ -150,7 +172,7 @@
         <a href="privacy.html">Privacy Policy</a>
         <a href="cookie.html">Cookie Policy</a>
       </nav>
-      <p style="width:100%;font-size:.85rem;opacity:.7;">Email: info@coesione-fa.it · [Telefono placeholder] · [Sede placeholder]</p>
+      <p style="width:100%;font-size:.85rem;opacity:.7;">Email: info@coesione-fa.it</p>
     </div>
   </footer>
 <script src="js/header.js"></script>

@@ -101,9 +101,11 @@
       headerHeight = header.offsetHeight;
     });
 
+    let scrollTimer = null;
     window.addEventListener('scroll', () => {
       if (isOpen) return;
       if (window.innerWidth <= 768) return;
+      if (scrollTimer) clearTimeout(scrollTimer);
       if (!ticking) {
         window.requestAnimationFrame(() => {
           const current = window.scrollY;
@@ -121,6 +123,10 @@
         });
         ticking = true;
       }
+      // Reappear after user stops scrolling for 1.2s
+      scrollTimer = setTimeout(() => {
+        header.classList.remove('header-hidden');
+      }, 1200);
     }, { passive: true });
 
     // keep header visible if focus inside
