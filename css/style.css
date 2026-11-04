@@ -408,6 +408,8 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-levels { list-style: none; display: grid; grid-template-columns: 1.34fr 1fr 1fr; gap: .85rem; margin: 1.6rem 0 0; padding: 0; }
 .cf-home .cf-levels li { border-radius: var(--radius); background: var(--cream); padding: clamp(1.2rem, 3vw, 2.3rem); }
 .cf-home .cf-levels li:first-child { background: linear-gradient(145deg, var(--wine), var(--deep)); color: white; }
+.cf-home .cf-levels li:first-child h3 { color: white; }
+.cf-home .cf-pro-grid article h3 { color: white; }
 .cf-home .cf-levels li:nth-child(3) { background: var(--rose); }
 .cf-home .cf-index { display: block; font: 500 2.6rem/1 Georgia, serif; margin-bottom: 1.1rem; color: var(--wine); }
 .cf-home .cf-levels li:first-child :is(.cf-index, .cf-label) { color: #ffd3d6; }
