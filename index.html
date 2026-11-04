@@ -158,13 +158,15 @@
 (function () {
   const loader = document.getElementById('intro-loader');
   if (!loader) return;
+  const hdr = document.querySelector('header.cf-header');
+  if (hdr) { hdr.style.opacity = '0'; hdr.style.transform = 'translateY(-100%)'; }
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function done() {
     loader.classList.add('hide');
     document.body.classList.remove('intro-lock');
     setTimeout(() => {
       const hdr = document.querySelector('header.cf-header');
-      if (hdr) hdr.classList.add('header-in');
+      if (hdr) { hdr.style.opacity = ''; hdr.style.transform = ''; hdr.classList.add('header-in'); }
     }, 240);
     if (window.gsap && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       gsap.from('.cf-hero', { opacity: 0, y: 24, duration: 0.8, ease: 'power2.out', delay: 0.15 });
