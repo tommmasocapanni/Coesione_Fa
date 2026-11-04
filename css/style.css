@@ -555,7 +555,7 @@ body.intro-lock { overflow: hidden; }
 @media (max-width: 48rem) {
   .cf-about .about-hero, .cf-about .ca-relations .relations-grid { grid-template-columns: 1fr; }
   .cf-about .ca-hero-photo { height: auto; min-height: 0; aspect-ratio: 1.55; }
-  .cf-about .ca-mark { order: 1; aspect-ratio: 1.8; }
+  .cf-about .ca-mark { order: 1; aspect-ratio: 1.8; width: 100%;}
 }
 /* Shared header behavior */
 .site-header, .cf-header { transition: transform .4s ease, opacity .4s ease; position: fixed; top: 0; left: 0; right: 0; z-index: 210; background: #fff; border-bottom: 1px solid rgba(0,0,0,.06); }
