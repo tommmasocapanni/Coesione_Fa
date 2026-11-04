@@ -127,4 +127,3 @@
     header.addEventListener('focusin', () => header.classList.remove('header-hidden'));
   });
 })();
-PY
