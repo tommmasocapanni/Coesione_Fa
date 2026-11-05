@@ -23,6 +23,7 @@
     <nav aria-label="Navigazione principale">
       <a href="index.html" aria-current="page">Home</a>
       <a href="chi-siamo.html">Chi siamo</a>
+      <a href="#tesseramento">Tesseramento</a>
       <a class="cf-button" href="chi-siamo.html#contatti">Contattaci</a>
     </nav>
   </header>
@@ -121,6 +122,72 @@
         <li><span aria-hidden="true">02</span><div><h3>Confronto</h3><p>Creare occasioni di dialogo e ascolto reciproco.</p></div></li>
         <li><span aria-hidden="true">03</span><div><h3>Gioco</h3><p>Favorire creatività, apprendimento e condivisione.</p></div></li>
       </ul>
+    </section>
+
+    <section id="tesseramento" class="cf-section cf-tesseramento" aria-labelledby="tesseramento-titolo">
+      <div class="cf-tess-wave" aria-hidden="true">
+        <svg viewBox="0 0 600 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,320 Q150,270 300,320 T600,320 L600,400 L0,400 Z" fill="#F6ECEA" opacity="0.7"/>
+          <path d="M0,345 Q150,300 300,345 T600,345 L600,400 L0,400 Z" fill="#7A1F3D" opacity="0.05"/>
+        </svg>
+      </div>
+      <div class="cf-tess-left">
+        <p class="cf-label">ENTRA A FAR PARTE DI COESIONE FA.</p>
+        <h2 id="tesseramento-titolo">Le relazioni crescono insieme.</h2>
+        <p>Diventare socio di Coesione fa. significa partecipare a un progetto che mette al centro le relazioni familiari, la condivisione e il confronto.</p>
+        <div class="cf-tess-price">
+          <span class="cf-tess-amount">30 €</span>
+          <span class="cf-tess-price-label">Quota associativa annuale</span>
+        </div>
+        <div class="cf-tess-cta">
+          <a class="cf-button" href="mailto:coesionefa@gmail.com?subject=Richiesta%20informazioni%20tesseramento%20Coesione%20fa.">Richiedi il tesseramento</a>
+          <a class="cf-link" href="mailto:coesionefa@gmail.com?subject=Informazioni%20tesseramento%20Coesione%20fa.">Scrivici per informazioni</a>
+        </div>
+      </div>
+      <div class="cf-tess-right">
+        <p class="cf-tess-subtitle">Cosa comprende il tesseramento</p>
+        <ul class="cf-tess-benefits">
+          <li>
+            <span class="cf-tess-dot" aria-hidden="true"></span>
+            <div>
+              <h3>Laboratori gratuiti</h3>
+              <p>La possibilità di partecipare ai laboratori gratuiti riservati ai soci e indicati sul sito.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cf-tess-dot" aria-hidden="true"></span>
+            <div>
+              <h3>Un laboratorio tematico a scelta</h3>
+              <p>La possibilità di scegliere un laboratorio tematico tra quelli proposti dall'associazione e pubblicati online.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cf-tess-dot" aria-hidden="true"></span>
+            <div>
+              <h3>Un incontro gratuito di orientamento</h3>
+              <p>Un incontro online con i professionisti dedicati, volto ad ascoltare la richiesta e, quando possibile, offrire un primo supporto nell'ambito dell'incontro stesso. Se necessario, potranno essere indicate strutture pubbliche territoriali utili.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cf-tess-dot" aria-hidden="true"></span>
+            <div>
+              <h3>Iniziative speciali per i soci</h3>
+              <p>Attività e iniziative nel periodo natalizio, con laboratori per adulti e bambini, anche in presenza, secondo il programma dell'associazione.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cf-tess-dot" aria-hidden="true"></span>
+            <div>
+              <h3>Libri e incontri tematici</h3>
+              <p>Possibilità di partecipare a presentazioni di libri e incontri con più professionisti, secondo il calendario pubblicato sul sito e fino a esaurimento dei posti disponibili.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="cf-tess-info">
+          <p>Per le presentazioni di libri e gli incontri tematici è richiesta la prenotazione. Le iscrizioni agli eventi sono accettate fino a esaurimento dei posti disponibili.</p>
+          <p>Gli incontri e le consulenze si svolgono nel rispetto della privacy e della riservatezza.</p>
+        </div>
+      </div>
     </section>
 
     <section id="professionisti" class="cf-section cf-pro" aria-labelledby="competenze">
@@ -240,7 +307,7 @@
   gsap.registerPlugin(ScrollTrigger);
   const base = { opacity: 0, y: 20, duration: 0.55, ease: 'power2.out' };
   // Section intros (excluding hero)
-  document.querySelectorAll('#famiglie > div, #percorsi > p, #percorsi > h2, #metodo > div, #professionisti > p, #professionisti > h2, #centro-studi .cf-split > div, #collaborazioni > div').forEach((el) => {
+  document.querySelectorAll('#famiglie > div, #percorsi > p, #percorsi > h2, #metodo > div, #tesseramento .cf-tess-left, #tesseramento .cf-tess-right, #professionisti > p, #professionisti > h2, #centro-studi .cf-split > div, #collaborazioni > div').forEach((el) => {
     gsap.from(el, { ...base, scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
   });
   // Cards with stagger
