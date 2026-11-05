@@ -259,6 +259,9 @@ p { margin: 0 0 1rem; }
 }
 .intro-loader .mask { overflow: hidden; display: inline-block; }
 .intro-loader img { max-width: 220px; width: 40vw; transform: translateY(120%); animation: introSlide 1.1s cubic-bezier(.2,.8,.2,1) .3s forwards, introFade .5s ease 1.7s forwards; }
+@media (min-width: 769px) {
+  .intro-loader img { max-width: 308px; width: 56vw; }
+}
 @keyframes introSlide { to { transform: translateY(0); } }
 @keyframes introFade { to { opacity: 0; } }
 .intro-loader.hide { opacity: 0; pointer-events: none; }
