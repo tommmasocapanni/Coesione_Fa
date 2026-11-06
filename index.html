@@ -338,19 +338,39 @@
       </div>
     </section>
   </main>
-  <footer class="cf-footer">
-    <div class="cf-wrap cf-footer-inner">
-      <div><a class="cf-brand" href="index.html"><img src="img/logo.svg" alt="Coesione fa." style="height:30px;width:auto;filter:brightness(0) invert(1);"></a><p>Centro polifunzionale per la famiglia</p></div>
-      <nav aria-label="Link a piè di pagina">
-        <a href="index.html">Home</a>
-        <a href="chi-siamo.html">Chi siamo</a>
-        <a href="chi-siamo.html#contatti">Contatti</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="cookie.html">Cookie Policy</a>
-      </nav>
-      <p style="width:100%;font-size:.85rem;opacity:.7;">Email: coesionefa@gmail.com</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="img/logo.svg" alt="Coesione fa." style="height:36px;filter:brightness(0) invert(1);margin-bottom:20px;">
+        <p>Centro polifunzionale per la famiglia. Ascolto, sostegno e accompagnamento.</p>
+      </div>
+      <div>
+        <h4>Navigazione</h4>
+        <ul style="list-style:none;padding:0;margin:12px 0 0;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi siamo</a></li>
+          <li><a href="index.html#tesseramento">Tesseramento</a></li>
+          <li><a href="chi-siamo.html#contatti">Contatti</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legale</h4>
+        <ul style="list-style:none;padding:0;margin:12px 0 0;">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookie.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p style="font-size:.9rem;">Email: <a href="mailto:coesionefa@gmail.com">coesionefa@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Coesione fa. Tutti i diritti riservati.</span>
+      <span>Dati legali: [placeholder]</span>
     </div>
   </footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 <script src="js/header.js"></script>
 <script>
 (function () {
