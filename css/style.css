@@ -789,3 +789,134 @@ body.intro-lock { overflow: hidden; }
   .cf-home .cf-tesseramento { grid-template-columns: 1fr; gap: 2rem; }
   .cf-home .cf-tess-wave svg { width: 100%; }
 }
+
+/* Tesseramento - intro, prezzo, IBAN, icone */
+.cf-home .cf-tess-intro-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.2rem;
+}
+.cf-home .cf-tess-illustration {
+  flex: 0 0 150px;
+  max-width: 150px;
+}
+.cf-home .cf-tess-illustration svg { width: 100%; height: auto; display: block; }
+.cf-home .cf-tess-intro-row p { margin: 0; flex: 1 1 auto; }
+.cf-home .cf-tess-price-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.4rem;
+}
+.cf-home .cf-tess-iban-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .6rem 1.1rem;
+  border-radius: 99rem;
+  border: 1.5px solid var(--wine);
+  background: var(--wine);
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  min-height: 44px;
+  transition: background .2s ease, transform .15s ease;
+}
+.cf-home .cf-tess-iban-btn:hover { background: var(--deep); }
+.cf-home .cf-tess-iban-btn:active { transform: scale(.97); }
+.cf-home .cf-tess-iban-btn .cf-tess-iban-icon,
+.cf-home .cf-tess-iban-btn .cf-tess-chevron { width: 18px; height: 18px; }
+.cf-home .cf-tess-chevron { transition: transform 300ms ease; }
+.cf-home .cf-tess-iban-panel {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 320ms ease, opacity 320ms ease, margin 320ms ease;
+  margin: 0;
+}
+.cf-home .cf-tess-iban-panel.is-open {
+  max-height: 500px;
+  opacity: 1;
+  margin: 1rem 0 1.4rem;
+}
+.cf-home .cf-tess-iban-card {
+  padding: 1.1rem 1.25rem;
+  border-radius: 1rem;
+  background: var(--cream);
+  border: 1px solid rgba(122,31,61,.12);
+}
+.cf-home .cf-tess-iban-title {
+  font-weight: 700;
+  color: var(--wine);
+  margin-bottom: .6rem;
+  font-size: .9rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.cf-home .cf-tess-iban-dl { margin: 0 0 .8rem; }
+.cf-home .cf-tess-iban-dl > div {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: .4rem;
+  padding: .35rem 0;
+  border-bottom: 1px solid rgba(122,31,61,.08);
+  font-size: .9rem;
+}
+.cf-home .cf-tess-iban-dl dt { font-weight: 600; color: var(--wine); }
+.cf-home .cf-tess-iban-dl dd { margin: 0; color: var(--muted); word-break: break-all; }
+.cf-home .cf-tess-iban-actions {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+.cf-home .cf-tess-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .5rem .9rem;
+  border-radius: 99rem;
+  border: 1.5px solid rgba(122,31,61,.3);
+  background: transparent;
+  color: var(--wine);
+  font-size: .85rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 40px;
+  transition: background .2s ease;
+}
+.cf-home .cf-tess-copy-btn:hover:not(:disabled) { background: var(--rose); }
+.cf-home .cf-tess-copy-btn:disabled { opacity: .5; cursor: not-allowed; }
+.cf-home .cf-tess-copy-btn svg { width: 16px; height: 16px; }
+.cf-home .cf-tess-copy-status {
+  font-size: .85rem;
+  color: var(--red);
+  font-weight: 600;
+}
+.cf-home .cf-tess-icon {
+  flex: 0 0 auto;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: var(--rose);
+  color: var(--wine);
+  display: grid;
+  place-items: center;
+}
+.cf-home .cf-tess-icon svg { width: 1.25rem; height: 1.25rem; }
+.cf-home .cf-tess-benefits li { align-items: start; }
+
+@media (max-width: 52rem) {
+  .cf-home .cf-tess-intro-row { flex-direction: column; align-items: flex-start; }
+  .cf-home .cf-tess-illustration { max-width: 120px; flex-basis: 120px; }
+  .cf-home .cf-tess-price-row { flex-direction: column; align-items: flex-start; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cf-home .cf-tess-iban-panel,
+  .cf-home .cf-tess-chevron,
+  .cf-home .cf-tess-iban-btn { transition: none; }
+}
