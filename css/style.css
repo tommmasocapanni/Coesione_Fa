@@ -893,6 +893,7 @@ body.intro-lock { overflow: hidden; }
   padding: clamp(2rem, 4.6vw, 4.25rem);
   border-radius: var(--radius);
   background: var(--rose);
+  margin-bottom: clamp(3rem, 6vw, 5rem);
 }
 .cf-home .cf-collab-left {
   grid-area: copy;
