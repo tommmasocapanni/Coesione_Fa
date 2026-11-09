@@ -2077,19 +2077,9 @@ body.intro-lock { overflow: hidden; }
 }
 .cf-home .cf-equipe-area:first-child {
   padding-right: clamp(1.5rem, 3.5vw, 2.75rem);
-  border-right: 1px solid #e3d9d5;
 }
-.cf-home .cf-equipe-area:last-child {
-  padding-left: clamp(.25rem, 1vw, .75rem);
-}
-.cf-home .cf-equipe-area::before {
-  content: "";
-  display: block;
-  width: 3.2rem;
-  height: 2px;
-  margin-bottom: 1rem;
-  background: var(--red);
-}
+.cf-home .cf-equipe-area:last-child::before { display: none; }
+.cf-home .cf-equipe-area::before { display: none; }
 .cf-home .cf-equipe-area h3 {
   max-width: 24ch;
   margin: 0 0 .9rem;
