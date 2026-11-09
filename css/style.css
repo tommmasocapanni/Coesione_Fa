@@ -1956,6 +1956,7 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-equipe-grid {
   position: relative;
   z-index: 1;
+  border-top: none;
 }
 .cf-home .cf-equipe-header {
   max-width: 54rem;
