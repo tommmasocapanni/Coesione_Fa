@@ -1360,11 +1360,16 @@ body.intro-lock { overflow: hidden; }
   .site-header .nav-links { display: none !important; }
   .cf-header nav { display: none !important; }
 }
-.mobile-menu-panel { position: fixed; inset: 0; background: #FBF8F5; z-index: 200; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+.mobile-menu-panel { position: fixed; inset: 0; background: #FBF8F5; z-index: 200; display: flex; align-items: flex-start; justify-content: center; opacity: 0; pointer-events: none; transition: opacity .3s ease; overflow-y: auto; padding: 6rem 1.5rem 2rem; }
 .mobile-menu-panel.open { opacity: 1; pointer-events: auto; }
-.mobile-menu-panel ul { list-style: none; margin: 0; padding: 0; text-align: center; display: flex; flex-direction: column; gap: 1.5rem; }
+.mobile-menu-panel ul { list-style: none; margin: auto 0; padding: 0; text-align: center; display: flex; flex-direction: column; gap: 1.5rem; }
 .mobile-menu-panel a { color: #7A1F3D; font-family: 'Manrope', Georgia, serif; font-size: 1.6rem; font-weight: 600; text-decoration: none; }
 .mobile-menu-panel .cf-button, .mobile-menu-panel .btn-primary { background: #C8202F; color: #fff; padding: .7rem 1.6rem; border-radius: 99rem; display: inline-block; }
+/* Con più voci la barra non entra: sotto i 1200px si usa il menu a icona */
+@media (max-width: 75rem) {
+  .cf-header nav { display: none !important; }
+  .nav-toggle { display: block !important; }
+}
 @media (prefers-reduced-motion: reduce) {
   .site-header, .cf-header, .mobile-menu-panel { transition: none; }
   .cf-home .cf-level-card, .cf-home .cf-level-detail, .cf-home .cf-level-toggle { transition: none; }
@@ -1372,6 +1377,12 @@ body.intro-lock { overflow: hidden; }
 
 /* Tesseramento */
 .cf-home #tesseramento { scroll-margin-top: 7rem; }
+.cf-home #famiglie,
+.cf-home #percorsi,
+.cf-home #professionisti,
+.cf-home #centro-studi,
+.cf-home #collaborazioni,
+.cf-home #ringraziamenti { scroll-margin-top: 6.5rem; }
 .cf-home .cf-tesseramento {
   position: relative;
   overflow: hidden;
@@ -1822,4 +1833,252 @@ body.intro-lock { overflow: hidden; }
   .cf-home .cf-tess-iban-btn,
   .cf-home .cf-tess-primary-btn,
   .cf-home .cf-tess-arrow { transition: none; }
+}
+
+/* Ringraziamenti */
+.cf-home .cf-thanks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.6rem, 5.5vw, 5rem);
+  padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
+.cf-home .cf-thanks-head { max-width: 53rem; }
+.cf-home .cf-thanks-eyebrow {
+  margin: 0 0 clamp(1rem, 1.8vw, 1.4rem);
+  color: var(--red);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.cf-home .cf-thanks-head h2 {
+  margin: 0 0 clamp(1.1rem, 2.2vw, 1.6rem);
+  font-size: clamp(2.45rem, 4.4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -.05em;
+}
+.cf-home .cf-thanks-intro {
+  margin: 0;
+  max-width: 37.5rem;
+  color: #4F4F4F;
+  font-size: clamp(1.02rem, 1.2vw, 1.14rem);
+  line-height: 1.6;
+  text-wrap: balance;
+}
+.cf-home .cf-thanks-block h3 {
+  color: var(--wine);
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+/* Primo blocco — Hotel Hassler */
+.cf-home .cf-thanks-partner {
+  display: grid;
+  grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+  gap: clamp(1.5rem, 3.5vw, 3.5rem);
+  align-items: stretch;
+}
+.cf-home .cf-thanks-panel {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.6rem, 3.2vw, 3rem);
+  border-radius: clamp(1.1rem, 2vw, 1.7rem);
+  background: #FBF1EE;
+}
+.cf-home .cf-thanks-panel::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -36%;
+  right: -20%;
+  width: 64%;
+  aspect-ratio: 1;
+  border-radius: 54% 46% 40% 60% / 56% 44% 56% 44%;
+  background: #F5E2DD;
+  transform: rotate(-12deg);
+}
+.cf-home .cf-thanks-panel-label {
+  margin: 0 0 clamp(1rem, 2vw, 1.5rem);
+  max-width: none;
+  color: var(--red);
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.cf-home .cf-thanks-panel h3 {
+  margin: 0 0 clamp(.9rem, 1.8vw, 1.4rem);
+  max-width: 13ch;
+  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+  line-height: 1.07;
+}
+.cf-home .cf-thanks-rule {
+  display: block;
+  width: 2.6rem;
+  height: 2px;
+  background: var(--red);
+}
+.cf-home .cf-thanks-copy { min-width: 0; }
+.cf-home .cf-thanks-copy p {
+  margin: 0 0 1.05rem;
+  max-width: 68ch;
+  color: #4F4F4F;
+  font-size: clamp(1rem, 1.1vw, 1.08rem);
+  line-height: 1.7;
+}
+.cf-home .cf-thanks-copy p:last-child { margin-bottom: 0; }
+
+/* 02 — Costanza Castelli */
+.cf-home .cf-thanks-memory {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(1.8rem, 4.2vw, 3.8rem);
+  border-radius: var(--radius);
+  background: #F7E6E2;
+}
+.cf-home .cf-thanks-memory::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -22%;
+  right: -10%;
+  width: min(20rem, 32%);
+  aspect-ratio: 1;
+  border-radius: 56% 44% 62% 38% / 48% 58% 42% 52%;
+  background: #F1D6D1;
+  opacity: .55;
+  transform: rotate(-8deg);
+}
+.cf-home .cf-thanks-memory::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -24%;
+  left: -5%;
+  width: min(16rem, 26%);
+  aspect-ratio: 1;
+  border-radius: 48% 52% 40% 60% / 58% 44% 56% 42%;
+  background: #F3DDD8;
+  opacity: .4;
+  transform: rotate(10deg);
+}
+.cf-home .cf-thanks-memory-inner {
+  max-width: 58rem;
+  padding-left: clamp(1.2rem, 2.6vw, 2.4rem);
+  border-left: 2px solid rgba(122, 31, 61, .55);
+}
+.cf-home .cf-thanks-memory-eyebrow {
+  margin: 0 0 .75rem;
+  color: var(--red);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.cf-home .cf-thanks-memory h3 {
+  margin: 0 0 .3rem;
+  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  line-height: 1.04;
+}
+.cf-home .cf-thanks-memory-role {
+  margin: 0 0 clamp(1.2rem, 2.4vw, 1.8rem);
+  color: var(--bordeaux);
+  font-size: clamp(.9rem, 1.1vw, 1rem);
+  font-weight: 600;
+  letter-spacing: .02em;
+  opacity: .8;
+}
+.cf-home .cf-thanks-memory-text {
+  margin: 0;
+  max-width: 56ch;
+  color: #4A3A3A;
+  font-size: clamp(1.02rem, 1.2vw, 1.12rem);
+  line-height: 1.68;
+}
+.cf-home .cf-thanks-memory-text p { margin: 0 0 .85rem; }
+.cf-home .cf-thanks-memory-text p:last-child { margin-bottom: 0; }
+
+/* 03 — Professionisti */
+.cf-home .cf-thanks-walk {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(1.4rem, 4vw, 4rem);
+  align-items: start;
+  padding-top: clamp(1.4rem, 3vw, 2.4rem);
+  border-top: 1px solid rgba(122, 31, 61, .14);
+}
+.cf-home .cf-thanks-walk h3 {
+  margin: 0;
+  max-width: 16ch;
+  font-size: clamp(1.9rem, 3.2vw, 2.9rem);
+  line-height: 1.07;
+}
+.cf-home .cf-thanks-walk-body p {
+  margin: 0 0 .9rem;
+  max-width: 58ch;
+  color: #4F4F4F;
+  font-size: clamp(1rem, 1.1vw, 1.08rem);
+  line-height: 1.62;
+}
+.cf-home .cf-thanks-walk-body p:last-child { margin-bottom: 0; }
+
+@media (max-width: 56rem) {
+  .cf-home .cf-thanks-partner {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .cf-home .cf-thanks-panel {
+    padding: clamp(1.35rem, 4vw, 2rem);
+  }
+  .cf-home .cf-thanks-panel h3 { max-width: none; }
+  .cf-home .cf-thanks-panel::before {
+    bottom: -30%;
+    right: -14%;
+    width: 50%;
+  }
+  .cf-home .cf-thanks-walk {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+  .cf-home .cf-thanks-walk h3 { max-width: 22ch; }
+}
+
+@media (max-width: 34rem) {
+  .cf-home .cf-thanks { gap: 2.2rem; }
+  .cf-home .cf-thanks-head h2 { font-size: clamp(2rem, 10vw, 2.55rem); }
+  .cf-home .cf-thanks-panel {
+    padding: 1.3rem 1.2rem;
+    border-radius: 20px;
+  }
+  .cf-home .cf-thanks-panel h3 { font-size: clamp(1.65rem, 7.4vw, 2rem); }
+  .cf-home .cf-thanks-memory {
+    padding: 1.5rem 1.2rem;
+    border-radius: 26px;
+  }
+  .cf-home .cf-thanks-memory-inner { padding-left: 1rem; }
+  .cf-home .cf-thanks-memory::before {
+    top: -16%;
+    right: -14%;
+    width: 46%;
+    opacity: .5;
+  }
+  .cf-home .cf-thanks-memory::after {
+    bottom: -20%;
+    left: -10%;
+    width: 32%;
+    opacity: .38;
+  }
+  .cf-home .cf-thanks-walk h3 { font-size: clamp(1.7rem, 8.4vw, 2.1rem); }
+  .cf-home .cf-thanks-memory-text p,
+  .cf-home .cf-thanks-walk-body p,
+  .cf-home .cf-thanks-copy p { font-size: 1rem; }
 }
