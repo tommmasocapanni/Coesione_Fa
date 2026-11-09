@@ -1946,7 +1946,7 @@ body.intro-lock { overflow: hidden; }
   position: relative;
   isolation: isolate;
   margin-top: 0;
-  padding: clamp(2.5rem, 5vw, 4rem) var(--pad) clamp(2rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 3vw, 2.5rem) var(--pad) clamp(1.5rem, 3vw, 2.5rem);
   overflow: visible;
   border-radius: var(--radius);
   background: #FBF8F5;
@@ -1959,7 +1959,7 @@ body.intro-lock { overflow: hidden; }
   border-top: none;
 }
 .cf-home .cf-equipe-header {
-  max-width: 54rem;
+  max-width: 76rem;
   margin-bottom: clamp(2rem, 5vw, 3.8rem);
 }
 .cf-home .cf-equipe-header .cf-label {
@@ -1967,7 +1967,7 @@ body.intro-lock { overflow: hidden; }
   color: var(--red);
 }
 .cf-home .cf-equipe-header h2 {
-  max-width: 18ch;
+  max-width: none;
   margin-bottom: 0;
   font-size: clamp(2.15rem, 4.8vw, 4rem);
   line-height: 1.04;
