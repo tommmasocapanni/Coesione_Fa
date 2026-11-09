@@ -24,7 +24,7 @@
       <a href="index.html" aria-current="page">Home</a>
       <a href="chi-siamo.html">Associazione</a>
       <a href="#percorsi">Strumenti</a>
-      <a href="#professionisti">Equipe</a>
+      <a href="#equipe">Equipe</a>
       <a href="#centro-studi">Centro studi</a>
       <a href="#tesseramento">Tesseramento</a>
       <a href="#ringraziamenti">Ringraziamenti</a>
@@ -288,34 +288,26 @@
     </section>
 
     <section id="professionisti" class="cf-section cf-pro" aria-labelledby="competenze">
-      <p class="cf-label">Per i professionisti</p>
-      <h2 id="competenze">Competenze che si incontrano.</h2>
-      <p class="cf-intro">Il confronto tra competenze giuridiche, psicologiche, medico-specialistiche, educative e di mediazione familiare può contribuire a una lettura più ampia delle difficoltà relazionali e familiari. Coesione fa. valorizza il dialogo tra saperi diversi per costruire un approccio multidisciplinare al sostegno delle famiglie.</p>
-      <div class="cf-pro-grid">
-        <article>
-          <span class="cf-index" aria-hidden="true">01</span>
-          <h3>Area medico-legale e psicosociale</h3>
-          <p>Competenze giuridiche, psicologiche, di mediazione familiare e medico-specialistiche, rivolte alla comprensione e all'orientamento nelle difficoltà relazionali e familiari.</p>
-        </article>
-        <article>
-          <span class="cf-index" aria-hidden="true">02</span>
-          <h3>Area ludico-didattica ed educativa</h3>
-          <p>Attività educative, formative, creative e di condivisione, con attenzione alla prevenzione, alla conoscenza e alla coesione sociale.</p>
-        </article>
-      </div>
-      <div class="cf-contribute">
-        <div>
-          <h3>Il tuo contributo, una prospettiva in più.</h3>
-          <p>Le possibili forme di partecipazione al progetto includono il confronto interdisciplinare, il contributo a incontri informativi e formativi, le attività educative e creative, gli approfondimenti tematici e i contributi al progetto. Si tratta di possibilità di partecipazione, non di collaborazioni già attive.</p>
-          <p>Hai una competenza o un'idea da condividere?</p>
-          <a class="cf-button cf-button-light" href="chi-siamo.html?cat=professionista#contatti">Collabora con noi</a>
-        </div>
-        <ul>
-          <li>Confronto interdisciplinare.</li>
-          <li>Incontri informativi e formativi.</li>
-          <li>Attività educative e creative.</li>
-          <li>Approfondimenti tematici e contributi al progetto.</li>
-        </ul>
+      <p class="cf-label">Le nostre competenze</p>
+      <h2 id="competenze">Professionalità diverse, un'unica attenzione: la famiglia.</h2>
+      <p class="cf-intro">Coesione fa. valorizza il dialogo tra competenze medico-legali, psicologiche, psicosociali, educative e creative. Uno sguardo multidisciplinare che permette di affrontare le relazioni familiari da prospettive diverse, mettendo al centro le persone e le loro esigenze.</p>
+    </section>
+
+    <section id="equipe" class="cf-section cf-equipe" aria-labelledby="equipe-titolo">
+      <header class="cf-equipe-header">
+        <p class="cf-label">Équipe</p>
+        <h2 id="equipe-titolo">Persone e competenze che si incontrano.</h2>
+      </header>
+      <div class="cf-equipe-grid">
+        <section class="cf-equipe-area" aria-labelledby="equipe-medico-titolo">
+          <h3 id="equipe-medico-titolo">Équipe medico-legale e psicosociale</h3>
+          <div class="cf-equipe-list" data-equipe-area="medico"></div>
+        </section>
+        <section class="cf-equipe-area" aria-labelledby="equipe-educativa-titolo">
+          <h3 id="equipe-educativa-titolo">Équipe ludico-didattica ed educativa</h3>
+          <div class="cf-equipe-list" data-equipe-area="educativa"></div>
+          <p class="cf-equipe-note">Il gioco, la creatività e l'espressione sono strumenti preziosi per favorire l'incontro, l'apprendimento e la relazione.</p>
+        </section>
       </div>
     </section>
 
@@ -475,10 +467,6 @@
     const els = ul.querySelectorAll('li');
     gsap.from(els, { opacity: 0, y: 20, duration: 0.55, stagger: 0.08, ease: 'power2.out', scrollTrigger: { trigger: ul, start: 'top 85%', once: true } });
   });
-  document.querySelectorAll('.cf-pro-grid').forEach((g) => {
-    const els = g.querySelectorAll('article');
-    gsap.from(els, { opacity: 0, y: 20, duration: 0.55, stagger: 0.08, ease: 'power2.out', scrollTrigger: { trigger: g, start: 'top 85%', once: true } });
-  });
   // Centro Studi and Collaborazioni as whole blocks (already handled above for studies text; collab handled)
   document.querySelectorAll('#centro-studi, #collaborazioni').forEach((sec) => {
     gsap.from(sec, { ...base, scrollTrigger: { trigger: sec, start: 'top 85%', once: true } });
@@ -550,6 +538,7 @@
   }
 })();
 </script>
+<script src="js/equipe.js"></script>
 <script>
 // Allinea gli ancoraggi dopo il caricamento dei font e la chiusura dell'intro,
 // così le sezioni non restano sotto l'header fisso quando si arriva da un'altra pagina.
