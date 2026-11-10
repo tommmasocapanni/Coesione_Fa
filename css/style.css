@@ -1270,6 +1270,46 @@ body.intro-lock { overflow: hidden; }
   z-index: -1;
   transform: rotate(-7deg) translateX(8%) translateY(20%);
 }
+.cf-about #contatti {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-bottom: clamp(14rem, 24vw, 19rem);
+}
+.cf-about #contatti::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 2px;
+  background: var(--bordeaux-dark);
+  content: "";
+}
+.cf-about #contatti > .about-contact-grid {
+  position: relative;
+  z-index: 2;
+}
+.cf-about #contatti .about-contact-wave {
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  z-index: 0;
+  width: 200%;
+  height: clamp(9rem, 18vw, 16rem);
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(-20%);
+}
+.cf-about #contatti .about-contact-wave--bordeaux {
+  z-index: 1;
+  transform: translateX(8%) translateY(0);
+}
+.cf-about #contatti .about-contact-wave svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 .cf-about .about-hero-text { align-self: start; padding: var(--ca-pad); padding-top: clamp(1rem, 3vw, 2rem); padding-left: 0; }
 .cf-about .about-hero .eyebrow { display: flex; align-items: center; gap: .55rem; }
