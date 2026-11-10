@@ -1378,6 +1378,7 @@ body.intro-lock { overflow: hidden; }
 .cf-about .ca-relations .relations-grid p { margin: 0; padding: clamp(1rem, 3vw, 2rem); border-radius: 1.25rem; background: white; }
 .cf-about .ca-relations .relations-grid p:first-child { grid-column: 1 / -1; background: var(--ca-rose); }
 @media (max-width: 48rem) {
+  .cf-about .about-hero-wrap { overflow: hidden; }
   .cf-about .about-hero-wrap .about-hero, .cf-about .ca-relations .relations-grid { grid-template-columns: 1fr; }
   .cf-about .ca-hero-photo { height: auto; min-height: 0; aspect-ratio: 1.55; }
   .cf-about .ca-mark { order: 1; aspect-ratio: 1.8; width: 100%; max-width: 100%; min-width: 0; }
@@ -2282,6 +2283,7 @@ body.intro-lock { overflow: hidden; }
 }
 
 @media (max-width: 48rem) {
+  .cf-home .cf-equipe { overflow: clip; }
   .cf-home .cf-equipe-band {
     grid-template-columns: 1fr;
     gap: 1.5rem;
