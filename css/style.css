@@ -2487,3 +2487,93 @@ body.intro-lock { overflow: hidden; }
 #metodo h2 { font-size: 1.6rem; }
 #metodo h3 { font-size: 1.05rem; }
 #metodo p { font-size: 0.92rem; }
+
+/* IL NOSTRO METODO — ottimizzazione mobile (<=767px) */
+@media (max-width: 767px) {
+  #metodo {
+    display: block !important;
+    padding: 24px 20px !important;
+    margin: 24px auto !important;
+    max-width: 100% !important;
+    border-radius: 16px !important;
+  }
+  #metodo > div {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+  #metodo > div > div:first-child {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  #metodo .cf-label {
+    display: block !important;
+    margin-bottom: 8px !important;
+    font-size: 0.78rem !important;
+  }
+  #metodo h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.1 !important;
+    margin: 0 0 10px !important;
+    hyphens: none !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+  }
+  #metodo > div > div:first-child > p:not(.cf-label) {
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+    margin: 0 0 14px !important;
+    max-width: 100% !important;
+  }
+  #metodo figure {
+    margin: 0 0 16px !important;
+    width: 100% !important;
+  }
+  #metodo figure img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    object-fit: cover !important;
+    aspect-ratio: 4 / 3 !important;
+  }
+  #metodo ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-left: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  #metodo ul li {
+    display: flex !important;
+    gap: 12px !important;
+    align-items: flex-start !important;
+    padding: 14px 0 !important;
+    border-bottom: 1px solid #e6ddd5 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  #metodo ul li:last-child {
+    border-bottom: none !important;
+  }
+  #metodo ul li > span:first-child {
+    width: 32px !important;
+    height: 32px !important;
+    flex-shrink: 0 !important;
+  }
+  #metodo ul li > div {
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+  }
+  #metodo ul li h3 {
+    font-size: 1.05rem !important;
+    margin: 0 0 4px !important;
+    line-height: 1.2 !important;
+  }
+  #metodo ul li p {
+    font-size: 0.92rem !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+}
