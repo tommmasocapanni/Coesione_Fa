@@ -1278,11 +1278,11 @@ body.intro-lock { overflow: hidden; }
   width: 200%;
   pointer-events: none;
   overflow: hidden;
-  transform: translateY(20%);
+  transform: rotate(-7deg) translateY(20%);
 }
 .cf-about .about-hero-wrap .about-hero-wave--bordeaux {
   z-index: -1;
-  transform: translateX(8%) translateY(20%);
+  transform: rotate(-7deg) translateX(8%) translateY(20%);
 }
 
 .cf-about .about-hero-text { align-self: start; padding: var(--ca-pad); padding-top: clamp(1rem, 3vw, 2rem); padding-left: 0; }
@@ -2234,11 +2234,11 @@ body.intro-lock { overflow: hidden; }
   width: 200%;
   pointer-events: none;
   overflow: visible;
-  transform: translateY(20%);
+  transform: rotate(-7deg) translateY(20%);
 }
 .cf-home .cf-equipe-curve .cf-equipe-wave--bordeaux {
   z-index: -1;
-  transform: translateX(8%) translateY(20%);
+  transform: rotate(-7deg) translateX(8%) translateY(20%);
 }
 .cf-home .cf-equipe-curve .cf-equipe-wave svg {
   display: block;
