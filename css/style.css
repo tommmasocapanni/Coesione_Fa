@@ -531,7 +531,7 @@ body.intro-lock { overflow: hidden; }
     "media body";
   align-items: start;
   align-content: start;
-  column-gap: clamp(3rem, 5vw, 4rem);
+  column-gap: clamp(3.125rem, 4vw, 4.0625rem);
   row-gap: 0;
 }
 .cf-home .cf-famiglie-head { grid-area: head; align-self: start; min-width: 0; }
@@ -540,9 +540,9 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-famiglie-body { position: relative; z-index: 1; }
 .cf-home .cf-famiglie-head .cf-label { margin: 0 0 clamp(1rem, 1.8vw, 1.4rem); }
 .cf-home .cf-famiglie-head h2 {
-  margin: 0 0 clamp(1.5rem, 2.6vw, 2.2rem);
-  font-size: clamp(2.35rem, 4.4vw, 3.9rem);
-  line-height: 1.06;
+  margin: 0 0 clamp(1.35rem, 2.2vw, 1.8rem);
+  font-size: clamp(2.1rem, 3.3vw, 3rem);
+  line-height: 1.08;
   letter-spacing: -.045em;
 }
 .cf-home .cf-famiglie-media {
@@ -553,23 +553,17 @@ body.intro-lock { overflow: hidden; }
   width: 100%;
   aspect-ratio: 3 / 4;
   margin: 0;
-  border-radius: 1.25rem;
+  border-radius: 1.15rem;
 }
 .cf-home .cf-famiglie-media::before {
   content: "";
   position: absolute;
   z-index: 0;
   pointer-events: none;
+  inset: -2% -2% -2% -4%;
   background: #F8E6E2;
-  top: -10%;
-  left: -8%;
-  width: 64%;
-  height: 58%;
-  border-radius: 52% 48% 44% 56% / 58% 46% 54% 42%;
-  transform: rotate(-12deg);
-}
-.cf-home .cf-famiglie-media::after {
-  display: none;
+  border-radius: 54% 46% 51% 49% / 44% 54% 46% 56%;
+  transform: rotate(-2deg);
 }
 .cf-home .cf-famiglie-media .cf-photo {
   position: absolute;
@@ -584,26 +578,26 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-famiglie-principles {
   display: flex;
   align-items: center;
-  gap: clamp(1.1rem, 2vw, 1.75rem);
-  margin: 0 0 clamp(1.4rem, 2.4vw, 2rem);
+  gap: clamp(.7rem, 1.7vw, 1.4rem);
+  margin: 0 0 clamp(1.4rem, 2.4vw, 1.8rem);
   padding: 0;
   list-style: none;
 }
 .cf-home .cf-famiglie-principles li {
   display: flex;
   align-items: center;
-  gap: clamp(.7rem, 1.1vw, 1rem);
+  gap: clamp(.55rem, .9vw, .8rem);
   min-width: 0;
 }
 .cf-home .cf-famiglie-principles li + li {
   border-left: 1px solid #EFD9D5;
-  padding-left: clamp(1.1rem, 2vw, 1.75rem);
+  padding-left: clamp(.7rem, 1.7vw, 1.4rem);
 }
 .cf-home .cf-famiglie-icon {
   display: grid;
   place-items: center;
   flex: 0 0 auto;
-  width: clamp(3.2rem, 4.4vw, 4.25rem);
+  width: clamp(2.65rem, 3.7vw, 3.5rem);
   aspect-ratio: 1;
   border-radius: 50%;
   background: #F8E7E4;
@@ -613,7 +607,7 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-famiglie-principle {
   color: var(--wine);
   font-weight: 700;
-  font-size: clamp(.98rem, 1.3vw, 1.18rem);
+  font-size: clamp(.9rem, 1.1vw, 1.05rem);
   line-height: 1.25;
   letter-spacing: -.01em;
 }
@@ -621,17 +615,17 @@ body.intro-lock { overflow: hidden; }
   max-width: 58ch;
   color: #4C4C4C;
   font-size: clamp(1.08rem, 1.25vw, 1.18rem);
-  line-height: 1.65;
+  line-height: 1.7;
   margin: 0 0 1.1rem;
   padding-left: 1rem;
-  border-left: 2px solid var(--bordeaux);
+  border-left: 1px solid var(--bordeaux);
 }
 .cf-home .cf-famiglie-body p {
-  max-width: 60ch;
+  max-width: 100%;
   color: #4C4C4C;
-  font-size: clamp(1rem, 1.12vw, 1.08rem);
-  line-height: 1.65;
-  margin: 0 0 1rem;
+  font-size: clamp(1rem, 1.08vw, 1.08rem);
+  line-height: 1.72;
+  margin: 0 0 1.1rem;
 }
 .cf-home .cf-famiglie-body p:last-of-type { margin-bottom: clamp(1.2rem, 2vw, 1.7rem); }
 .cf-home .cf-famiglie-link {
@@ -649,15 +643,15 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-famiglie-link:hover .cf-famiglie-arrow { transform: translateX(3px); }
 
 @media (max-width: 64rem) {
-  .cf-home .cf-famiglie-media::before { left: -4%; transform: rotate(-8deg); }
+  .cf-home .cf-famiglie-media::before { left: -3%; }
 }
 @media (max-width: 56rem) {
   .cf-home .cf-famiglie {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "head"
-      "body"
-      "media";
+      "media"
+      "body";
     row-gap: clamp(1.4rem, 4vw, 2rem);
   }
   .cf-home .cf-famiglie-head,
@@ -667,30 +661,20 @@ body.intro-lock { overflow: hidden; }
     margin-bottom: clamp(1.2rem, 3vw, 1.6rem);
   }
   .cf-home .cf-famiglie-media {
+    width: min(100%, 36rem);
     aspect-ratio: 4 / 3;
-    border-radius: 1rem;
+    justify-self: center;
   }
-  .cf-home .cf-famiglie-media::before { top: -4%; left: -2%; width: 58%; height: 52%; transform: rotate(-4deg); }
+  .cf-home .cf-famiglie-media::before { top: -2%; left: -2%; }
 }
 @media (max-width: 34rem) {
   .cf-home .cf-famiglie { row-gap: 1.4rem; }
-  .cf-home .cf-famiglie-media { border-radius: 1rem; aspect-ratio: 4 / 3; }
-  .cf-home .cf-famiglie-media::before { top: -5%; left: -3%; width: 56%; height: 50%; }
-  .cf-home .cf-famiglie-principles {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .cf-home .cf-famiglie-principles li {
-    width: 100%;
-  }
-  .cf-home .cf-famiglie-principles li + li {
-    border-left: 0;
-    border-top: 1px solid #EFD9D5;
-    padding-left: 0;
-    padding-top: 1rem;
-  }
-  .cf-home .cf-famiglie-icon { width: 3.4rem; }
+  .cf-home .cf-famiglie-media { border-radius: 1rem; }
+  .cf-home .cf-famiglie-principles { gap: .55rem; }
+  .cf-home .cf-famiglie-principles li { gap: .45rem; }
+  .cf-home .cf-famiglie-principles li + li { padding-left: .55rem; }
+  .cf-home .cf-famiglie-icon { width: 2.4rem; }
+  .cf-home .cf-famiglie-principle { font-size: .82rem; }
 }
 
 @media (max-width: 68rem) {
