@@ -2296,6 +2296,9 @@ body.intro-lock { overflow: hidden; }
     overflow-x: clip;
     overflow-y: visible;
   }
+  .cf-home .cf-equipe-curve {
+    display: none;
+  }
   .cf-home .cf-equipe-band {
     grid-template-columns: 1fr;
     gap: 1.5rem;
