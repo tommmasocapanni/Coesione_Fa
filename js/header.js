@@ -132,4 +132,17 @@
     // keep header visible if focus inside
     header.addEventListener('focusin', () => header.classList.remove('header-hidden'));
   });
+
+  // Sulla Home, il link "Home" scrolla in cima invece di ricaricare la pagina
+  const onHome = /index\.html$/.test(location.pathname) || location.pathname === '/' || location.pathname.endsWith('/');
+  if (onHome) {
+    document.querySelectorAll('header nav a, .site-header .nav a').forEach((a) => {
+      if (a.getAttribute('href') === 'index.html' || a.getAttribute('href') === '/') {
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    });
+  }
 })();

@@ -19,7 +19,7 @@
   <div id="intro-loader" class="intro-loader"><div class="mask"><img src="img/logo.svg" alt="Coesione fa."></div></div>
   <a class="cf-skip" href="#contenuto">Vai al contenuto</a>
   <header class="cf-header">
-    <a class="cf-brand" href="index.html"><img src="img/logo.svg" alt="Coesione fa." style="height:36px;width:auto;"></a>
+    <a class="cf-brand" href="index.html?replay=1"><img src="img/logo.svg" alt="Coesione fa." style="height:36px;width:auto;"></a>
     <nav aria-label="Navigazione principale">
       <a href="index.html" aria-current="page">Home</a>
       <a href="chi-siamo.html">Associazione</a>
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="cf-hero-photo-wrap">
-        <img class="cf-photo cf-hero-photo" src="Assets/img/logo/Coesione-fa_rosso-bordeaux_ridotto.png" alt="Coesione fa." width="1600" height="1067" fetchpriority="high">
+        <img class="cf-photo cf-hero-photo" src="img/hero.jpg" alt="Famiglia in un momento di dialogo e vicinanza" width="1600" height="1067" fetchpriority="high">
       </div>
       <svg class="cf-hero-masks" width="0" height="0" aria-hidden="true" focusable="false">
         <defs>
@@ -451,15 +451,32 @@
     </div>
   </footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-<script src="js/header.js"></script>
+<script src="js/header.js?v=2"></script>
 <script>
 (function () {
   const loader = document.getElementById('intro-loader');
   if (!loader) return;
+  // Click sul logo: forza la replay dell'intro
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('replay') === '1') {
+    sessionStorage.removeItem('cfIntroPlayed');
+    if (window.history && window.history.replaceState) {
+      window.history.replaceState(null, '', 'index.html');
+    }
+  }
+  // Mostra l'intro solo al primo ingresso nella sessione
+  if (sessionStorage.getItem('cfIntroPlayed') === '1') {
+    loader.remove();
+    document.body.classList.remove('intro-lock');
+    const hdr = document.querySelector('header.cf-header');
+    if (hdr) { hdr.style.opacity = ''; hdr.style.transform = ''; }
+    return;
+  }
   const hdr = document.querySelector('header.cf-header');
   if (hdr) { hdr.style.opacity = '0'; hdr.style.transform = 'translateY(-100%)'; }
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function done() {
+    sessionStorage.setItem('cfIntroPlayed', '1');
     loader.classList.add('hide');
     document.body.classList.remove('intro-lock');
     setTimeout(() => {
