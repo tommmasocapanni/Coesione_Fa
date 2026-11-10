@@ -31,14 +31,40 @@
 
 <main>
 <!-- HERO -->
-<section class="about-hero container" aria-labelledby="chi-siamo-titolo">
-  <div class="about-hero-text">
-    <p class="eyebrow">L’ASSOCIAZIONE</p>
-    <h1 id="chi-siamo-titolo"><span style="color:#8a6b6b;font-weight:500;">Da un progetto di ascolto.</span> <span class="accent">A una comunità che agisce.</span></h1>
-    <p class="lead">Coesione fa. è un’associazione senza scopo di lucro dedicata alle relazioni, alla conoscenza e al sostegno delle famiglie nei passaggi della vita.</p>
+<div class="about-hero-wrap">
+  <div class="about-hero-wave about-hero-wave--bordeaux" aria-hidden="true">
+    <svg viewBox="0 0 1440 260" preserveAspectRatio="none" focusable="false">
+      <defs>
+        <linearGradient id="bordeauxGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#7A1F3D"/>
+          <stop offset="75%" stop-color="#7A1F3D"/>
+          <stop offset="100%" stop-color="#f8f6f3"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#bordeauxGrad)" d="M0 260 C 80 245 160 200 240 140 C 280 110 320 110 360 140 C 440 200 520 215 600 205 C 680 195 760 180 840 150 C 900 125 960 125 1020 150 C 1100 175 1180 195 1260 180 C 1320 170 1380 130 1440 20 L1440 260 Z"/>
+    </svg>
   </div>
-  <img class="ca-hero-photo" src="img/chi-siamo-hero.png" alt="Due persone conversano a un tavolo" fetchpriority="high">
-</section>
+  <div class="about-hero-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 260" preserveAspectRatio="none" focusable="false">
+      <defs>
+        <linearGradient id="roseGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#F8E7E4"/>
+          <stop offset="75%" stop-color="#F8E7E4"/>
+          <stop offset="100%" stop-color="#f8f6f3"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#roseGrad)" d="M0 260 C 80 245 160 200 240 140 C 280 110 320 110 360 140 C 440 200 520 215 600 205 C 680 195 760 180 840 150 C 900 125 960 125 1020 150 C 1100 175 1180 195 1260 180 C 1320 170 1380 130 1440 20 L1440 260 Z"/>
+    </svg>
+  </div>
+  <section class="about-hero container" aria-labelledby="chi-siamo-titolo">
+    <div class="about-hero-text">
+      <p class="eyebrow">L’ASSOCIAZIONE</p>
+      <h1 id="chi-siamo-titolo"><span style="color:#8a6b6b;font-weight:500;">Da un progetto di ascolto.</span> <span class="accent">A una comunità che agisce.</span></h1>
+      <p class="lead">Coesione fa. è un’associazione senza scopo di lucro dedicata alle relazioni, alla conoscenza e al sostegno delle famiglie nei passaggi della vita.</p>
+    </div>
+    <img class="ca-hero-photo" src="img/chi-siamo-hero.png" alt="Due persone conversano a un tavolo" fetchpriority="high">
+  </section>
+</div>
 
 <!-- STORIA -->
 <section class="section ca-story" id="storia">

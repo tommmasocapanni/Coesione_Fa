@@ -179,6 +179,10 @@
       const profile = createBiography(profileData, 'cf-equipe-profile');
       const name = document.createElement('h4');
       name.textContent = profileData.name;
+      const role = document.createElement('p');
+      role.className = 'cf-equipe-profile-role';
+      role.textContent = profileData.qualification;
+      profile.prepend(role);
       profile.prepend(name);
       list.append(profile);
     });

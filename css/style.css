@@ -1253,17 +1253,41 @@ body.intro-lock { overflow: hidden; }
 }
 .cf-about .nav-links [aria-current="page"] { font-weight: 700; text-decoration: none; }
 .cf-about main :is(.about-hero, .ca-story, .ca-values, .ca-relations) { scroll-margin-top: 6rem; }
-.cf-about .about-hero {
+.cf-about .about-hero-wrap {
+  position: relative;
+  overflow: visible;
+}
+.cf-about .about-hero-wrap .about-hero {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: .75rem;
   width: calc(100% - 2rem);
   padding: .75rem;
   margin-block: clamp(1rem, 4vw, 2.5rem) 0;
-  background: white;
+  background: transparent;
   border-radius: var(--ca-radius);
+  overflow: visible;
 }
-.cf-about .about-hero-text { align-self: center; padding: var(--ca-pad); }
+.cf-about .about-hero-wrap .about-hero-wave {
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  z-index: 0;
+  width: 200%;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translateY(20%);
+}
+.cf-about .about-hero-wrap .about-hero-wave--bordeaux {
+  z-index: -1;
+  transform: translateX(8%) translateY(20%);
+}
+
+.cf-about .about-hero-text { align-self: start; padding: var(--ca-pad); padding-top: clamp(1rem, 3vw, 2rem); padding-left: 0; }
+.cf-about .about-hero .eyebrow { display: flex; align-items: center; gap: .55rem; }
+.cf-about .about-hero .eyebrow::before { content: ""; width: 3px; height: 1.1em; background: var(--red); border-radius: 2px; flex-shrink: 0; }
 .cf-about .about-hero h1 {
   max-width: 13ch;
   font-size: clamp(2.55rem, 5vw, 5.4rem);
@@ -1328,7 +1352,7 @@ body.intro-lock { overflow: hidden; }
 .cf-about .ca-relations .relations-grid p { margin: 0; padding: clamp(1rem, 3vw, 2rem); border-radius: 1.25rem; background: white; }
 .cf-about .ca-relations .relations-grid p:first-child { grid-column: 1 / -1; background: var(--ca-rose); }
 @media (max-width: 48rem) {
-  .cf-about .about-hero, .cf-about .ca-relations .relations-grid { grid-template-columns: 1fr; }
+  .cf-about .about-hero-wrap .about-hero, .cf-about .ca-relations .relations-grid { grid-template-columns: 1fr; }
   .cf-about .ca-hero-photo { height: auto; min-height: 0; aspect-ratio: 1.55; }
   .cf-about .ca-mark { order: 1; aspect-ratio: 1.8; width: 100%;}
 }
@@ -1942,301 +1966,357 @@ body.intro-lock { overflow: hidden; }
   max-width: 74ch;
   margin-bottom: 0;
 }
+/* Équipe — composizione editoriale */
 .cf-home .cf-equipe {
+  --eq-wine: #7A1F3D;
+  --eq-red: #C8202F;
+  --eq-ink: #353032;
+  --eq-muted: #4E4A4B;
+  --eq-paper: #FBF8F5;
+  --eq-line: #EADFDA;
+  --eq-rose: #FBEDEB;
+  --eq-wave-h: clamp(6rem, 11.7vw, 10.5rem);
   position: relative;
   isolation: isolate;
-  margin-top: 0;
-  padding: clamp(1.5rem, 3vw, 2.5rem) var(--pad) clamp(1.5rem, 3vw, 2.5rem);
+  scroll-margin-top: 6.5rem;
+  margin-top: clamp(3rem, 8vw, 7rem);
+  padding: clamp(2.5rem, 5vw, 4.25rem) 0 var(--eq-wave-h);
   overflow: visible;
-  border-radius: var(--radius);
-  background: #FBF8F5;
-  color: var(--text);
+  border-radius: 0;
+  background: transparent;
+  color: var(--eq-ink);
 }
+
+/* Intestazione */
 .cf-home .cf-equipe-header,
+.cf-home .cf-equipe-band,
 .cf-home .cf-equipe-grid {
   position: relative;
-  z-index: 1;
-  border-top: none;
+  z-index: 2;
 }
 .cf-home .cf-equipe-header {
   max-width: 76rem;
-  margin-bottom: clamp(2rem, 5vw, 3.8rem);
+  margin: 0 0 clamp(2.2rem, 4vw, 3.1rem);
 }
 .cf-home .cf-equipe-header .cf-label {
-  margin-bottom: .85rem;
-  color: var(--red);
+  margin: 0 0 clamp(.9rem, 1.5vw, 1.2rem);
+  color: var(--eq-red);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .14em;
 }
 .cf-home .cf-equipe-header h2 {
   max-width: none;
-  margin-bottom: 0;
-  font-size: clamp(2.15rem, 4.8vw, 4rem);
-  line-height: 1.04;
+  margin: 0 0 clamp(1.1rem, 2vw, 1.6rem);
+  color: var(--eq-wine);
+  font-size: clamp(2.3rem, 4.7vw, 4.3rem);
+  line-height: 1.05;
+  letter-spacing: -.045em;
   text-wrap: balance;
 }
-.cf-home .cf-equipe-featured {
+.cf-home .cf-equipe-intro {
+  max-width: 64ch;
+  margin: 0;
+  color: var(--eq-muted);
+  font-size: clamp(1rem, 1.15vw, 1.07rem);
+  line-height: 1.62;
+}
+
+/* Fascia editoriale centrale */
+.cf-home .cf-equipe-band {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.25rem, 3vw, 2.5rem);
-  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr);
+  align-items: start;
+  margin: 0 0 clamp(2.7rem, 5vw, 4.1rem);
 }
-.cf-home .cf-equipe-persona {
-  min-width: 0;
-  padding-top: 1.1rem;
-  border-top: 2px solid var(--wine);
+.cf-home .cf-equipe-band-lead {
+  padding-left: clamp(1.1rem, 2vw, 1.7rem);
+  border-left: 3px solid var(--eq-wine);
 }
-.cf-home .cf-equipe-persona-name {
-  margin: 0 0 .45rem;
-  color: var(--wine);
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
-  line-height: 1.15;
-  letter-spacing: -.035em;
-  overflow-wrap: anywhere;
+.cf-home .cf-equipe-band-lead h3 {
+  max-width: 22ch;
+  margin: 0;
+  color: var(--eq-wine);
+  font: 700 clamp(1.35rem, 2.3vw, 2.05rem)/1.14 'Manrope', system-ui, sans-serif;
+  letter-spacing: -.04em;
 }
-.cf-home .cf-equipe-persona-role {
-  margin: 0 0 .8rem;
-  color: var(--red);
-  font-size: .76rem;
-  font-weight: 700;
-  letter-spacing: .075em;
-  line-height: 1.5;
-  text-transform: uppercase;
+.cf-home .cf-equipe-band-copy {
+  max-width: 62ch;
+  margin: 0;
+  padding-left: clamp(1.4rem, 3vw, 2.6rem);
+  border-left: 1px solid #F0DCD8;
+  color: var(--eq-muted);
+  font-size: clamp(.98rem, 1.1vw, 1.05rem);
+  line-height: 1.62;
 }
-.cf-home .cf-equipe-persona-summary {
-  max-width: 42ch;
-  min-height: 4.6em;
-  margin: 0 0 .85rem;
-  color: #555;
-  font-size: .93rem;
-  line-height: 1.65;
-}
-.cf-home .cf-equipe-persona-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: .45rem;
-  padding: .2rem 0;
-  border: 0;
-  background: transparent;
-  color: var(--wine);
-  font: 600 .88rem/1.5 'Manrope', system-ui, sans-serif;
-  text-align: left;
-  text-underline-offset: .22em;
-  cursor: pointer;
-}
-.cf-home .cf-equipe-persona-toggle::after {
-  content: "+";
-  font-size: .95rem;
-  transition: transform .25s ease;
-}
-.cf-home .cf-equipe-persona-toggle[aria-expanded="true"]::after {
-  content: "\2212";
-}
-.cf-home .cf-equipe-persona-toggle:hover {
-  text-decoration: underline;
-}
-.cf-home .cf-equipe-persona-toggle[aria-expanded="true"]::after {
-  content: "−";
-}
-.cf-home .cf-equipe-persona-toggle:focus-visible {
-  outline: 2px solid var(--red);
-  outline-offset: 3px;
-}
-.cf-home .cf-equipe-persona-panel {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows .36s ease;
-}
-.cf-home .cf-equipe-persona.is-open .cf-equipe-persona-panel {
-  grid-template-rows: 1fr;
-}
-.cf-home .cf-equipe-persona-panel-inner {
-  min-height: 0;
-  overflow: hidden;
-  color: #555;
-  font-size: .92rem;
-  line-height: 1.65;
-  transition: padding .36s ease;
-}
-.cf-home .cf-equipe-persona.is-open .cf-equipe-persona-panel-inner {
-  padding-top: .9rem;
-}
-.cf-home .cf-equipe-persona-biography p {
-  margin: 0 0 .7rem;
-}
-.cf-home .cf-equipe-persona-biography p:last-child {
-  margin-bottom: 0;
-}
+
+/* Le due aree professionali */
 .cf-home .cf-equipe-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: clamp(4rem, 6vw, 5rem);
-  margin-top: 0;
-  padding-top: clamp(2rem, 4vw, 3rem);
+  align-items: start;
+  gap: clamp(2rem, 5.5vw, 5.25rem);
+  margin: 0;
+  padding: 0;
 }
-.cf-home .cf-equipe-area {
-  min-width: 0;
+.cf-home .cf-equipe-area { min-width: 0; }
+
+.cf-home .cf-equipe-area-head {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 1.75vw, 1.55rem);
+  margin: 0 0 clamp(1rem, 1.6vw, 1.35rem);
 }
-.cf-home .cf-equipe-area:first-child {
-  padding-right: clamp(1.5rem, 3.5vw, 2.75rem);
+.cf-home .cf-equipe-area-icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: clamp(3.4rem, 4.7vw, 4.35rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--eq-rose);
+  color: var(--eq-wine);
 }
-.cf-home .cf-equipe-area:last-child::before { display: none; }
-.cf-home .cf-equipe-area::before { display: none; }
+.cf-home .cf-equipe-area-icon svg {
+  width: 48%;
+  height: 48%;
+}
 .cf-home .cf-equipe-area h3 {
-  max-width: 24ch;
-  margin: 0 0 .9rem;
-  color: var(--wine);
-  font: 700 clamp(1.35rem, 2vw, 1.8rem)/1.12 'Manrope', system-ui, sans-serif;
-  letter-spacing: -.035em;
+  flex: 0 1 auto;
+  max-width: none;
+  margin: 0;
+  color: var(--eq-wine);
+  font: 700 clamp(1.2rem, 1.95vw, 1.7rem)/1.15 'Manrope', system-ui, sans-serif;
+  letter-spacing: -.04em;
+  overflow-wrap: anywhere;
 }
+.cf-home .cf-equipe-area-rule {
+  flex: 1 1 2rem;
+  min-width: 1.5rem;
+  height: 1px;
+  background: var(--eq-line);
+}
+
+/* Elenchi */
 .cf-home .cf-equipe-list {
-  border-top: 1px solid #ded5d1;
+  border-top: 1px solid var(--eq-line);
 }
 .cf-home .cf-equipe-item {
-  border-bottom: 1px solid #ded5d1;
+  border-bottom: 1px solid var(--eq-line);
 }
 .cf-home .cf-equipe-item.is-open {
-  background: #f5efec;
+  background: transparent;
 }
-.cf-home .cf-equipe-toggle {
+.cf-home .cf-equipe-toggle,
+.cf-home .cf-equipe-label {
   display: flex;
   width: 100%;
-  min-height: 2.75rem;
+  min-height: 2.9rem;
   align-items: center;
+  color: var(--eq-ink);
+  font-size: clamp(.98rem, 1.1vw, 1.05rem);
+  line-height: 1.45;
+  text-align: left;
+}
+.cf-home .cf-equipe-toggle {
   justify-content: space-between;
-  gap: 1rem;
-  padding: .55rem .25rem;
+  gap: .75rem;
+  padding: .78rem .15rem;
   border: 0;
   background: transparent;
-  color: var(--text);
-  font: inherit;
-  line-height: 1.4;
-  text-align: left;
+  font-family: inherit;
   cursor: pointer;
-  transition: background-color .2s ease, color .2s ease;
+  transition: color .22s ease, background-color .22s ease;
+}
+.cf-home .cf-equipe-label {
+  padding: .78rem .15rem;
 }
 .cf-home .cf-equipe-toggle::after {
-  content: "+";
+  content: "\203A";
   display: block;
   flex: 0 0 auto;
-  width: 1.25rem;
-  color: var(--red);
-  font-size: 1.35rem;
-  font-weight: 400;
+  color: var(--eq-red);
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 1.55rem;
+  font-weight: 500;
   line-height: 1;
-  text-align: center;
-  transition: color .2s ease, transform .2s ease;
+  transform: translateY(-.04em);
+  transition: transform .35s ease, color .22s ease;
 }
 .cf-home .cf-equipe-toggle[aria-expanded="true"]::after {
-  content: "\2212";
-  transform: scale(.94);
-}
-.cf-home .cf-equipe-toggle:hover,
-.cf-home .cf-equipe-toggle[aria-expanded="true"] {
-  color: var(--wine);
+  transform: rotate(90deg);
 }
 .cf-home .cf-equipe-toggle:hover {
-  background: #f8f3f0;
-}
-.cf-home .cf-equipe-toggle:hover::after {
-  transform: scale(1.12);
-}
-.cf-home .cf-equipe-toggle[aria-expanded="true"]:hover::after {
-  transform: scale(1.04);
+  background: rgba(122, 31, 61, .035);
+  color: var(--eq-wine);
 }
 .cf-home .cf-equipe-toggle:focus-visible {
-  outline: 2px solid var(--red);
+  outline: 2px solid var(--eq-red);
   outline-offset: 2px;
 }
+
+/* Pannelli */
 .cf-home .cf-equipe-panel {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows .36s ease;
+  transition: grid-template-rows .42s cubic-bezier(.22, .61, .36, 1);
 }
 .cf-home .cf-equipe-item.is-open .cf-equipe-panel {
   grid-template-rows: 1fr;
 }
 .cf-home .cf-equipe-panel-inner {
   min-height: 0;
-  overflow: hidden;
   max-width: 68ch;
-  padding: 0 .25rem;
-  color: #555;
-  font-size: .94rem;
-  line-height: 1.65;
-  transition: padding .36s ease;
+  overflow: hidden;
+  padding: 0 .15rem;
+  color: var(--eq-muted);
+  font-size: .95rem;
+  line-height: 1.66;
+  transition: padding .42s cubic-bezier(.22, .61, .36, 1);
 }
 .cf-home .cf-equipe-item.is-open .cf-equipe-panel-inner {
-  padding: .15rem .25rem 1rem;
+  padding: .1rem .15rem 1.35rem;
 }
 .cf-home .cf-equipe-profiles {
   display: grid;
-  gap: 1rem;
+  gap: 1.15rem;
   margin: 0;
+  padding: 0;
 }
 .cf-home .cf-equipe-profile {
   margin: 0;
 }
 .cf-home .cf-equipe-profile h4 {
-  margin: 0 0 .5rem;
-  color: var(--wine);
-  font: 600 1rem/1.4 'Manrope', system-ui, sans-serif;
+  margin: 0 0 .2rem;
+  color: var(--eq-wine);
+  font: 700 1.02rem/1.35 'Manrope', system-ui, sans-serif;
+  letter-spacing: -.02em;
+}
+.cf-home .cf-equipe-profile-role {
+  margin: 0 0 .6rem;
+  color: var(--eq-red);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 .cf-home .cf-equipe-profile p {
   margin: 0 0 .65rem;
-  color: #555;
+  color: var(--eq-muted);
   font-weight: 400;
 }
 .cf-home .cf-equipe-profile p:last-child {
   margin-bottom: 0;
 }
 .cf-home .cf-equipe-profile + .cf-equipe-profile {
-  padding-top: 1rem;
-  border-top: 1px solid #ded5d1;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--eq-line);
 }
-.cf-home .cf-equipe-label {
+
+/* Curva organica inferiore */
+.cf-home .cf-equipe-curve {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 0;
+  width: 100vw;
+  transform: translateX(-50%);
+  pointer-events: none;
+  overflow: hidden;
+}
+.cf-home .cf-equipe-curve svg {
   display: block;
-  padding: .65rem .25rem;
-  color: #555;
-  line-height: 1.4;
+  width: 100%;
+  height: var(--eq-wave-h);
 }
-.cf-home .cf-equipe-note {
-  max-width: 38ch;
-  margin: clamp(1.75rem, 4vw, 2.75rem) 0 0;
-  padding: .95rem 0 0;
-  border-top: 1px solid var(--wine);
-  color: #555;
-  font: 500 1rem/1.65 'Manrope', system-ui, sans-serif;
-  text-wrap: pretty;
-}
-@media (max-width: 52rem) {
-  .cf-home .cf-equipe-featured {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+.cf-home .cf-equipe-curve .cf-eq-svg--mobile { display: none; }
+.cf-home .cf-equipe-curve-rose { fill: #F8E7E4; }
+.cf-home .cf-equipe-curve-wine { fill: #7A1F3D; }
+
+@media (max-width: 64rem) {
+  .cf-home .cf-equipe-header h2 {
+    font-size: clamp(2.15rem, 4.9vw, 3.5rem);
   }
-  .cf-home .cf-equipe-persona-summary {
-    min-height: 0;
+  .cf-home .cf-equipe-band {
+    grid-template-columns: minmax(0, .68fr) minmax(0, 1.32fr);
+  }
+}
+
+@media (max-width: 48rem) {
+  .cf-home .cf-equipe-band {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .cf-home .cf-equipe-band-lead h3 {
+    max-width: 22ch;
+  }
+  .cf-home .cf-equipe-band-copy {
+    max-width: 68ch;
+    padding: 1.45rem 0 0;
+    border-top: 1px solid #F0DCD8;
+    border-left: 0;
   }
   .cf-home .cf-equipe-grid {
-    grid-template-columns: 1fr;
-    gap: 2.25rem;
+    gap: clamp(2rem, 4vw, 2.75rem);
   }
-  .cf-home .cf-equipe-area:first-child {
-    padding-right: 0;
-    border-right: 0;
+  .cf-home .cf-equipe-area-head {
+    gap: .85rem;
   }
-  .cf-home .cf-equipe-area:last-child {
-    padding-left: 0;
+  .cf-home .cf-equipe-area h3 {
+    max-width: none;
+    font-size: 1.13rem;
   }
-}
-@media (max-width: 36rem) {
-  .cf-home .cf-equipe-featured {
-    grid-template-columns: 1fr;
+  .cf-home .cf-equipe-area-icon {
+    width: 3.1rem;
   }
 }
+
+@media (max-width: 43.75rem) {
+  .cf-home .cf-equipe-grid {
+    grid-template-columns: 1fr;
+    gap: 2.6rem;
+  }
+  .cf-home .cf-equipe-area-head {
+    gap: 1rem;
+  }
+  .cf-home .cf-equipe-area h3 {
+    max-width: none;
+    font-size: clamp(1.15rem, 3.4vw, 1.32rem);
+  }
+}
+
+@media (max-width: 30rem) {
+  .cf-home .cf-equipe {
+    --eq-wave-h: 4.5rem;
+    padding-top: 2.25rem;
+    padding-bottom: var(--eq-wave-h);
+  }
+  .cf-home .cf-equipe-curve .cf-eq-svg--desktop { display: none; }
+  .cf-home .cf-equipe-curve .cf-eq-svg--mobile { display: block; }
+  .cf-home .cf-equipe-header h2 {
+    font-size: clamp(1.95rem, 8.6vw, 2.45rem);
+    line-height: 1.08;
+  }
+  .cf-home .cf-equipe-area-head {
+    margin-bottom: 1rem;
+  }
+  .cf-home .cf-equipe-area h3 {
+    max-width: none;
+    font-size: 1.12rem;
+  }
+  .cf-home .cf-equipe-area-icon {
+    width: 2.9rem;
+  }
+  .cf-home .cf-equipe-area-rule {
+    display: none;
+  }}
+
 @media (prefers-reduced-motion: reduce) {
   .cf-home .cf-equipe-panel,
   .cf-home .cf-equipe-panel-inner,
-  .cf-home .cf-equipe-persona-panel,
-  .cf-home .cf-equipe-persona-panel-inner,
-  .cf-home .cf-equipe-persona-toggle::after {
+  .cf-home .cf-equipe-toggle,
+  .cf-home .cf-equipe-toggle::after {
     transition: none;
   }
 }
