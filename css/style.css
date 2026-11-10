@@ -2214,25 +2214,37 @@ body.intro-lock { overflow: hidden; }
   border-top: 1px solid var(--eq-line);
 }
 
-/* Curva organica inferiore */
+/* Onde decorative inferiori (stile chi-siamo hero) */
 .cf-home .cf-equipe-curve {
   position: absolute;
+  top: 0;
   bottom: 0;
   left: 50%;
   z-index: 0;
   width: 100vw;
   transform: translateX(-50%);
   pointer-events: none;
-  overflow: hidden;
+  overflow: visible;
 }
-.cf-home .cf-equipe-curve svg {
+.cf-home .cf-equipe-curve .cf-equipe-wave {
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  z-index: 0;
+  width: 200%;
+  pointer-events: none;
+  overflow: visible;
+  transform: translateY(20%);
+}
+.cf-home .cf-equipe-curve .cf-equipe-wave--bordeaux {
+  z-index: -1;
+  transform: translateX(8%) translateY(20%);
+}
+.cf-home .cf-equipe-curve .cf-equipe-wave svg {
   display: block;
   width: 100%;
-  height: var(--eq-wave-h);
+  height: auto;
 }
-.cf-home .cf-equipe-curve .cf-eq-svg--mobile { display: none; }
-.cf-home .cf-equipe-curve-rose { fill: #F8E7E4; }
-.cf-home .cf-equipe-curve-wine { fill: #7A1F3D; }
 
 @media (max-width: 64rem) {
   .cf-home .cf-equipe-header h2 {

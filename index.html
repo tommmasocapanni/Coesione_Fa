@@ -324,14 +324,30 @@
       </div>
 
       <div class="cf-equipe-curve" aria-hidden="true">
-        <svg class="cf-eq-svg cf-eq-svg--desktop" viewBox="0 0 1440 260" preserveAspectRatio="none" focusable="false">
-          <path class="cf-equipe-curve-rose" d="M0 222 C 240 218 450 210 660 194 C 920 174 1180 124 1440 66 L1440 260 L0 260 Z"/>
-          <path class="cf-equipe-curve-wine" d="M730 260 C 950 262 1020 242 1115 188 C 1210 134 1250 90 1320 66 C 1360 53 1400 44 1440 40 L1440 260 Z"/>
-        </svg>
-        <svg class="cf-eq-svg cf-eq-svg--mobile" viewBox="0 0 1000 260" preserveAspectRatio="none" focusable="false">
-          <path class="cf-equipe-curve-rose" d="M0 224 C 200 220 360 210 520 190 C 700 168 860 148 1000 116 L1000 260 L0 260 Z"/>
-          <path class="cf-equipe-curve-wine" d="M470 260 C 620 262 700 246 780 206 C 860 166 930 122 1000 90 L1000 260 Z"/>
-        </svg>
+        <div class="cf-equipe-wave cf-equipe-wave--bordeaux">
+          <svg viewBox="0 0 1440 260" preserveAspectRatio="none" focusable="false">
+            <defs>
+              <linearGradient id="equipeBordeauxGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#7A1F3D"/>
+                <stop offset="75%" stop-color="#7A1F3D"/>
+                <stop offset="100%" stop-color="#FBF8F5"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#equipeBordeauxGrad)" d="M0 260 C 80 245 160 200 240 140 C 280 110 320 110 360 140 C 440 200 520 215 600 205 C 680 195 760 180 840 150 C 900 125 960 125 1020 150 C 1100 175 1180 195 1260 180 C 1320 170 1380 130 1440 20 L1440 260 Z"/>
+          </svg>
+        </div>
+        <div class="cf-equipe-wave">
+          <svg viewBox="0 0 1440 260" preserveAspectRatio="none" focusable="false">
+            <defs>
+              <linearGradient id="equipeRoseGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#F8E7E4"/>
+                <stop offset="75%" stop-color="#F8E7E4"/>
+                <stop offset="100%" stop-color="#FBF8F5"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#equipeRoseGrad)" d="M0 260 C 80 245 160 200 240 140 C 280 110 320 110 360 140 C 440 200 520 215 600 205 C 680 195 760 180 840 150 C 900 125 960 125 1020 150 C 1100 175 1180 195 1260 180 C 1320 170 1380 130 1440 20 L1440 260 Z"/>
+          </svg>
+        </div>
       </div>
     </section>
 

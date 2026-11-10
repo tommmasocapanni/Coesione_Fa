@@ -29,6 +29,20 @@
         'La mediazione familiare offre uno spazio neutro e privo di giudizio per gestire il conflitto e raggiungere accordi duraturi, ponendo al centro il benessere e l’interesse dei figli.',
         'La pedagogia supporta le difficoltà comportamentali e di apprendimento dall’infanzia all’adolescenza, coinvolgendo anche gli adulti di riferimento.'
       ]
+    },
+    fulvia: {
+      name: 'Fulvia Coen',
+      qualification: 'Educatrice, direttrice e legale rappresentante dell’Associazione Il Flauto Magico',
+      summary: 'Educatrice e direttrice dell’Associazione Il Flauto Magico di Roma, cura il progetto Bottega Teatrale, laboratorio annuale di teatro integrato per persone con e senza disabilità.',
+      biography: [
+        'Fulvia Coen è educatrice laureata in Scienze della Formazione, con un Master in tutela, protezione e diritti del minore e una formazione specifica nell’ambito dell’Arte Terapia nel teatro e nella danza. Ha una lunga esperienza nella progettazione e realizzazione di attività educative e ludico-creative rivolte principalmente a bambini e minori, in ambito scolastico, culturale, museale, sanitario e socio-educativo.',
+        'Dal 2002 è Direttrice e legale rappresentante dell’Associazione Il Flauto Magico di Roma, per la quale cura la progettazione, il coordinamento e la gestione di laboratori, centri estivi, eventi e progetti dedicati all’infanzia.',
+        'L’Associazione Il Flauto Magico propone a Coesione Fa il progetto Bottega Teatrale, un laboratorio annuale di teatro integrato che, dal 2006, si svolge presso il Teatro San Genesio di Roma e coinvolge gruppi misti di persone con e senza disabilità.',
+        'Il progetto nasce dalla convinzione che la relazione con l’altro, l’espressione di sé e il senso di appartenenza siano elementi fondamentali per il benessere della persona. In questa prospettiva, il teatro diventa uno strumento privilegiato per imparare a comunicare, ascoltare, riconoscere le proprie emozioni, confrontarsi con le differenze e costruire relazioni positive.',
+        'Ispirata al principio “Persone tra le persone”, Bottega Teatrale propone un percorso in cui ciascun partecipante, indipendentemente dalle proprie capacità e fragilità, può trovare uno spazio di espressione, riconoscimento e partecipazione alla pari. Attraverso il gioco teatrale, l’improvvisazione, il movimento, la musica e le arti visive, il gruppo sperimenta forme di comunicazione verbale e non verbale, collaborazione e condivisione.',
+        'Il percorso è condotto da operatori e professionisti del settore teatrale e artistico e culmina nella realizzazione di uno spettacolo aperto al pubblico. In sintonia con la missione di Coesione Fa, il progetto intende valorizzare il ruolo delle relazioni nella costruzione del benessere individuale e collettivo, offrendo un’esperienza concreta di ascolto, accoglienza, fiducia reciproca e superamento delle barriere relazionali.',
+        'Perché stare bene con gli altri significa anche imparare a stare bene con sé stessi. Il teatro offre a ciascuno la possibilità di incontrare l’altro, riconoscersi nelle differenze e costruire insieme nuove forme di relazione.'
+      ]
     }
   };
 
@@ -52,7 +66,7 @@
       { name: 'Maestri di scacchi' },
       { name: 'Arteterapeuti nelle diverse declinazioni' },
       { name: 'Pedagogisti specializzati in disegno onirico', profiles: ['rosalba'] },
-      { name: 'Teatro e associazioni collegate' }
+      { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] }
     ]
   };
 
