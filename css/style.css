@@ -1907,7 +1907,7 @@ body.intro-lock { overflow: hidden; }
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: clamp(2.6rem, 5.5vw, 5rem);
+  gap: clamp(3rem, 5vw, 4rem);
   padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
 }
 .cf-home .cf-thanks-head { max-width: 53rem; }
@@ -1942,10 +1942,8 @@ body.intro-lock { overflow: hidden; }
 
 /* Primo blocco — Hotel Hassler */
 .cf-home .cf-thanks-partner {
-  display: grid;
-  grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
-  gap: clamp(1.5rem, 3.5vw, 3.5rem);
-  align-items: stretch;
+  display: block;
+  max-width: 58rem;
 }
 .cf-home .cf-thanks-panel {
   position: relative;
@@ -1995,7 +1993,7 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-thanks-copy { min-width: 0; }
 .cf-home .cf-thanks-copy p {
   margin: 0 0 1.05rem;
-  max-width: 68ch;
+  max-width: 58rem;
   color: #4F4F4F;
   font-size: clamp(1rem, 1.1vw, 1.08rem);
   line-height: 1.7;
@@ -2425,7 +2423,7 @@ body.intro-lock { overflow: hidden; }
   transform: rotate(10deg);
 }
 .cf-home .cf-thanks-memory-inner {
-  max-width: 58rem;
+  max-width: 100%;
   padding-left: clamp(1.2rem, 2.6vw, 2.4rem);
   border-left: 2px solid rgba(122, 31, 61, .55);
 }
@@ -2453,13 +2451,16 @@ body.intro-lock { overflow: hidden; }
 }
 .cf-home .cf-thanks-memory-text {
   margin: 0;
-  max-width: 56ch;
+  max-width: 100%;
   color: #4A3A3A;
   font-size: clamp(1.02rem, 1.2vw, 1.12rem);
   line-height: 1.68;
 }
-.cf-home .cf-thanks-memory-text p { margin: 0 0 .85rem; }
+.cf-home .cf-thanks-memory-text p { margin: 0 0 .85rem; max-width: 100%; }
 .cf-home .cf-thanks-memory-text p:last-child { margin-bottom: 0; }
+.cf-home .cf-thanks-memory--plain { background: transparent !important; padding: 0 !important; border-radius: 0 !important; }
+.cf-home .cf-thanks-memory--plain::before,
+.cf-home .cf-thanks-memory--plain::after { display: none !important; }
 
 /* 03 — Professionisti */
 .cf-home .cf-thanks-walk {
