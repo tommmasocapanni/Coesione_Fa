@@ -534,6 +534,17 @@ body.intro-lock { overflow: hidden; }
   column-gap: clamp(3.125rem, 4vw, 4.0625rem);
   row-gap: 0;
 }
+/* Sezione speculare (immagine a destra) */
+.cf-home .cf-famiglie--reverse {
+  grid-template-columns: minmax(0, .58fr) minmax(0, .42fr);
+  grid-template-areas:
+    "head media"
+    "body media";
+}
+.cf-home .cf-famiglie--reverse .cf-famiglie-media::before {
+  inset: -2% -4% -2% -2%;
+  transform: rotate(2deg);
+}
 .cf-home .cf-famiglie-head { grid-area: head; align-self: start; min-width: 0; }
 .cf-home .cf-famiglie-body { grid-area: body; align-self: start; min-width: 0; }
 .cf-home .cf-famiglie-head,
@@ -1212,6 +1223,7 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-art-studies i { width: 68%; height: 73%; right: -5%; top: -8%; border: 1px solid #ffc4c8; border-radius: 45% 45% 0 0; transform: rotate(31deg); }
 .cf-home .cf-art-studies i:nth-child(2) { right: 2%; top: -2%; }
 .cf-home .cf-art-studies i:nth-child(3) { right: 9%; top: 4%; }
+.cf-home .cf-studies--reverse { grid-template-columns: 1fr .9fr; }
 .cf-home .cf-footer { margin-top: clamp(3rem, 8vw, 7rem); background: var(--deep); color: white; }
 .cf-home .cf-footer-inner { padding-block: 2rem; }
 .cf-home .cf-footer p { margin: .45rem 0 0; }
@@ -1225,6 +1237,7 @@ body.intro-lock { overflow: hidden; }
 @media (max-width: 36rem) {
   .cf-home .cf-split, .cf-home .cf-levels { grid-template-columns: 1fr; }
   .cf-home .cf-split > div:last-child { grid-row: 1; }
+  .cf-home .cf-studies--reverse > div:last-child { grid-row: auto; }
 }
 .cf-home .cf-photo { display: block; width: 100%; height: 100%; min-height: 16rem; object-fit: cover; border-radius: var(--radius); }
 @media (min-width: 68.01rem) {

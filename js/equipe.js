@@ -51,22 +51,21 @@
       { name: 'Avvocato' },
       { name: 'Mediatore familiare', profiles: ['rosalba'] },
       { name: 'Consulente familiare' },
-      { name: 'Psicologo' },
-      { name: 'Psicoterapeuta' },
+      { name: 'Psicologo e Psicoterapeuta' },
       { name: 'Psichiatra' },
       { name: 'Pedagogista' },
       { name: 'Gastroenterologo', profiles: ['franco', 'rita'] },
       { name: 'Ginecologo' },
       { name: 'Neurologo' },
       { name: 'Cardiologo' },
-      { name: 'Geriatra' },
-      { name: 'Nefrologo' }
+      { name: 'Geriatra' }
     ],
     educativa: [
       { name: 'Maestri di scacchi' },
       { name: 'Arteterapeuti nelle diverse declinazioni' },
       { name: 'Pedagogisti specializzati in disegno onirico', profiles: ['rosalba'] },
-      { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] }
+      { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] },
+      { name: 'Arte come Mediazione' }
     ]
   };
 
