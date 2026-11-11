@@ -1004,7 +1004,8 @@ body.intro-lock { overflow: hidden; }
   }
   .cf-home .cf-collab-left,
   .cf-home .cf-collab-action { align-self: start; }
-  .cf-home .cf-collab-media { border-radius: 36px; }
+  .cf-home .cf-collab-left { position: relative; z-index: 2; }
+  .cf-home .cf-collab-media { border-radius: 36px; position: relative; z-index: 1; margin-top: 1rem; }
 }
 
 @media (max-width: 34rem) {
