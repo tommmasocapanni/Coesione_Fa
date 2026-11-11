@@ -43,7 +43,32 @@
         'Il percorso è condotto da operatori e professionisti del settore teatrale e artistico e culmina nella realizzazione di uno spettacolo aperto al pubblico. In sintonia con la missione di Coesione Fa, il progetto intende valorizzare il ruolo delle relazioni nella costruzione del benessere individuale e collettivo, offrendo un’esperienza concreta di ascolto, accoglienza, fiducia reciproca e superamento delle barriere relazionali.',
         'Perché stare bene con gli altri significa anche imparare a stare bene con sé stessi. Il teatro offre a ciascuno la possibilità di incontrare l’altro, riconoscersi nelle differenze e costruire insieme nuove forme di relazione.'
       ]
-    }
+    },
+    zocco: {
+      name: 'Prof.ssa Maria Assunta Zocco',
+      qualification: 'Internista/Gastroenterologo',
+      summary: 'Specialista in Medicina Interna; Master in Ecografia internistica e terapie Eco guidate.',
+      biography: ["Prof.ssa Maria Assunta Zocco, MD, PHD, Specialista in Medicina Interna; Master in Ecografia internistica e terapie Eco guidate, Ricercatrice in Medicina Interna, Gastroenterologia e Malattie del fegato, Fondazione Policlinico Universitario A, Gemelli IRCCS - Roma"]
+    },
+    bruno: {
+      name: 'PROF. Giuseppe Bruno',
+      qualification: 'Neurologo',
+      summary: 'Psicoanalista SPI, Responsabile della “Clinica della memoria”, La Sapienza, Roma.',
+      biography: ["PROF. Giuseppe Bruno, Neurologo, Psicoanalista SPI, Responsabile della \"Clinica della memoria\", La Sapienza, Roma."]
+    },
+    psicologa: {
+      name: 'Psicologa e psicoterapeuta',
+      qualification: 'Arteterapeuta del colore ad orientamento steineriano',
+      summary: 'Psicologa e psicoterapeuta, arteterapeuta del colore ad orientamento steineriano.',
+      biography: ["Psicologa e psicoterapeuta, arteterapeuta del colore ad orientamento steineriano.", "Lavoro con bambini attraverso la play Therapy, adolescenti, e genitori. Lavoro sul lutto e sull’ impatto di vita sulle malattie organiche.", "1 volta al mese gestisco un Death Cafè in cui gratuitamente tutti coloro che ne hanno bisogno possono partecipare su prenotazione."]
+    },
+    artemediatrice: {
+      name: 'Arte come Mediazione',
+      qualification: 'Presso il Palazzetto dell’hotel Hassler',
+      summary: 'Esercizi extraformativi e percorsi di mentorizzazione.',
+      biography: ["Presso il Palazzetto dell’hotel Hassler", "ESERCIZI EXTRAFORMATIVE", "– PERCORSI DI MENTORIZAZZIONE", "Vengono proposti cicli di incontri dedicati all’esercizio di diverse modalità di comprensione del mondo. Attraverso di essi, possiamo scoprire il nostro modo di pensare e aprirci all’incontro con le opere create.", "GUARIRE LA VIOLENZA DELLO SGUARDO SUL MONDO", "Lo svelamento dello sguardo-Dalla cecità ai nuovi occhi", "Non si tratta più di proiettare sul mondo ciò che già conosciamo – o ciò che desideriamo che la realtà circostante e le nostre relazioni siano. Desideri e conoscenze, radicati nella prospettiva abituale, lasciano il posto a uno sguardo nuovo, capace di superare condizionamenti e cecità; si giunge così a una sincera autenticità nel vedere il mondo. In un simile incontro – immersi nel mare delle infinite possibilità dell’arte – si dissolvono i pregiudizi e quel superfluo fardello che, finora, ci ha impedito di vedere con chiarezza e di lasciarci trasformare. Noi stessi dobbiamo diventare un’opera d’arte: questa compenetrazione reciproca si compie nell’incontro creativo. Emerge uno sguardo triplice – rivolto al mondo, a se stessi e alla trascendenza – unito in un unico processo che non può essere compreso attraverso una duplice conoscenza, un pensare razionale-teorico e il pensare empirico-sperimentale. Si tratta di un processo aperto, costantemente proteso verso una promessa che risiede tanto all’origine quanto nel futuro. Esso richiede una terza forma di conoscenza: una conoscenza mentale contemplativa (Welt-Anschauung) che permetta di tenere i due modi di pensare in tensione e alla stesso tempo vedere il tutto, sostenuta dalla capacità di interrogarsi sul senso, sullo spirito e sull’essere delle cose. Qui, l’oggettività si raggiunge attraverso la sincerità nel processo della conoscenza, il che implica anche la disponibilità a lasciarsi, a propria volta, guardare. Ciò richiede di creare spazio per ciò che è ancora sconosciuto e di saper stare un momento in silenzio.", "Ogni essere umano possiede l’organo per questo sguardo, sia che ne sia o non ne sia consapevole, sia che faccia uso sia che non faccia uso di questo organo. Lo sguardo non si crea così facilmente. Per questo (sguardo), richiede alcune precondizioni, prima di tutto una certa distanza, per vedere l’interezza, poi di nuovo una coscienza di impegno, una grande accettazione del mondo, e allo stesso tempo la libertà da essa (dal mondo), che rende possibile un sguardo nel silenzio (Anschauung), e che non mescola e non divide.", "Pontificia Università Greogoriana –", "Professoressa Dr. Yvonne zu Dohna Schlobitten", "La Welt-Anschauung (La contemplazione mentale del mondo)", "Professor presso la Facoltà di Storia e Beni Culturali della Chiesa e del Rome Catholic Studies Program e il Centro di Studi interreligiosi della Pontificia Università Gregoriana. Vincitrice per la sua opera omnia del Premio Basilicata nel 2022. Formazione internazionale e interdisciplinare in Diritto comparato, Filosofia e storia dell’arte e dei media. Phd in filosofia con una borsa di studio della Bibliotheca Hertziana/ Max Planck Gesellschaft su \"Canova e l’arte come educatore”. Specializzazione in Teologia Spirituale (Teresianum) e la filosofia della religione (Università di Fribourg). Professore ospite in Messico, Virginia e Pechino. Fondato il campo Fenomenologia dello sguardo sul tutto in Oriente e Occidente ispirata a Romano Guardini. Pilot Project con le università in China, America e Europa su “Metanoia in the Age of AI”, seguendo il progetto \"Grounding Transdisciplinariity in the Threefold Seeing”. Membro della Commissione redazionale di 'Donne, Chiesa, Mondo' (Osservatore Romano, Vaticano), Vice presidente del Centro di Formazione alla Meditazione Cristiana (CFMC), Roma, e Fondatrice dell’Intercultural School of Silence. Pubblicazione: Verso nuovi occhi. L’arte dello sguardo sul tutto (2023).", "Coesione fa. – avv.to Maria Antonietta Schettino", "avv.to esperto in diritto di famiglia ha sempre creduto nella necessità dell’obiettività delle scelte che presuppongono la separazione, ove necessaria. Spesso la soluzione giuridica (tranne rari casi) per una “sana” separazione è indicata da molteplici possibilità composite esistenti nel nostro ordinamento giuridico. L’obiettività’ nel “vedere” e la necessità nel comunicare anche attraverso l’esperienza dell’arte permette di ritrovare, nell’emozione comune, un filo ed un legame. La crisi allora assume il suo reale significato etimologico “krisis”, ossia scelta, decisione.", "Giornalista, scrittrice, ideatrice e responsabile scientifico dei progetti Coesione, Incoesione e Coesione fa., progetti di “accompagnamento”, (con la collaborazione di un’equipe multidisciplinare), nelle fasi fisiologiche e patologiche delle relazioni familiari ed interpersonali.", "Odi et amo;", "Dalla relazione alla responsabilità genitoriale;", "Rispetto, riconoscimento dell’altro e separazione;"]
+    },
+
   };
 
   const areas = {
@@ -51,12 +76,12 @@
       { name: 'Avvocato' },
       { name: 'Mediatore familiare', profiles: ['rosalba'] },
       { name: 'Consulente familiare' },
-      { name: 'Psicologo e Psicoterapeuta' },
+      { name: 'Psicologo e Psicoterapeuta', profiles: ['psicologa'] },
       { name: 'Psichiatra' },
       { name: 'Pedagogista' },
-      { name: 'Gastroenterologo', profiles: ['franco', 'rita'] },
+      { name: 'Gastroenterologo', profiles: ['franco', 'rita', 'zocco'] },
       { name: 'Ginecologo' },
-      { name: 'Neurologo' },
+      { name: 'Neurologo', profiles: ['bruno'] },
       { name: 'Cardiologo' },
       { name: 'Geriatra' }
     ],
@@ -65,7 +90,7 @@
       { name: 'Arteterapeuti nelle diverse declinazioni' },
       { name: 'Pedagogisti specializzati in disegno onirico', profiles: ['rosalba'] },
       { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] },
-      { name: 'Arte come Mediazione' }
+      { name: 'Arte come Mediazione', profiles: ['artemediatrice'] }
     ]
   };
 
