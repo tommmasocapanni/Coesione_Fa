@@ -18,7 +18,7 @@ body {
   background: var(--white);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 h1,h2,h3,h4 { font-family: 'Manrope', system-ui, sans-serif; color: var(--bordeaux); line-height: 1.05; margin: 0 0 .5em; letter-spacing: -.02em; font-weight: 700; }
 a { color: var(--red); text-decoration: none; }
@@ -675,6 +675,7 @@ body.intro-lock { overflow: hidden; }
     width: min(100%, 36rem);
     aspect-ratio: 4 / 3;
     justify-self: center;
+    overflow: hidden;
   }
   .cf-home .cf-famiglie-media::before { top: -2%; left: -2%; }
 }
@@ -690,6 +691,9 @@ body.intro-lock { overflow: hidden; }
 
 @media (max-width: 68rem) {
   .cf-home .cf-hero {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     grid-template-columns: minmax(0, 1fr);
     min-height: 0;
   }
@@ -2735,9 +2739,14 @@ body.intro-lock { overflow: hidden; }
 .cf-vp-panel-inner p:last-child { margin-bottom: 16px; }
 @media (max-width: 48rem) {
   .cf-equipe-top { grid-template-columns: 1fr; gap: 1.5rem; }
-  .cf-equipe-curve-test { overflow-x: clip; }
 }
 .cf-home .cf-test-wave { display: block !important; transform: translateX(-50%) scaleX(-1) translateY(35%); }
+.cf-equipe-curve-test {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  overflow-x: clip;
+}
 @media (min-width: 48.01rem) {
   .cf-home .cf-test-wave { transform: translateX(-50%) scaleX(-1) translateY(90%); }
 }
