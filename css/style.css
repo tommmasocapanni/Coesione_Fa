@@ -1,4 +1,18 @@
 /* Coesione fa. — final editorial system */
+
+.cf-vicepresidenti { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
+.cf-vicepresidente { border-bottom: 1px solid #e6ddd5; padding-bottom: .75rem; }
+.cf-vicepresidente .cf-equipe-persona-name { color: #5a1f2e; font-weight: 700; margin: .25rem 0; }
+.cf-vicepresidente .cf-equipe-persona-role { color: #b03a3a; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; margin: 0; }
+.cf-vicepresidente .cf-equipe-persona-qualification { color: #4F4F4F; font-size: .9rem; margin: .25rem 0 .5rem; }
+.cf-vicepresidente .cf-equipe-persona-toggle { background: none; border: none; color: #5a1f2e; cursor: pointer; font: inherit; padding: .25rem 0; display: inline-flex; align-items: center; gap: .35rem; }
+.cf-vicepresidente .cf-equipe-arrow { display: inline-block; transition: transform 350ms ease; }
+.cf-vicepresidente.is-open .cf-equipe-arrow { transform: rotate(90deg); }
+.cf-vicepresidente .cf-equipe-persona-panel { max-height: 0; overflow: hidden; transition: max-height 350ms ease; }
+.cf-vicepresidente.is-open .cf-equipe-persona-panel { max-height: 1000px; }
+@media (prefers-reduced-motion: reduce) {
+  .cf-vicepresidente .cf-equipe-arrow, .cf-vicepresidente .cf-equipe-persona-panel { transition: none; }
+}
 :root {
   --red: #C8202F;
   --bordeaux: #7A1F3D;
