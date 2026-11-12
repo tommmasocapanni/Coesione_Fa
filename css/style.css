@@ -1918,8 +1918,8 @@ body.intro-lock { overflow: hidden; }
   gap: clamp(1.2rem, 2vw, 1.8rem);
   padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
 }
-.cf-home .cf-thanks-head { max-width: 72rem; }
-.cf-home .cf-thanks-body { max-width: 72rem; }
+.cf-home .cf-thanks-head { max-width: none; }
+.cf-home .cf-thanks-body { max-width: none; }
 .cf-home .cf-thanks-body p { margin: 0 0 1.05rem; color: #4F4F4F; font-size: clamp(1rem, 1.1vw, 1.08rem); line-height: 1.7; max-width: none; }
 .cf-home .cf-thanks-body p:last-child { margin-bottom: 0; }
 .cf-home .cf-thanks-eyebrow {
