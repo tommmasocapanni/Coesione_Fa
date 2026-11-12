@@ -2676,7 +2676,7 @@ body.intro-lock { overflow: hidden; }
 
 #storia h3 { font-size: 1.35rem; margin-top: 24px; margin-bottom: 12px; }
 
-#metodo { font-size: 0.92rem; }
+#metodo { font-size: 0.92rem; scroll-margin-top: 20vh; }
 #metodo h2 { font-size: 1.6rem; }
 #metodo h3 { font-size: 1.05rem; }
 #metodo p { font-size: 0.92rem; }
