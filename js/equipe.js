@@ -86,6 +86,19 @@
         'Un percorso di ascolto e vicinanza, perché ogni vita ha una storia da raccontare e ogni storia può offrire nuovi spunti per il futuro.'
       ]
     },
+    michele: {
+      name: 'Michele Blonna',
+      qualification: 'Maestro di Scacchi | Mental Coach | Formatore',
+      summary: 'Oltre 25 anni di esperienza nella didattica scacchistica, nella formazione giovanile e nella progettazione scolastica e sociale.',
+      biography: [
+        'Presidente ASD Scuola di Scacchi Mikhail Botvinnik Roma | +39 393 438 3698 | scuoladiscacchimb@gmail.com',
+        'PROFILO PROFESSIONALE Oltre 25 anni di esperienza nella didattica scacchistica, nella formazione giovanile e nella progettazione scolastica e sociale. Integra scacchi, coaching e comunicazione per sviluppare concentrazione, autocontrollo, autostima e responsabilità. Fondatore e Presidente della Scuola di Scacchi Mikhail Botvinnik dal 2017.',
+        'ESPERIENZE PRINCIPALI 2017 - oggi | Fondatore e Presidente - ASD Scuola di Scacchi Mikhail Botvinnik Direzione dell’associazione, progettazione dei corsi e coordinamento delle attività formative e agonistiche. Attività con circa 1.500 bambini tra settembre 2021 e maggio 2026 presso Visconti, Villa Flaminia e IC Virgilio. 2014 - oggi | Progetti “Scacchi a Scuola” - Roma Laboratori curricolari ed extracurricolari; collaborazione con IC Visconti e percorsi educativi per bambini e ragazzi. 2018 - 2024 | Gazzetta dello Sport - Summer Camp Motivatore Tecnico per l’Autostima e Istruttore di Scacchi. 2010 - oggi | Allenatore - ASD Livigno Scacchi Allenamento periodico dei giovani allievi del circolo.',
+        'QUALIFICHE E FORMAZIONE Maestro di Scacchi dal 1999; Istruttore FSI dal 2000; Istruttore UISP dal 2009; Educatore Nazionale allo Sport UISP Roma. Master in PNL (2018). Formazione Mental Coach CSEN completata con valutazione 38/40.',
+        'COMPETENZE E PROGETTI SOCIALI Didattica per bambini e ragazzi; progettazione scolastica; preparazione ai tornei; coaching e motivazione; gestione di ASD. Progetti con Binario 95 e persone senza dimora, attività presso Regina Coeli e Rebibbia e collaborazioni con biblioteche del Comune di Roma.',
+        'RISULTATI SPORTIVI E INCARICHI Medaglia d’argento ai Giochi Mondiali / Internazionali per non professionisti nella propria categoria (2010); Campione Regionale di categoria (2019). Consigliere del Comitato Regionale Scacchi Lazio nei periodi 1999-2001 e 2016-2020.'
+      ]
+    },
   
   };
 
@@ -105,7 +118,7 @@
       { name: 'Pediatra' }
     ],
     educativa: [
-      { name: 'Maestri di scacchi' },
+      { name: 'Maestri di scacchi', profiles: ['michele'] },
       { name: 'Arteterapeuti nelle diverse declinazioni' },
       { name: 'Pedagogisti specializzati in disegno onirico', profiles: ['rosalba'] },
       { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] },
