@@ -74,6 +74,18 @@
       summary: 'Maria Villirillo, fondatrice e direttrice didattica di Atelier Piccoli Stilisti.',
       biography: ["Mi chiamo Maria Villirillo, sono la fondatrice e direttrice didattica di Atelier Piccoli Stilisti, un progetto formativo e creativo nato dalla mia profonda passione per la moda, la sartoria e la pedagogia del fare. Con Atelier Piccoli Stilisti guido e coordino laboratori sartoriali, workshop e campus creativi dedicati a bambini e ragazzi dai 5 ai 16 anni, operando stabilmente nelle sedi di Roma e Milano. Il mio lavoro si focalizza sull'insegnamento dell'arte tessile a 360 gradi. Desidero condividere questo progetto coll’associazione perché Atelier Piccoli Stilisti non è soltanto una scuola di cucito per i più giovani, ma uno spazio dove la creatività incontra la manualità, l'autostima e l'espressione personale. www.atelierpiccolistilisti.com"]
     },
+    biblioteca: {
+      name: 'Biblioteca dei Saperi',
+      qualification: 'Le storie di ieri, un patrimonio per il domani.',
+      summary: 'A partire dalla primavera 2027, Coesione fa. darà vita a Biblioteca dei Saperi, un progetto dedicato all’ascolto, alla memoria e alla valorizzazione delle esperienze di vita delle persone anziane.',
+      biography: [
+        'A partire dalla primavera 2027, Coesione fa. darà vita a Biblioteca dei Saperi, un progetto dedicato all’ascolto, alla memoria e alla valorizzazione delle esperienze di vita delle persone anziane.',
+        'La Dott.ssa Lucilla De Martinis, psicologa e psicoterapeuta, incontrerà gli anziani del quartiere presso le loro abitazioni o in spazi comuni da loro scelti, creando occasioni di dialogo e condivisione.',
+        'Attraverso i racconti, i ricordi e le tappe più significative delle loro biografie, il progetto si propone di raccogliere parole, esperienze e testimonianze che custodiscono un prezioso patrimonio umano.',
+        'Con il sostegno dell’Associazione e il contributo della sua Presidente, queste storie prenderanno forma in un libro-diario, pensato per conservare e tramandare un’eredità di esperienze e conoscenze alle generazioni future.',
+        'Un percorso di ascolto e vicinanza, perché ogni vita ha una storia da raccontare e ogni storia può offrire nuovi spunti per il futuro.'
+      ]
+    },
   
   };
 
@@ -99,7 +111,7 @@
       { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] },
       { name: 'Arte come Mediazione', profiles: ['artemediatrice'] },
       { name: 'Laboratori per Giovani stilisti', profiles: ['stilisti'] },
-      { name: 'Biblioteca Dei Saperi' }
+      { name: 'Biblioteca dei Saperi', profiles: ['biblioteca'] }
     ]
   };
 
