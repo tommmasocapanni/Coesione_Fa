@@ -2735,6 +2735,7 @@ body.intro-lock { overflow: hidden; }
 .cf-vp-panel-inner p:last-child { margin-bottom: 16px; }
 @media (max-width: 48rem) {
   .cf-equipe-top { grid-template-columns: 1fr; gap: 1.5rem; }
+  .cf-equipe-curve-test { overflow-x: clip; }
 }
 .cf-home .cf-test-wave { display: block !important; transform: translateX(-50%) scaleX(-1) translateY(35%); }
 @media (min-width: 48.01rem) {
