@@ -2664,6 +2664,7 @@ body.intro-lock { overflow: hidden; }
   clip-path: none;
 }
 .cf-home-logo-preview .cf-hero-photo-wrap::before { content: none; }
+.cf-home-logo-preview .cf-hero-eyebrows { display: contents; }
 
 @media (max-width: 767px) {
   .cf-home-logo-preview .cf-hero {
@@ -2673,18 +2674,37 @@ body.intro-lock { overflow: hidden; }
   .cf-home-logo-preview .cf-hero-copy {
     grid-row: auto;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
     padding-top: clamp(48px, 13vw, 56px);
   }
-  .cf-home-logo-preview .cf-hero-eyebrow { max-width: 36%; }
-  .cf-home-logo-preview .cf-hero h1 {
-    margin-top: calc(clamp(2rem, calc(125vw - 367px), 10.5rem) + 5.5rem);
+  .cf-home-logo-preview .cf-hero-eyebrows {
+    order: 1;
+    display: block;
+    margin-top: calc(82.5vw - clamp(48px, 13vw, 56px) - 10px);
+    margin-bottom: 0;
+    white-space: nowrap;
   }
+  .cf-home-logo-preview .cf-hero-eyebrow {
+    max-width: 100%;
+    margin: 0;
+    font-size: .58rem;
+    line-height: 1.35;
+    letter-spacing: .1em;
+  }
+  .cf-home-logo-preview .cf-hero-eyebrow + .cf-hero-eyebrow { display: none; }
+  .cf-home-logo-preview .cf-hero h1 {
+    order: 2;
+    margin-top: 0;
+  }
+  .cf-home-logo-preview .cf-hero-lead { order: 3; }
+  .cf-home-logo-preview .cf-hero-actions { order: 4; }
   .cf-home-logo-preview .cf-hero-photo-wrap {
     position: absolute;
     z-index: 1;
-    top: 0;
-    right: -8vw;
-    width: 70vw;
+    top: calc(-18vw);
+    right: -4vw;
+    width: 82vw;
     aspect-ratio: 247 / 291;
     margin: 0;
     pointer-events: none;
