@@ -1228,6 +1228,7 @@ body.intro-lock { overflow: hidden; }
 .cf-home .cf-comitato-wip { margin: 0 0 1rem; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #999; }
 .cf-home .cf-comitato-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
 .cf-home .cf-comitato-text p { margin: 0 0 1rem; color: #4F4F4F; line-height: 1.7; }
+.cf-home .cf-comitato-text .cf-label { color: var(--red); }
 .cf-home .cf-comitato-text p:last-child { margin-bottom: 0; }
 @media (max-width: 52rem) {
   .cf-home .cf-comitato-row { grid-template-columns: 1fr; }
