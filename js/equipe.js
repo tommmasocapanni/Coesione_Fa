@@ -248,69 +248,6 @@
     return item;
   }
 
-  function createVicepresidente(profileId, profileData) {
-    const item = document.createElement('article');
-    item.className = 'cf-equipe-persona cf-vicepresidente';
-
-    const role = document.createElement('p');
-    role.className = 'cf-equipe-persona-role';
-    role.textContent = 'VICEPRESIDENTE';
-
-    const name = document.createElement('h3');
-    name.className = 'cf-equipe-persona-name';
-    name.textContent = profileData.name;
-
-    if (profileData.qualification) {
-      const qualification = document.createElement('p');
-      qualification.className = 'cf-equipe-persona-qualification';
-      qualification.textContent = profileData.qualification;
-      item.append(role, name, qualification);
-    } else {
-      item.append(role, name);
-    }
-
-    const button = document.createElement('button');
-    const buttonId = `equipe-vp-${profileId}`;
-    const panelId = `${buttonId}-panel`;
-    button.className = 'cf-equipe-persona-toggle';
-    button.type = 'button';
-    button.id = buttonId;
-    button.setAttribute('aria-expanded', 'false');
-    button.setAttribute('aria-controls', panelId);
-    button.innerHTML = 'Leggi il profilo <span class="cf-equipe-arrow" aria-hidden="true">›</span>';
-
-    const panel = document.createElement('div');
-    panel.className = 'cf-equipe-persona-panel';
-    panel.id = panelId;
-    panel.setAttribute('role', 'region');
-    panel.setAttribute('aria-labelledby', buttonId);
-    panel.setAttribute('aria-hidden', 'true');
-
-    const inner = document.createElement('div');
-    inner.className = 'cf-equipe-persona-panel-inner';
-    inner.append(createBiography(profileData, 'cf-equipe-persona-biography'));
-    panel.append(inner);
-    item.append(button, panel);
-
-    button.addEventListener('click', () => {
-      const open = button.getAttribute('aria-expanded') !== 'true';
-      closeOpenDisclosures(item);
-      item.classList.toggle('is-open', open);
-      button.setAttribute('aria-expanded', String(open));
-      panel.setAttribute('aria-hidden', String(!open));
-      button.innerHTML = (open ? 'Chiudi il profilo' : 'Leggi il profilo') + ' <span class="cf-equipe-arrow" aria-hidden="true">›</span>';
-    });
-
-    return item;
-  }
-
-  const vicepresidenti = document.querySelector('[data-equipe-vicepresidenti]');
-  if (vicepresidenti) {
-    ['franco', 'rosalba'].forEach((id) => {
-      if (profiles[id]) vicepresidenti.append(createVicepresidente(id, profiles[id]));
-    });
-  }
-
   const featured = document.querySelector('[data-equipe-profiles]');
   if (featured) {
     Object.entries(profiles).forEach(([profileId, profile]) => {

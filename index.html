@@ -300,19 +300,32 @@
       <header class="cf-equipe-header">
         <p class="cf-label" hidden>Équipe</p>
         <h2 id="equipe-titolo">Équipe</h2>
-        <p class="cf-equipe-intro">La famiglia è fatta di relazioni, bisogni ed equilibri diversi. Coesione fa. mette in relazione professionalità differenti attraverso uno sguardo di conoscenza trasversale.</p>
-        <p class="cf-equipe-intro">Coesione fa. valorizza il dialogo tra competenze medico-legali, psicologiche, psicosociali, educative e creative. Uno sguardo multidisciplinare che permette di affrontare le relazioni familiari da prospettive diverse, mettendo al centro le persone e le loro esigenze.</p>
       </header>
 
-      <div class="cf-equipe-band">
-        <div class="cf-equipe-band-lead">
-          <h3>Uno sguardo di conoscenza trasversale.</h3>
+      <div class="cf-equipe-top">
+        <div class="cf-equipe-intro-col">
+          <p class="cf-equipe-intro">La famiglia è fatta di relazioni, bisogni ed equilibri diversi. Coesione fa. mette in relazione professionalità differenti attraverso uno sguardo di conoscenza trasversale.</p>
+          <p class="cf-equipe-intro">Coesione fa. valorizza il dialogo tra competenze medico-legali, psicologiche, psicosociali, educative e creative. Uno sguardo multidisciplinare che permette di affrontare le relazioni familiari da prospettive diverse, mettendo al centro le persone e le loro esigenze.</p>
         </div>
-        <p class="cf-equipe-band-copy">Le professionalità medico-legali si affiancano alle figure ludico-didattiche, mettendo in dialogo le competenze pertinenti alla situazione. Ogni intervento specifico richiede una valutazione adeguata e competenze professionali definite. Alla dimensione di sostegno si affiancano ascolto, confronto, arte e gioco.</p>
+        <div class="cf-vp-stack">
+          <div class="cf-vp">
+            <button class="cf-vp-toggle" aria-expanded="false" type="button">
+              <span class="cf-equipe-area-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+              <span class="cf-vp-meta cf-equipe-profile"><span class="cf-vp-role">VICEPRESIDENTE</span><h4 class="cf-vp-name">Prof. Franco Scaldaferri</h4></span>
+              <span class="cf-vp-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="cf-vp-panel"><div class="cf-vp-panel-inner"><p>Dirigente medico presso la Fondazione Policlinico Universitario A. Gemelli IRCCS di Roma, dirige l’Unità Operativa Semplice dedicata alle Malattie Infiammatorie Croniche Intestinali (MICI) del CEMAD. Svolge inoltre attività accademica e di ricerca clinica e traslazionale, con particolare attenzione alle nuove strategie terapeutiche, al microbiota intestinale e ai meccanismi dell’infiammazione.</p><p>La sua attività integra competenza specialistica, ricerca scientifica e un approccio multidisciplinare e personalizzato alla cura del paziente.</p></div></div>
+          </div>
+          <div class="cf-vp">
+            <button class="cf-vp-toggle" aria-expanded="false" type="button">
+              <span class="cf-equipe-area-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+              <span class="cf-vp-meta cf-equipe-profile"><span class="cf-vp-role">VICEPRESIDENTE</span><h4 class="cf-vp-name">Dott.ssa Rosalba Merola</h4></span>
+              <span class="cf-vp-arrow" aria-hidden="true">›</span>
+            </button>
+            <div class="cf-vp-panel"><div class="cf-vp-panel-inner"><p>Pedagogista clinico, mediatrice familiare e pedagogista con esperienza pluriennale per DSA e BES.</p><p>Fornisce consulenza e supporto per percorsi di crescita serena e consapevole a individui e famiglie.</p><p>La pedagogia clinica offre aiuto alla persona nei momenti di crisi, lavorando sulle sue risorse. Il disegno onirico è uno degli strumenti maggiormente utilizzati.</p><p>La mediazione familiare offre uno spazio neutro e privo di giudizio per gestire il conflitto e raggiungere accordi duraturi, ponendo al centro il benessere e l’interesse dei figli.</p><p>La pedagogia supporta le difficoltà comportamentali e di apprendimento dall’infanzia all’adolescenza, coinvolgendo anche gli adulti di riferimento.</p></div></div>
+          </div>
+        </div>
       </div>
-
-      <div class="cf-vicepresidenti" data-equipe-vicepresidenti aria-label="Vicepresidenti"></div>
-
       <div class="cf-equipe-grid">
         <section class="cf-equipe-area" aria-labelledby="equipe-medico-titolo">
           <div class="cf-equipe-area-head">
@@ -672,6 +685,16 @@
     start();
   }
 })();
+</script>
+<script>
+document.querySelectorAll('.cf-vp-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const panel = btn.parentElement.querySelector('.cf-vp-panel');
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    panel.classList.toggle('is-open', !open);
+  });
+});
 </script>
 </body>
 </html>

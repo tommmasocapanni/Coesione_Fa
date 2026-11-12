@@ -1,18 +1,4 @@
 /* Coesione fa. — final editorial system */
-
-.cf-vicepresidenti { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
-.cf-vicepresidente { border-bottom: 1px solid #e6ddd5; padding-bottom: .75rem; }
-.cf-vicepresidente .cf-equipe-persona-name { color: #5a1f2e; font-weight: 700; margin: .25rem 0; }
-.cf-vicepresidente .cf-equipe-persona-role { color: #b03a3a; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; margin: 0; }
-.cf-vicepresidente .cf-equipe-persona-qualification { color: #4F4F4F; font-size: .9rem; margin: .25rem 0 .5rem; }
-.cf-vicepresidente .cf-equipe-persona-toggle { background: none; border: none; color: #5a1f2e; cursor: pointer; font: inherit; padding: .25rem 0; display: inline-flex; align-items: center; gap: .35rem; }
-.cf-vicepresidente .cf-equipe-arrow { display: inline-block; transition: transform 350ms ease; }
-.cf-vicepresidente.is-open .cf-equipe-arrow { transform: rotate(90deg); }
-.cf-vicepresidente .cf-equipe-persona-panel { max-height: 0; overflow: hidden; transition: max-height 350ms ease; }
-.cf-vicepresidente.is-open .cf-equipe-persona-panel { max-height: 1000px; }
-@media (prefers-reduced-motion: reduce) {
-  .cf-vicepresidente .cf-equipe-arrow, .cf-vicepresidente .cf-equipe-persona-panel { transition: none; }
-}
 :root {
   --red: #C8202F;
   --bordeaux: #7A1F3D;
@@ -2711,4 +2697,38 @@ body.intro-lock { overflow: hidden; }
     pointer-events: none;
   }
   .cf-home-logo-preview .cf-hero-photo { padding: 0; }
+}
+
+/* Vicepresidenti */
+.cf-equipe-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  margin: 0 0 clamp(2.7rem, 5vw, 4.1rem);
+}
+.cf-equipe-intro-col {
+  min-width: 0;
+}
+.cf-vp-stack {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+.cf-vp { border-bottom: 1px solid #e6ddd5; }
+.cf-vp-toggle { display: flex; align-items: center; gap: 14px; width: 100%; background: none; border: none; padding: 12px 0 12px; cursor: pointer; text-align: left; }
+.cf-vp-meta { display: flex; flex-direction: column; flex: 1; gap: 2px; }
+.cf-vp-role { font-size: .75rem; letter-spacing: .08em; color: #5a1f2e; font-weight: 700; text-transform: uppercase; }
+.cf-vp-name { margin: 0 0 .2rem; }
+.cf-vp-arrow { color: #5a1f2e; font-size: 1.4rem; line-height: 1; transition: transform .35s ease; align-self: center; }
+.cf-vp-toggle[aria-expanded="true"] .cf-vp-arrow { transform: rotate(90deg); }
+.cf-vp-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; overflow: hidden; }
+.cf-vp-panel.is-open { grid-template-rows: 1fr; }
+.cf-vp-panel-inner { overflow: hidden; padding: 0; }
+.cf-vp-panel-inner p { color: #4F4F4F; font-size: .9rem; line-height: 1.5; margin: 0 0 8px; }
+.cf-vp-panel-inner p:last-child { margin-bottom: 16px; }
+@media (max-width: 48rem) {
+  .cf-equipe-top { grid-template-columns: 1fr; gap: 1.5rem; }
 }
