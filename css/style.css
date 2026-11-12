@@ -2733,3 +2733,7 @@ body.intro-lock { overflow: hidden; }
 @media (max-width: 48rem) {
   .cf-equipe-top { grid-template-columns: 1fr; gap: 1.5rem; }
 }
+.cf-home .cf-test-wave { display: block !important; transform: translateX(-50%) scaleX(-1) translateY(35%); }
+@media (min-width: 48.01rem) {
+  .cf-home .cf-test-wave { transform: translateX(-50%) scaleX(-1) translateY(90%); }
+}
