@@ -99,7 +99,7 @@
       { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] },
       { name: 'Arte come Mediazione', profiles: ['artemediatrice'] },
       { name: 'Laboratori per Giovani stilisti', profiles: ['stilisti'] },
-      { name: 'Biblioteca del sapere' }
+      { name: 'Biblioteca Dei Saperi' }
     ]
   };
 
