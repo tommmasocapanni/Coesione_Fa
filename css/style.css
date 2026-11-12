@@ -995,6 +995,127 @@ body.intro-lock { overflow: hidden; }
   object-position: center;
   border-radius: inherit;
 }
+/* Incontro "Pensare prima di muovere" */
+.cf-home .cf-chess {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  align-items: start;
+  column-gap: clamp(2rem, 4vw, 3.8rem);
+  row-gap: 2rem;
+  padding: clamp(2rem, 4.6vw, 4.25rem);
+  border-radius: var(--radius);
+  background: var(--rose);
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+.cf-home .cf-chess-intro { min-width: 0; }
+.cf-home .cf-chess-eyebrow {
+  margin: 0 0 clamp(1.1rem, 2vw, 1.6rem);
+  font-size: .7rem;
+  letter-spacing: .15em;
+}
+.cf-home .cf-chess-intro h2 {
+  margin: 0 0 clamp(.9rem, 1.6vw, 1.2rem);
+  color: var(--wine);
+  font-size: clamp(2.2rem, 3.4vw, 3.3rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -.045em;
+}
+.cf-home .cf-chess-lead {
+  margin: 0;
+  max-width: 42ch;
+  color: #4F4F4F;
+  font-size: clamp(1.02rem, 1.25vw, 1.18rem);
+  line-height: 1.55;
+}
+.cf-home .cf-chess-media {
+  position: relative;
+  isolation: isolate;
+  margin: clamp(1.6rem, 3vw, 2.4rem) 0 0;
+  aspect-ratio: 3 / 2;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #F3DED4;
+}
+.cf-home .cf-chess-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+.cf-home .cf-chess-info {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 clamp(2rem, 4vw, 3.8rem);
+  border-left: 1px solid rgba(122, 31, 61, .14);
+}
+.cf-home .cf-chess-info li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(.9rem, 1.6vw, 1.25rem);
+  padding: clamp(1.05rem, 1.7vw, 1.35rem) 0;
+  border-top: 1px solid rgba(122, 31, 61, .14);
+}
+.cf-home .cf-chess-info li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+.cf-home .cf-chess-info li:last-child { padding-bottom: 0; }
+.cf-home .cf-chess-icon {
+  display: grid;
+  place-items: center;
+  width: clamp(2.9rem, 3.3vw, 3.3rem);
+  height: clamp(2.9rem, 3.3vw, 3.3rem);
+  border-radius: 50%;
+  background: #F8E7E5;
+  color: var(--wine);
+}
+.cf-home .cf-chess-icon svg { width: 1.5rem; height: 1.5rem; }
+.cf-home .cf-chess-info h3 {
+  margin: 0 0 .22rem;
+  color: var(--wine);
+  font-size: clamp(1.02rem, 1.3vw, 1.18rem);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -.01em;
+}
+.cf-home .cf-chess-info p {
+  margin: 0;
+  max-width: none;
+  color: #464646;
+  font-size: clamp(.92rem, 1.08vw, 1rem);
+  line-height: 1.55;
+}
+@media (max-width: 56rem) {
+  .cf-home .cf-chess {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: clamp(1.6rem, 3.5vw, 2.2rem);
+  }
+  .cf-home .cf-chess-info {
+    padding: clamp(1.5rem, 4vw, 2rem) 0 0;
+    border-top: 1px solid rgba(122, 31, 61, .14);
+    border-left: 0;
+  }
+  .cf-home .cf-chess-info li:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+@media (max-width: 34rem) {
+  .cf-home .cf-chess {
+    padding: 1.35rem;
+    border-radius: 28px;
+  }
+  .cf-home .cf-chess-intro h2 { font-size: clamp(2rem, 9.5vw, 2.6rem); }
+  .cf-home .cf-chess-media { border-radius: 14px; }
+  .cf-home .cf-chess-icon { width: 2.75rem; height: 2.75rem; }
+  .cf-home .cf-chess-icon svg { width: 1.3rem; height: 1.3rem; }
+}
 
 @media (max-width: 56rem) {
   .cf-home .cf-collab {
@@ -1817,7 +1938,7 @@ body.intro-lock { overflow: hidden; }
 }
 
 @media (min-width: 80rem) {
-  .cf-home :is(.cf-tesseramento, .cf-method, .cf-collab) {
+  .cf-home :is(.cf-tesseramento, .cf-method, .cf-collab, .cf-chess) {
     margin-inline: clamp(-6rem, calc((1280px - 100vw) / 3), 0rem);
   }
 }
