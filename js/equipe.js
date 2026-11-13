@@ -126,7 +126,30 @@
         'RISULTATI SPORTIVI E INCARICHI Medaglia d’argento ai Giochi Mondiali / Internazionali per non professionisti nella propria categoria (2010); Campione Regionale di categoria (2019). Consigliere del Comitato Regionale Scacchi Lazio nei periodi 1999-2001 e 2016-2020.'
       ]
     },
-  
+    rossana: {
+      name: 'Dr.ssa Rossana Riolo',
+      qualification: 'Psichiatra e psicoterapeuta',
+      summary: 'Medica chirurga e specialista in Psichiatria, psicoterapeuta a orientamento psicodinamico.',
+      biography: [
+        '+39 349.3989.416 - ross.riolo@gmail.com',
+        'Sono medica chirurga e specialista in Psichiatria, psicoterapeuta a orientamento psicodinamico. Mi sono laureata in Medicina e Chirurgia all\'Università di Padova nel 1990 e mi sono specializzata in Psichiatria nel 1994. Ho fatto un\'analisi personale con un analista didatta e ho proseguito la formazione con supervisioni cliniche individuali, formazione EMDR di primo livello e percorsi sui gruppi e sulle relazioni.',
+        'Ho iniziato a lavorare in ambito medico tra il 1985 e il 1990 come collaboratrice presso la Divisione di Gastroenterologia dell\'Istituto di Medicina Interna di Padova, occupandomi di ricerca in ambito alcologico. Dal 1995 al 2000 sono stata dirigente medico di psichiatria presso la USL 13 di Dolo. Dal 2000 al 2020 ho lavorato presso l\'AULSS 6 Euganea, nel distretto di Camposampiero. Fino al 2020 ho svolto il coordinamento del Centro di Salute Mentale, come responsabile di struttura semplice. Dal 2009 al 2020 ho diretto un ambulatorio per la cura della depressione perinatale materna, riconosciuto come centro di riferimento regionale O.N.Da., e ho coordinato un progetto integrato con Ostetricia e Ginecologia. In quegli anni ho condotto terapie di gruppo per pazienti con gravi psicopatologie e, per alcuni anni, ho fatto parte del direttivo dell\'Asvegra di Padova. Ho collaborato con l\'Università di Bologna alla validazione del test PAPA per la depressione perinatale paterna.',
+        'Dal 2020 sono dirigente medico presso l\'U.O.C. Psichiatria 1 del Dipartimento di salute mentale dell\'AULSS 8 Berica, a Vicenza. Dal 2022 dirigo l\'Ambulatorio "Genitori senza depressione", di Altissima Specializzazione per la diagnosi precoce e la cura dei disturbi affettivi perinatali materni e paterni, con funzione di coordinamento con tutte le realtà ospedaliere e territoriali che si occupano di perinatalità. Svolgo anche psicoterapia individuale e di coppia. Sono socia de Il Nodo Group e mi occupo di manutenzione delle organizzazioni, cioè della cura dei ruoli e dei gruppi di lavoro, in particolare nelle professioni d\'aiuto.',
+        'Formazione, divulgazione e organizzazione: ho conseguito nel 2019 il certificato di alta formazione sul trattamento psicoterapico della depressione post natale con la prof.ssa Jeannette Milgrom, di cui sono stata anche responsabile scientifica del corso, e la formazione EMDR di primo livello. Sono Coordinatrice del Tavolo Regionale Veneto per il PPTDA Disturbi Perinatali e partecipo al Network dell\'Istituto Superiore di Sanità sulla salute mentale perinatale, dove sono stata relatrice nel 2019 e nel 2025. Sono fondatrice dell\'Associazione Kairos Donna, di cui sono stata presidente fino al 2022. L\'associazione si occupa di formazione e di sostegno alle famiglie in difficoltà emotiva nel periodo perinatale, con sportelli online e in presenza. Ho ideato e fatto parte del comitato scientifico del Festival della Maternità, a Padova nel 2018, con circa trentacinque eventi e il patrocinio del Ministero della Salute e della Regione Veneto. Svolgo da anni attività di docenza e di formazione come relatrice in corsi, seminari e convegni, e sono stata responsabile scientifica di convegni nazionali sulla psicopatologia perinatale. Ho tenuto seminari multidisciplinari con gastroenterologi, cardiologi, psichiatri e medici di base: tra questi, "Il coinvolgimento del medico di medicina generale nei disturbi del tono dell\'umore" a Vicenza nel 2023, la giornata "PSI.CRO.MED." sulla patologia psichiatrica e le cronicità a Verona nel 2024 e il corso "Dal sonno interrotto alle memorie perdute" a Creazzo nel 2026. Vigodarzere 11/11/2026'
+      ]
+    },
+    heike: {
+      name: 'Heike Hoerdemann',
+      qualification: 'Naturopata | Insegnante di Yoga e Jin Shin Jyutsu',
+      summary: 'Come eterna studentessa dell\'arte di conoscere sé stessi, credo profondamente che la coesione con gli altri nasca dalla connessione con noi stessi.',
+      biography: [
+        'Come eterna studentessa dell\'arte di conoscere sé stessi, credo profondamente che la coesione con gli altri nasca dalla connessione con noi stessi.',
+        'Sono Heike, tedesca ma in Italia da 25 anni, naturopata, insegnante di diversi stili di yoga, ideatrice di Yoga & Jin Shin Jyutsu, operatrice e divulgatrice di Jin Shin Jyutsu, specializzata in longevità e benessere olistico.',
+        'Attraverso pratiche di consapevolezza, auto-aiuto e riconnessione con la natura, desidero contribuire alla missione di Coesione Fa, offrendo strumenti per affrontare le difficoltà emotive, migliorare le relazioni familiari e sociali e trasformare i conflitti in opportunità di comprensione.',
+        'Il mio intento è aiutare le persone a fare pace con sé stesse, per poter costruire ponti con gli altri, trasformando, dove possibile, anche i nemici in amici.'
+      ]
+    },
+   
   };
 
   const areas = {
@@ -135,7 +158,7 @@
       { name: 'Mediatore familiare', profiles: ['rosalba'] },
       { name: 'Consulente familiare' },
       { name: 'Psicologo e Psicoterapeuta', profiles: ['psicologa'] },
-      { name: 'Psichiatra' },
+      { name: 'Psichiatra', profiles: ['rossana'] },
       { name: 'Pedagogista' },
       { name: 'Gastroenterologo', profiles: ['franco', 'rita', 'zocco'] },
       { name: 'Ginecologo' },
@@ -151,7 +174,8 @@
       { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] },
       { name: 'Arte come Mediazione', profiles: ['artemediatrice'] },
       { name: 'Laboratori per Giovani stilisti', profiles: ['stilisti'] },
-      { name: 'Biblioteca dei Saperi', profiles: ['biblioteca'] }
+      { name: 'Biblioteca dei Saperi', profiles: ['biblioteca'] },
+      { name: 'Yoga & Jin Shin Jyutsu', profiles: ['heike'] }
     ]
   };
 
