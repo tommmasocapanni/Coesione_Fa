@@ -177,6 +177,7 @@
       { name: 'Psichiatra', profiles: ['rossana'] },
       { name: 'Pedagogista' },
       { name: 'Gastroenterologo', profiles: ['franco', 'rita', 'zocco'] },
+      { name: 'Internista / Gastroenterologo' },
       { name: 'Ginecologo' },
       { name: 'Neurologo', profiles: ['bruno'] },
       { name: 'Cardiologo' },
