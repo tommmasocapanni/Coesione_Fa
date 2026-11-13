@@ -204,9 +204,18 @@
     const profile = document.createElement('article');
     profile.className = className;
     profileData.biography.forEach((text) => {
-      const paragraph = document.createElement('p');
-      paragraph.textContent = text;
-      profile.append(paragraph);
+      if (text === 'Professoressa Dr. Yvonne zu Dohna Schlobitten' || text === 'Coesione fa. – avv.to Maria Antonietta Schettino') {
+        const heading = document.createElement('h4');
+        heading.textContent = text;
+        heading.style.color = 'var(--wine)';
+        heading.style.fontWeight = '700';
+        heading.style.marginTop = '1rem';
+        profile.append(heading);
+      } else {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = text;
+        profile.append(paragraph);
+      }
     });
     return profile;
   }
