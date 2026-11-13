@@ -1027,7 +1027,7 @@ body.intro-lock { overflow: hidden; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   border-radius: inherit;
 }
 /* Incontro "Pensare prima di muovere" */
