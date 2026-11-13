@@ -149,6 +149,22 @@
         'Il mio intento è aiutare le persone a fare pace con sé stesse, per poter costruire ponti con gli altri, trasformando, dove possibile, anche i nemici in amici.'
       ]
     },
+    livia: {
+      name: 'Livia Serlupi Crescenzi',
+      qualification: 'Consulente Familiare – Socio Effettivo AICCeF',
+      summary: 'Consulente Familiare e Socio Effettivo AICCeF, accompagna persone, coppie e famiglie in momenti di cambiamento e difficoltà relazionali.',
+      biography: [
+        'LIVIA SERLUPI CRESCENZI - Consulente Familiare - Socio Effettivo AICCeF Tessera n. E1232 - Dottore di Ricerca in Comunicazione - Giornalista Pubblicista',
+        'La mia attività professionale si focalizza sull\'accompagnamento di persone, coppie e famiglie che attraversano momenti di cambiamento, difficoltà relazionali o passaggi esistenziali significativi. In qualità di Consulente Familiare e Socio Effettivo AICCeF, opero offrendo uno spazio di ascolto che si distingue per la riservatezza e l\'accoglienza, ponendo al centro la valorizzazione delle risorse personali del cliente.',
+        'Il lavoro di consulenza è orientato alla risoluzione dei problemi e al raggiungimento di obiettivi concreti, con un\'attenzione particolare verso i processi comunicativi che influenzano il benessere individuale e sistemico. Gli ambiti di intervento includono: Persona (supporto nelle difficoltà esistenziali per individuare e riattivare le risorse personali); Famiglia (aiuto nelle dinamiche relazionali); Genitorialità (supporto alle funzioni genitoriali); Coppia (mediazione e sostegno nelle fasi di crisi); Gruppo (attivazione delle proprie risorse nelle dinamiche di gruppo condotte da un CF); Adozione (gestione delle dinamiche e delle risorse specifiche); Elaborazione del lutto (accompagnamento nel superamento di perdite affettive).',
+        'Nel mio lavoro integro competenze professionali, sensibilità umana ed esperienza personale, con un\'attenzione specifica ai temi dell\'adozione, della genitorialità, della coppia, dei cambiamenti familiari e dell\'elaborazione del lutto. Il mio approccio valorizza la relazione d\'aiuto come luogo di ascolto, consapevolezza e costruzione di percorsi possibili.',
+        'Sono ancora impegnata con l\'università per redigere articoli di comunicazione politica con particolare riferimento alla comunicazione non verbale dei leader politici. Dopo la laurea ho conseguito un dottorato in comunicazione e ricerca sociale. Mi sono molto occupata di comunicazione e pubbliche relazioni lavorando in agenzie di pubblicità e uffici stampa per Aziende e Istituzioni Pubbliche. Sono giornalista pubblicista. Svolgo attività di volontariato.',
+        'Formazione specialistica e ricerca: il percorso formativo ha coniugato l\'ambito della consulenza familiare con un solido background accademico in scienze della comunicazione e sociologia. La formazione specifica è avvenuta presso la Scuola di Formazione per Consulenti Coniugali e Familiari (SICOF) di Roma, dove ho completato il percorso triennale di studi. Durante questo iter formativo, ho approfondito tematiche complesse legate al mondo dell\'adozione, culminate nella stesura della tesi specialistica dal titolo “Universo adozione, una risorsa senza aggettivi”. Tale lavoro di ricerca è stato dedicato all\'analisi dell\'inclusione, del pregiudizio e delle potenzialità intrinseche della consulenza familiare.',
+        'La ricerca accademica si è estesa anche allo studio della comunicazione non verbale, con particolare riferimento al parlato politico e al linguaggio del corpo. In questo ambito, ho approfondito lo svelamento delle emozioni profonde attraverso l\'analisi dei micromovimenti facciali, conseguendo il diploma di esperto per la codifica e decodifica delle emozioni dopo un esame finale sostenuto con il prof. Joseph C. Hager.',
+        'Titoli, certificazioni e percorso accademico: Laurea presso Sapienza – Università di Roma; Dottorato di Ricerca in Scienze della Comunicazione e Sociologia presso Sapienza – Università di Roma; Frequenza del corso triennale per Consulente Familiare presso SICOF; Diploma di Consulente della Coppia e della Famiglia.',
+        'Disponibilità e contatti: livia.serlupicrescenzi@aiccef.it'
+      ]
+    },
    
   };
 
@@ -156,7 +172,7 @@
     medico: [
       { name: 'Avvocato' },
       { name: 'Mediatore familiare', profiles: ['rosalba'] },
-      { name: 'Consulente familiare' },
+      { name: 'Consulente familiare', profiles: ['livia'] },
       { name: 'Psicologo e Psicoterapeuta', profiles: ['psicologa'] },
       { name: 'Psichiatra', profiles: ['rossana'] },
       { name: 'Pedagogista' },
