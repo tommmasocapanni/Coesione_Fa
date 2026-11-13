@@ -230,7 +230,7 @@
         profile.append(heading);
       } else {
         const paragraph = document.createElement('p');
-        const parts = text.split(/(\\*\\*[^*]+\\*\\*)/g);
+        const parts = text.split(/(\*\*[^*]+\*\*)/g);
         parts.forEach((part) => {
           if (part.startsWith('**') && part.endsWith('**')) {
             const span = document.createElement('span');
