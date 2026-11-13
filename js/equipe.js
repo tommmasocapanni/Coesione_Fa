@@ -175,7 +175,7 @@
       { name: 'Consulente familiare', profiles: ['livia'] },
       { name: 'Psicologo e Psicoterapeuta', profiles: ['psicologa'] },
       { name: 'Psichiatra', profiles: ['rossana'] },
-      { name: 'Pedagogista' },
+      { name: 'Pedagogista', profiles: ['rosalba'] },
       { name: 'Gastroenterologo', profiles: ['franco', 'rita'] },
       { name: 'Internista / Gastroenterologo', profiles: ['zocco'] },
       { name: 'Ginecologo' },
