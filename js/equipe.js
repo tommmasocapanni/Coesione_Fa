@@ -95,6 +95,12 @@
       summary: 'Con la collaborazione di Vivilmare attraverso le vele di Lucia Rosa.',
       biography: ["Con la collaborazione di vivilmare attraverso le vele di Lucia Rosa, si potrà ragionare sui grandi sistemi della vita attraverso il soffio del vento ed il dondolio del mare. Tra L’ oblio e L’ immanenza si troveranno risposte agli interrogativi filosofici di sempre, di ognuno di noi, dell’ essere umano."]
     },
+    maria: {
+      name: 'María González-Vallinas Garrachón',
+      qualification: 'Artista, arteterapeuta e docente di Arte',
+      summary: 'Artista, arteterapeuta e docente di Arte nella scuola secondaria, con oltre 15 anni di esperienza tra Spagna e Italia.',
+      biography: ["María González-Vallinas Garrachón Artista, arteterapeuta e docente di Arte nella scuola secondaria, con oltre 15 anni di esperienza tra Spagna e Italia. Unisce una formazione in arteterapia, il contatto quotidiano con gli adolescenti e l'accompagnamento delle famiglie nel legame con i figli. La sua ricerca artistica con la carta piegata, il disegno e la pittura è il linguaggio su cui si fonda il progetto. Proposta: A volte i genitori non trovano le parole per avvicinarsi al proprio figlio o alla propria figlia adolescente, che a sua volta non ha voglia di usarle. Il disegno, la pittura e la carta offrono un altro linguaggio, più indiretto e meno impegnativo, in cui si può comunicare senza doversi spiegare. Il progetto propone che siano i genitori a fare da mediatori di questo linguaggio. Prima recuperano il proprio rapporto con l'arte e creano in prima persona. Poi offrono all'adolescente un oggettodomanda: un quaderno incompleto, un disegno con uno spazio vuoto, un oggetto di carta non finito. Il ragazzo o la ragazza risponde, se vuole, con un proprio intervento, e si apre così un dialogo visivo di andata e ritorno. La mediatrice non lavora direttamente con l'adolescente: accompagna i genitori in consulenza online, perché questo ponte sia rispettoso e sostenibile nel tempo. Formazione: In corso — Laurea in Psicologia, con interesse per l'arte nell'adolescenza. 2019–2020 — Corso di specializzazione nel Metodo Montessori, Opera Nazionale Montessori, Roma. 2008–2011 — Master triennale Arteterapia: Applicazioni psicoterapeutiche della pratica artistica, Università di Barcellona e Centro Metafora. 1997–2002 — Laurea in Belle Arti, Università di Salamanca. 1987–2002 — Diploma di Docenza in Musica, specialità Pianoforte, Conservatorio Professionale di Musica, Valladolid (Spagna). Esperienza: Attualmente — Coesione Fa. Interlocutoria: mediazione artistica. Attualmente — Docente di Arte nella scuola secondaria, Valladolid (Spagna). 2016 — Università degli Studi di Trento: percorso formativo Arteterapia e Pedagogia artistica per il personale dell'Asilo Nido; laboratori per docenti e famiglie Il profumo dei colori e Per capire il disegno di un bambino bisogna usare i 5 sensi. 2016 — Artemisia Onlus, Progetto Coesione, Roma: arteterapeuta. 2014–2016 — Ospedale San Giovanni Calibita Fatebenefratelli, Roma: ideatrice e conduttrice del laboratorio Arteterapia in gravidanza. 2009–2011 — Fundación Personas, Valladolid: sessioni di arteterapia con persone con disturbo dello sviluppo intellettivo e disturbi psichiatrici, nell'ambito del tirocinio del Master. 2006–2011 — Professoressa di ruolo di Educazione artistica, Castilla y León (Spagna), scuole medie e superiori. Pubblicazione: González-Vallinas, M. (2014). He visto saltar a los peces en la pecera. Una esperienza di arteterapia con discapacidad intelectual. Inspira, 4."]
+    },
     artemediatrice: {
       name: 'Arte come Mediazione',
       qualification: 'Presso il Palazzetto dell’hotel Hassler',
@@ -192,7 +198,7 @@
     ],
     educativa: [
       { name: 'Maestri di scacchi', profiles: ['michele'] },
-      { name: 'Arteterapeuti nelle diverse declinazioni' },
+      { name: 'Arteterapeuti nelle diverse declinazioni', profiles: ['maria'] },
       { name: 'Pedagogisti specializzati in disegno onirico', profiles: ['rosalba'] },
       { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] },
       { name: 'Arte come Mediazione', profiles: ['artemediatrice'] },
