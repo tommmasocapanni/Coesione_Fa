@@ -3040,3 +3040,11 @@ html { scroll-behavior: smooth; }
 .cf-home .cf-chess-info p { text-align: justify; }
 
 .cf-home .cf-thanks-body p { text-align: justify; }
+
+.cf-about #contatti { background: var(--ca-rose); }
+
+.cf-about #contatti .about-contact-wave:not(.about-contact-wave--bordeaux) {
+  top: -2rem;
+  bottom: auto;
+  transform: scaleY(-1);
+}
