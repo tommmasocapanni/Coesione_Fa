@@ -3005,24 +3005,17 @@ html { scroll-behavior: smooth; }
   }
 }
 
-@media (max-width: 767px) {
-  .cf-home .cf-tess-left h2 {
-    max-width: 100%;
-    margin-bottom: 24px;
-    font-size: clamp(36px, 9vw, 46px);
-    font-weight: 700;
-    line-height: 1.02;
-    letter-spacing: -.04em;
-  }
-}
+#livelli { font-size: clamp(1.88rem, 3.84vw, 3.52rem); }
 
 @media (max-width: 767px) {
+  .cf-home #livelli,
+  .cf-home .cf-tess-left h2,
   .cf-home .cf-chess-intro h2 {
     max-width: 100%;
     margin-bottom: 24px;
-    font-size: clamp(36px, 9vw, 46px);
+    font-size: clamp(1.88rem, 3.84vw, 3.52rem);
     font-weight: 700;
-    line-height: 1.02;
+    line-height: 1.03;
     letter-spacing: -.04em;
   }
 }
