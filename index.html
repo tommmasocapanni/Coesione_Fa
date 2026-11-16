@@ -231,8 +231,8 @@
           <div class="cf-tess-iban-card">
             <p class="cf-tess-iban-title">Coordinate bancarie</p>
             <dl class="cf-tess-iban-dl">
-              <div><dt>Intestatario</dt><dd>Da comunicare</dd></div>
-              <div><dt>IBAN</dt><dd>Da comunicare</dd></div>
+              <div><dt>Intestatario</dt><dd>ASSOCIAZIONE COESIONE FA</dd></div>
+              <div><dt>IBAN</dt><dd>IT58P0200805022000107424636</dd></div>
               <div><dt>Causale</dt><dd>Tesseramento Coesione Fa. – Nome Cognome – Anno</dd></div>
             </dl>
             <div class="cf-tess-iban-actions">
@@ -792,7 +792,7 @@
 
   const copyBtn = document.querySelector('.cf-tess-copy-btn');
   const status = document.querySelector('.cf-tess-copy-status');
-  const IBAN = 'Da comunicare';
+  const IBAN = 'IT58P0200805022000107424636';
   if (copyBtn) {
     copyBtn.disabled = (IBAN === 'Da comunicare' || !IBAN.trim());
     copyBtn.addEventListener('click', async function () {
