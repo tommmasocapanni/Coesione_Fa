@@ -2915,7 +2915,7 @@ html { scroll-behavior: smooth; }
   overflow-x: clip;
 }
 @media (min-width: 48.01rem) {
-  .cf-home .cf-test-wave { transform: translateX(-50%) scaleX(-1) translateY(54%); }
+  .cf-home .cf-test-wave { transform: translateX(-50%) scaleX(-1) translateY(126%); }
 }
 
 
