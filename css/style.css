@@ -3049,6 +3049,4 @@ html { scroll-behavior: smooth; }
   transform: scaleY(-1);
 }
 
-@media (min-width: 901px) {
-  .cf-about main { padding-top: 67px; }
-}
+.cf-about main { padding-top: 67px; }
