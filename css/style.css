@@ -2223,7 +2223,7 @@ body.intro-lock { overflow: hidden; }
 }
 .cf-home .cf-equipe-header {
   max-width: 76rem;
-  margin: 0 0 clamp(2.2rem, 4vw, 3.1rem);
+  margin: 0 0 clamp(1rem, 2vw, 1.5rem);
 }
 .cf-home .cf-equipe-header .cf-label {
   margin: 0 0 clamp(.9rem, 1.5vw, 1.2rem);
@@ -2950,4 +2950,7 @@ body.intro-lock { overflow: hidden; }
     margin-top: 1.5rem;
   }
   .cf-hero-readmore-circle svg { width: 36px; height: 36px; stroke: #c00000; }
+}
+@media (max-width: 767px) {
+  .cf-home .cf-equipe-header .cf-label { margin-bottom: 0 !important; }
 }
