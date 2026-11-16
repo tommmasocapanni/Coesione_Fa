@@ -3024,8 +3024,9 @@ html { scroll-behavior: smooth; }
   .cf-home #centro-studi,
   .cf-home .cf-comitato-bottom {
     background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.07);
+    border: none;
     border-radius: var(--radius);
     padding: 1.25rem;
+    box-shadow: 0 8px 24px rgba(66, 27, 43, 0.08);
   }
 }
