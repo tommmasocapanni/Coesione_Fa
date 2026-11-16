@@ -2958,3 +2958,9 @@ body.intro-lock { overflow: hidden; }
 @media (max-width: 767px) {
   .cf-home .cf-equipe-header .cf-label { padding-bottom: 8px; }
 }
+
+@media (max-width: 767px) {
+  .cf-home .cf-equipe-header { display: flex; flex-direction: column; }
+  .cf-home .cf-equipe-header h2 { order: 1; }
+  .cf-home .cf-equipe-header .cf-label { order: 2; }
+}
