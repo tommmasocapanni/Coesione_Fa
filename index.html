@@ -856,6 +856,13 @@ document.querySelectorAll('.cf-vp-toggle').forEach(btn => {
     panel.classList.toggle('is-open', !open);
   });
 });
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.cf-hero-copy, .cf-hero-photo-wrap').forEach((el) => {
+      el.classList.add('fade-in');
+      requestAnimationFrame(() => el.classList.add('is-visible'));
+    });
+  });
 </script>
 </body>
 </html>
