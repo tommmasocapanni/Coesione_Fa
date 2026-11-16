@@ -211,7 +211,6 @@
     educativa: [
       { name: 'Maestri di scacchi', profiles: ['michele', 'carla'] },
       { name: 'Arteterapeuti nelle diverse declinazioni', profiles: ['maria'] },
-      { name: 'Pedagogisti specializzati in disegno onirico', profiles: ['rosalba'] },
       { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] },
       { name: 'Arte come Mediazione', profiles: ['artemediatrice'] },
       { name: 'Laboratori per Giovani stilisti', profiles: ['stilisti'] },
