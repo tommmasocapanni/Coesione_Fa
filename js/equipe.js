@@ -83,6 +83,12 @@
       summary: 'Psicoanalista SPI, Responsabile della “Clinica della memoria”, La Sapienza, Roma.',
       biography: ["PROF. Giuseppe Bruno, Neurologo, Psicoanalista SPI, Responsabile della \"Clinica della memoria\", La Sapienza, Roma."]
     },
+    francesca: {
+      name: 'Dott.ssa Francesca Sauro',
+      qualification: 'Psicologa e psicoterapeuta',
+      summary: 'Psicologa e psicoterapeuta a orientamento gruppoanalitico.',
+      biography: ["Dott.ssa Francesca Sauro", "Psicologa e psicoterapeuta a orientamento gruppoanalitico, mi occupo di consulenza psicologica clinica e di percorsi di psicoterapia individuale e di gruppo. Credo profondamente nel valore trasformativo delle relazioni, luogo privilegiato in cui prendono forma la nostra identità e il nostro benessere. Per questo accompagno le persone nei momenti di difficoltà e di cambiamento, favorendo la conoscenza di sé e la possibilità di ritrovare un migliore equilibrio e uno sviluppo delle proprie risorse personali e relazionali.", "Mi occupo di consulenza e formazione per i servizi educativi e per le organizzazioni sociali. Sono inoltre Responsabile della Cooperativa Sociale Filobus 75, realtà impegnata nella costruzione del benessere della comunità e nell’integrazione dei cittadini attraverso la promozione, progettazione e realizzazione di servizi psico-socio-sanitari ed educativi, tra cui asili nido e scuole dell’infanzia. Con uno sguardo che pone al centro le famiglie, i loro legami e i loro processi di evoluzione, il mio lavoro è da sempre orientato a costruire servizi di qualità per la fascia 0-6 anni, insieme a spazi dedicati al supporto genitoriale e al sostegno psicologico.", "Didatta presso l'I.T.E.R. (Istituto Terapeutico Romano) a Roma, Scuola di Specializzazione in Psicoterapia Gruppoanalitica, contribuisco alla formazione clinica degli allievi. Mi occupo della loro crescita professionale e dello sviluppo dell’orientamento gruppoanalitico, mettendo al centro il gruppo e la dimensione relazionale come strumenti fondamentali di cura e conoscenza nella pratica terapeutica contemporanea."]
+    },
     psicologa: {
       name: 'Psicologa e psicoterapeuta',
       qualification: 'Arteterapeuta del colore ad orientamento steineriano',
@@ -191,7 +197,7 @@
       { name: 'Avvocato' },
       { name: 'Mediatore familiare', profiles: ['rosalba'] },
       { name: 'Consulente familiare', profiles: ['livia'] },
-      { name: 'Psicologo e Psicoterapeuta', profiles: ['psicologa'] },
+      { name: 'Psicologo e Psicoterapeuta', profiles: ['psicologa', 'francesca'] },
       { name: 'Psichiatra', profiles: ['rossana'] },
       { name: 'Pedagogista', profiles: ['rosalba'] },
       { name: 'Gastroenterologo', profiles: ['franco', 'rita'] },
