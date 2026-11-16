@@ -144,5 +144,66 @@
         });
       }
     });
+
+    // Scrollspy: evidenzia la voce di menu della sezione attualmente visibile
+    const header = document.querySelector('.cf-header, .site-header');
+    const navLinks = Array.from(document.querySelectorAll('header nav a'));
+    const targets = [];
+
+    navLinks.forEach((a) => {
+      const href = a.getAttribute('href') || '';
+      if (href.length > 1 && href.charAt(0) === '#') {
+        const el = document.querySelector(href);
+        if (el) targets.push({ href, el });
+      }
+    });
+
+    targets.sort((a, b) => {
+      return a.el.getBoundingClientRect().top - b.el.getBoundingClientRect().top;
+    });
+
+    function setActive(href) {
+      const links = Array.from(document.querySelectorAll('header nav a, #mobile-menu a'));
+      links.forEach((a) => a.removeAttribute('aria-current'));
+      if (href) {
+        links.forEach((a) => {
+          if (a.getAttribute('href') === href) a.setAttribute('aria-current', 'true');
+        });
+      } else {
+        links.forEach((a) => {
+          const h = a.getAttribute('href');
+          if (h === 'index.html' || h === '/') a.setAttribute('aria-current', 'page');
+        });
+      }
+    }
+
+    function updateSpy() {
+      if (!targets.length) return;
+      const offset = (header ? header.offsetHeight : 0) + 90;
+      const pos = window.scrollY + offset;
+      let current = null;
+      targets.forEach((t) => {
+        const top = t.el.getBoundingClientRect().top + window.scrollY;
+        if (top <= pos) current = t;
+      });
+      // Se siamo in fondo alla pagina, evidenzia l'ultima sezione
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+        current = targets[targets.length - 1];
+      }
+      setActive(current ? current.href : null);
+    }
+
+    let spyTicking = false;
+    window.addEventListener('scroll', () => {
+      if (spyTicking) return;
+      spyTicking = true;
+      window.requestAnimationFrame(() => {
+        updateSpy();
+        spyTicking = false;
+      });
+    }, { passive: true });
+    window.addEventListener('resize', updateSpy);
+    window.addEventListener('load', updateSpy);
+    updateSpy();
   }
 })();

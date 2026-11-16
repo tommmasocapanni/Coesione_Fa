@@ -3050,3 +3050,14 @@ html { scroll-behavior: smooth; }
 }
 
 .cf-about main { padding-top: 67px; }
+
+.cf-header nav a:not(.cf-button) {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 1.5px;
+  padding-bottom: 2px;
+  transition: background-size .25s ease;
+}
+.cf-header nav a:not(.cf-button)[aria-current] { background-size: 100% 1.5px; }
+.mobile-menu-panel a[aria-current] { font-weight: 700; }
