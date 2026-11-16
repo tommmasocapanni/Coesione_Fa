@@ -812,7 +812,7 @@ html { scroll-behavior: smooth; }
     min-height: 52px;
     margin-right: 12px;
     padding: .4rem 1rem;
-    border: 1px solid currentColor;
+    border: none;
     border-radius: 999px;
     text-decoration: none;
   }
