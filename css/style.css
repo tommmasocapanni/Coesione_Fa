@@ -2970,3 +2970,6 @@ html { scroll-behavior: smooth; }
 }
 
 .cf-equipe-intro { text-align: justify; }
+
+#centro-studi > div:nth-of-type(2),
+.cf-comitato-text { text-align: justify; }
