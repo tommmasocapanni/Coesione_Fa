@@ -2977,3 +2977,5 @@ html { scroll-behavior: smooth; }
 @media (max-width: 767px) {
   .cf-home .cf-hero-secondary { text-decoration: none !important; }
 }
+
+#metodo ul li p { text-align: justify; }
