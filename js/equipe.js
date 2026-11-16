@@ -125,11 +125,11 @@
         'Un percorso di ascolto e vicinanza, perché ogni vita ha una storia da raccontare e ogni storia può offrire nuovi spunti per il futuro.'
       ]
     },
-    maestra_scacchi: {
-      name: 'Maestro ad Honorem FSI',
+    carla: {
+      name: 'Carla Mircoli',
       qualification: 'Maestro ad Honorem, formatrice e divulgatrice',
       summary: "Maestro ad Honorem, formatrice e divulgatrice: insegno a pensare giocando.",
-      biography: ["Maestro ad Honorem, formatrice e divulgatrice: insegno a pensare giocando: da oltre vent'anni racconto gli scacchi come palestra per la mente e strumento di crescita, inclusione e scoperta."]
+      biography: ["Maestro ad Honorem, formatrice e divulgatrice: insegno a pensare giocando."]
     },
     michele: {
       name: 'Michele Blonna',
@@ -203,7 +203,7 @@
       { name: 'Pediatra' }
     ],
     educativa: [
-      { name: 'Maestri di scacchi', profiles: ['michele', 'maestra_scacchi'] },
+      { name: 'Maestri di scacchi', profiles: ['michele', 'carla'] },
       { name: 'Arteterapeuti nelle diverse declinazioni', profiles: ['maria'] },
       { name: 'Pedagogisti specializzati in disegno onirico', profiles: ['rosalba'] },
       { name: 'Teatro e associazioni collegate', profiles: ['fulvia'] },
