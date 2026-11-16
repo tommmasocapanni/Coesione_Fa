@@ -816,7 +816,7 @@ body.intro-lock { overflow: hidden; }
     margin: 40px auto 0;
   }
   .cf-home .cf-hero-photo {
-    object-position: 54% 40%;
+    object-position: 54% 0%;
     clip-path: url(#heroPhotoClipMobile);
   }
   .cf-home .cf-hero-photo-wrap::before {
