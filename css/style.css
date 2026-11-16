@@ -2996,3 +2996,7 @@ html { scroll-behavior: smooth; }
 .cf-home .cf-chess-body-strong { font-weight: 700; }
 
 .cf-home .cf-chess-byline { font-size: .95rem; }
+
+@media (max-width: 767px) {
+  #metodo ul li p { padding-right: .75rem; }
+}
