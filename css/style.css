@@ -10,7 +10,7 @@
   --max: 1280px;
 }
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+@view-transition { navigation: auto; }
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -2912,4 +2912,40 @@ body.intro-lock { overflow: hidden; }
 }
 @media (min-width: 48.01rem) {
   .cf-home .cf-test-wave { transform: translateX(-50%) scaleX(-1) translateY(90%); }
+}
+
+
+.cf-hero-readmore { display: none; }
+.cf-hero-readmore-circle { display: inline-flex; }
+.cf-hero-readmore-circle svg { width: 40px; height: 40px; }
+@media (min-width: 68.01rem) {
+  .cf-hero { position: relative; }
+  .cf-hero-readmore {
+    position: absolute;
+    bottom: -3rem;
+    left: clamp(2rem, 6vw, 7rem);
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    color: #c00000 !important;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: .04em;
+    margin-top: 0;
+  }
+  .cf-hero-readmore-circle svg { width: 40px; height: 40px; stroke: #c00000; }
+}
+@media (max-width: 68rem) {
+  .cf-hero-readmore {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    color: #c00000 !important;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 1.5rem;
+  }
+  .cf-hero-readmore-circle svg { width: 36px; height: 36px; stroke: #c00000; }
 }
