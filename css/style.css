@@ -815,7 +815,7 @@ body.intro-lock { overflow: hidden; }
   .cf-home .cf-hero-photo-wrap {
     width: calc(100% - 2 * clamp(20px, 6.15vw, 24px));
     aspect-ratio: 1.3;
-    margin: 40px auto 0;
+    margin: 0 auto 0;
   }
   .cf-home .cf-hero-photo {
     object-position: 54% 0%;
