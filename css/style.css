@@ -2968,3 +2968,5 @@ html { scroll-behavior: smooth; }
   .cf-home .cf-equipe-header h2 { order: 1; }
   .cf-home .cf-equipe-header .cf-label { order: 2; }
 }
+
+.cf-equipe-intro { text-align: justify; }
