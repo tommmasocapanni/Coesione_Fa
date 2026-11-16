@@ -545,7 +545,7 @@ html { scroll-behavior: smooth; }
   min-height: 0;
   border-radius: 0;
   object-fit: cover;
-  object-position: 34% 0%;
+  object-position: 34% 20%;
   clip-path: url(#heroPhotoClipDesktop);
 }
 .cf-home .cf-section { margin-top: clamp(3rem, 8vw, 7rem); }
