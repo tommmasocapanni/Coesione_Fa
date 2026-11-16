@@ -3061,3 +3061,5 @@ html { scroll-behavior: smooth; }
 }
 .cf-header nav a:not(.cf-button)[aria-current] { background-size: 100% 1.5px; }
 .mobile-menu-panel a[aria-current] { font-weight: 700; }
+
+.cf-header nav a:not(.cf-button)[aria-current] { color: #7A1F3D; }
