@@ -3000,3 +3000,10 @@ html { scroll-behavior: smooth; }
 @media (max-width: 767px) {
   #metodo ul li p { padding-right: .75rem; }
 }
+
+@media (min-width: 90rem) {
+  .cf-home .cf-hero { grid-template-columns: minmax(0, 52fr) minmax(0, 48fr); }
+  .cf-home .cf-hero-copy {
+    padding-left: max(clamp(2rem, 6vw, 7rem), min(calc((100vw - 80rem) / 2), 12rem));
+  }
+}
