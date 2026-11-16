@@ -281,8 +281,10 @@ body.intro-lock { overflow: hidden; }
 /* Reveal */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.in { opacity: 1; transform: translateY(0); }
+html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto; }
+  html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; }
 }
 
@@ -673,6 +675,7 @@ body.intro-lock { overflow: hidden; }
   color: #4C4C4C;
   font-size: clamp(1rem, 1.08vw, 1.08rem);
   line-height: 1.72;
+  text-align: justify;
   margin: 0 0 1.1rem;
 }
 .cf-home .cf-famiglie-body p:last-of-type { margin-bottom: clamp(1.2rem, 2vw, 1.7rem); }
@@ -795,6 +798,7 @@ body.intro-lock { overflow: hidden; }
     align-items: center;
     justify-content: flex-start;
     gap: clamp(16px, 5vw, 24px);
+    margin-bottom: 16px;
   }
   .cf-home .cf-hero-cta {
     width: auto;
@@ -2917,7 +2921,7 @@ body.intro-lock { overflow: hidden; }
 }
 
 
-.cf-hero-readmore { display: none; }
+.cf-hero-readmore { display: none !important; }
 .cf-hero-readmore-circle { display: inline-flex; }
 .cf-hero-readmore-circle svg { width: 40px; height: 40px; }
 @media (min-width: 68.01rem) {
