@@ -1044,7 +1044,7 @@ body.intro-lock { overflow: hidden; }
   background: var(--rose);
   margin-bottom: clamp(3rem, 6vw, 5rem);
 }
-.cf-home .cf-chess-intro { min-width: 0; }
+.cf-home .cf-chess-mirror { grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); }
 .cf-home .cf-chess-eyebrow {
   margin: 0 0 clamp(1.1rem, 2vw, 1.6rem);
   font-size: .7rem;
