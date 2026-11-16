@@ -289,9 +289,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  html { font-size: 90%; }
-}
 @media (max-width: 900px) {
   .container { padding: 0 20px; }
   .form-wrap { padding: 28px; }
