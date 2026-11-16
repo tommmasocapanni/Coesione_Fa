@@ -2973,3 +2973,7 @@ html { scroll-behavior: smooth; }
 
 #centro-studi > div:nth-of-type(1),
 .cf-comitato-text { text-align: justify; }
+
+@media (max-width: 767px) {
+  .cf-home .cf-hero-secondary { text-decoration: none !important; }
+}
