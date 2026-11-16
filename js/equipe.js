@@ -89,6 +89,12 @@
       summary: 'Psicologa e psicoterapeuta, arteterapeuta del colore ad orientamento steineriano.',
       biography: ["Psicologa e psicoterapeuta, arteterapeuta del colore ad orientamento steineriano.", "Lavoro con bambini attraverso la play Therapy, adolescenti, e genitori. Lavoro sul lutto e sull’ impatto di vita sulle malattie organiche.", "1 volta al mese gestisco un Death Cafè in cui gratuitamente tutti coloro che ne hanno bisogno possono partecipare su prenotazione."]
     },
+    platonebarca: {
+      name: 'Platone in barca a vela',
+      qualification: 'Con la collaborazione di Vivilmare',
+      summary: 'Con la collaborazione di Vivilmare attraverso le vele di Lucia Rosa.',
+      biography: ["Con la collaborazione di vivilmare attraverso le vele di Lucia Rosa, appena il tempo ed il mare lo permettono, si potrà ragionare sui grandi sistemi della vita attraverso il soffio del vento ed il dondolio del mare. Tra L’ oblio e L’ immanenza si troveranno risposte agli interrogativi filosofici di sempre, di ognuno di noi, dell’ essere umano."]
+    },
     artemediatrice: {
       name: 'Arte come Mediazione',
       qualification: 'Presso il Palazzetto dell’hotel Hassler',
@@ -192,7 +198,8 @@
       { name: 'Arte come Mediazione', profiles: ['artemediatrice'] },
       { name: 'Laboratori per Giovani stilisti', profiles: ['stilisti'] },
       { name: 'Biblioteca dei Saperi', profiles: ['biblioteca'] },
-      { name: 'Yoga & Jin Shin Jyutsu', profiles: ['heike'] }
+      { name: 'Yoga & Jin Shin Jyutsu', profiles: ['heike'] },
+        { name: 'Platone in barca a vela', profiles: ['platonebarca'] }
     ]
   };
 
