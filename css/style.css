@@ -3034,3 +3034,5 @@ html { scroll-behavior: smooth; }
 .cf-home .cf-tesseramento {
   box-shadow: 0 8px 24px rgba(66, 27, 43, 0.08);
 }
+
+.cf-home .cf-tess-right p { text-align: justify; }
