@@ -455,7 +455,7 @@ html { scroll-behavior: smooth; }
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: clamp(1.2rem, 2.2vw, 2.2rem);
+  gap: clamp(.9rem, 1.4vw, 1.4rem);
 }
 .cf-home .cf-hero-cta {
   display: inline-flex;
