@@ -216,7 +216,7 @@ p { margin: 0 0 1rem; }
 .relations-grid p { color: #555; font-size: .95rem; }
 .about-contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: start; }
 @media (max-width: 900px) {
-  .about-story-grid { grid-template-columns: minmax(0, 1fr); }
+  .about-story-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .about-story-grid .photo-slot { min-height: 280px; }
   .relations-grid { grid-template-columns: 1fr; }
   .vm-row { flex-direction: column; gap: 4px; }
