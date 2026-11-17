@@ -454,8 +454,8 @@ html { scroll-behavior: smooth; }
 .cf-home .cf-hero-actions {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
-  gap: clamp(.9rem, 1.4vw, 1.4rem);
+  flex-wrap: wrap;
+  gap: .5rem clamp(.5rem, 1.2vw, 1.2rem);
 }
 .cf-home .cf-hero-cta {
   display: inline-flex;
@@ -794,7 +794,7 @@ html { scroll-behavior: smooth; }
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: clamp(16px, 5vw, 24px);
+    gap: .5rem clamp(8px, 2.5vw, 16px);
     margin-bottom: 16px;
   }
   .cf-home .cf-hero-cta {
@@ -807,7 +807,6 @@ html { scroll-behavior: smooth; }
   .cf-home .cf-hero-secondary {
     align-self: center;
     min-height: 52px;
-    margin-right: 12px;
     padding: .4rem 1rem;
     border: 1px solid currentColor;
     border-radius: 999px;
