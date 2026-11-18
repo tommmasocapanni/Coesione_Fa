@@ -235,7 +235,6 @@
       { name: 'Laboratori per Giovani stilisti', profiles: ['stilisti'] },
       { name: 'Biblioteca dei Saperi', profiles: ['biblioteca'] },
       { name: 'Jin Shin Jyutsu', profiles: ['heike'] },
-        { name: 'Platone in barca a vela', profiles: ['platonebarca'] }
     ]
   };
 
