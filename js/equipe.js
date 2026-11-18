@@ -116,7 +116,7 @@
     },
     platonebarca: {
       name: 'Platone in barca a vela',
-      qualification: 'Con la collaborazione di Vivilmare',
+      qualification: '',
       summary: 'Con la collaborazione di Vivilmare attraverso le vele di Lucia Rosa.',
       biography: ["Con la collaborazione di vivilmare attraverso le vele di Lucia Rosa, si potrà ragionare sui grandi sistemi della vita attraverso il soffio del vento ed il dondolio del mare. Tra L’ oblio e L’ immanenza si troveranno risposte agli interrogativi filosofici di sempre, di ognuno di noi, dell’ essere umano."]
     },
@@ -235,6 +235,7 @@
       { name: 'Laboratori per Giovani stilisti', profiles: ['stilisti'] },
       { name: 'Biblioteca dei Saperi', profiles: ['biblioteca'] },
       { name: 'Jin Shin Jyutsu', profiles: ['heike'] },
+        { name: 'Platone in barca a vela', profiles: ['platonebarca'] }
     ]
   };
 
