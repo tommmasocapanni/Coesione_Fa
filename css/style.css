@@ -2900,7 +2900,7 @@ html { scroll-behavior: smooth; }
 .cf-vp-toggle[aria-expanded="true"] .cf-vp-arrow { transform: rotate(90deg); }
 .cf-vp-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; overflow: hidden; }
 .cf-vp-panel.is-open { grid-template-rows: 1fr; }
-.cf-vp-panel-inner { overflow: hidden; padding: 0; }
+.cf-vp-panel-inner { overflow: hidden; padding: 0; text-align: justify; }
 .cf-vp-panel-inner p { color: #4F4F4F; font-size: .9rem; line-height: 1.5; margin: 0 0 8px; }
 .cf-vp-panel-inner p:last-child { margin-bottom: 16px; }
 @media (max-width: 48rem) {
