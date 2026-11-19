@@ -97,7 +97,7 @@ p { margin: 0 0 1rem; }
   min-height: 400px;
   border-radius: 16px;
   background: var(--gray-light) center/cover no-repeat;
-  background-image: url('img/hero.jpg');
+  background-image: url('img/hero.webp');
 }
 .hero-side-note {
   position: absolute;
@@ -120,7 +120,7 @@ p { margin: 0 0 1rem; }
 /* Accoglienza */
 .acc-section { padding: 80px 0; }
 .acc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-.acc-grid .visual { min-height: 380px; border-radius: 20px; background: var(--gray-light) center/cover no-repeat; background-image: url('img/accoglienza.jpg'); }
+.acc-grid .visual { min-height: 380px; border-radius: 20px; background: var(--gray-light) center/cover no-repeat; background-image: url('img/accoglienza.webp'); }
 @media (max-width: 900px) { .acc-grid { grid-template-columns: 1fr; gap: 40px; } .acc-grid .visual { min-height: 260px; } }
 
 /* Percorsi bento */
@@ -206,7 +206,7 @@ p { margin: 0 0 1rem; }
 .about-hero h1 { font-size: clamp(2rem, 4vw, 3rem); color: var(--bordeaux); font-weight: 600; line-height: 1.15; }
 .about-hero .accent { color: var(--red); font-weight: 700; }
 .about-hero .lead { margin-top: 18px; max-width: 52ch; color: #555; }
-.about-hero-photo { min-height: 52vh; background: var(--gray-light) center/cover no-repeat; background-image: url('img/accoglienza.jpg'); margin-top: 40px; }
+.about-hero-photo { min-height: 52vh; background: var(--gray-light) center/cover no-repeat; background-image: url('img/accoglienza.webp'); margin-top: 40px; }
 .about-story-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; }
 .about-story-grid .photo-slot { min-height: 460px; border-radius: 12px; }
 .vm-row { display: flex; gap: 32px; padding: 18px 0; border-bottom: 1px solid rgba(0,0,0,.1); }
