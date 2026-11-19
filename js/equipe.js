@@ -220,6 +220,35 @@
         'Per l\'attività professionale e istituzionale svolta ha ricevuto riconoscimenti ed encomi.'
       ]
     },
+    galli: {
+      name: 'Dott.ssa Federica Galli',
+      qualification: 'Psicologa clinica e psicoterapeuta',
+      summary: 'Psicologa clinica e psicoterapeuta, professoressa associata presso l’Università Sapienza di Roma, esperta del ruolo dei fattori psicologici in relazione a patologie mediche.',
+      biography: [
+        'Dott.ssa Federica Galli, psicologa clinica e psicoterapeuta, professoressa associata presso l’Università Sapienza di Roma, esperta del ruolo dei fattori psicologici in relazione a patologie mediche.'
+      ]
+    },
+    malvezzi: {
+      name: 'Caterina Malvezzi Campeggi',
+      qualification: 'Consulente familiare / counselor',
+      summary: 'Consulente familiare e counselor, accompagna singoli, coppie e famiglie in un percorso di consapevolezza.',
+      biography: [
+        'Nel mio lavoro accompagno le persone (singoli, coppie e famiglie) in un percorso di consapevolezza che aiuti ognuno a conoscersi meglio, a comunicare in maniera efficace e trovare nuove strategie per affrontare problemi e cambiamenti.',
+        'Alla base del mio operare ci sono i principi guida della consulenza familiare: accoglienza, ascolto, rispetto dell’unicità della persona, fiducia nelle capacità di ognuno.',
+        'La consulenza è intesa come un supporto che, accompagnando il cliente nel riconoscere e far emergere le proprie risorse, favorisce scelte sempre più autonome e responsabili.',
+        'La consulenza non si occupa invece della diagnosi e del trattamento del disagio psicopatologico che rientrano nell\'ambito della psicoterapia.',
+        'Tra gli argomenti che le persone portano quando si rivolgono a me ci sono la relazione con se stessi e con gli altri, i conflitti, la gestione delle emozioni, la difficoltà nel prendere decisioni. Parallelamente all’attività di consulenza, mi occupo di organizzare seminari che promuovono percorsi di genitorialità consapevole e incontri volti a nutrire e supportare la relazione di coppia.',
+        'Socio Aiccef (Associazione Italiana Consulenti della Coppia E della Famiglia)'
+      ]
+    },
+    sabbadini: {
+      name: 'Dott.ssa Cristina Sabbadini',
+      qualification: 'Grafologa · Educatrice del Gesto Grafico · Formatrice scolastica',
+      summary: 'Grafologa, educatrice del gesto grafico e formatrice scolastica.',
+      biography: [
+        'Proposta di incontri gratuiti per docenti e genitori: una conferenza in presenza per docenti della scuola dell\'infanzia, primaria e secondaria di primo grado, e due incontri online per genitori, dedicati al gesto grafico, alle difficoltà di scrittura e all\'autostima. Offerti gratuitamente dalla Dott.ssa Cristina Sabbadini.'
+      ]
+    },
     
   };
 
@@ -227,8 +256,8 @@
     medico: [
       { name: 'Avvocato', profiles: ['schettino', 'spasari'] },
       { name: 'Mediatore familiare', profiles: ['rosalba'] },
-      { name: 'Consulente familiare', profiles: ['livia'] },
-      { name: 'Psicologo e Psicoterapeuta', profiles: ['psicologa', 'francesca'] },
+      { name: 'Consulente familiare', profiles: ['livia', 'malvezzi'] },
+      { name: 'Psicologo e Psicoterapeuta', profiles: ['galli', 'francesca', 'psicologa'] },
       { name: 'Psichiatra', profiles: ['rossana'] },
       { name: 'Pedagogista', profiles: ['rosalba'] },
       { name: 'Gastroenterologo', profiles: ['franco', 'rita'] },
@@ -248,8 +277,7 @@
       { name: 'Biblioteca dei Saperi', profiles: ['biblioteca'] },
       { name: 'Jin Shin Jyutsu', profiles: ['heike'] },
         { name: 'Platone in barca a vela', profiles: ['platonebarca'] },
-        { name: 'Grafologia dei bambini per docenti e genitori' },
-        { name: 'Grafologia della personalità' },
+        { name: 'Grafologia - Educazione del gesto grafico per bambini, docenti e genitori', profiles: ['sabbadini'], pdf: 'docs/proposta_grafologia.pdf' },
         { name: 'Grafologia' }
     ]
   };
@@ -406,6 +434,29 @@
       list.append(profile);
     });
     inner.append(list);
+
+    if (profession.pdf) {
+      const pdfWrap = document.createElement('div');
+      pdfWrap.style.marginTop = '1rem';
+      const pdfLink = document.createElement('a');
+      pdfLink.href = profession.pdf;
+      pdfLink.target = '_blank';
+      pdfLink.rel = 'noopener';
+      pdfLink.textContent = 'Vedi il programma ↗';
+      pdfLink.style.display = 'inline-flex';
+      pdfLink.style.alignItems = 'center';
+      pdfLink.style.gap = '.6rem';
+      pdfLink.style.minHeight = '2.85rem';
+      pdfLink.style.padding = '.63rem 1.2rem';
+      pdfLink.style.borderRadius = '99rem';
+      pdfLink.style.background = '#5a1f2e';
+      pdfLink.style.color = '#fff';
+      pdfLink.style.fontSize = '.9rem';
+      pdfLink.style.fontWeight = '700';
+      pdfLink.style.textDecoration = 'none';
+      pdfWrap.append(pdfLink);
+      inner.append(pdfWrap);
+    }
 
     panel.append(inner);
     item.append(button, panel);
