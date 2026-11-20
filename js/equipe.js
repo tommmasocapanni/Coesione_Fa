@@ -249,6 +249,20 @@
         'Proposta di incontri gratuiti per docenti e genitori: una conferenza in presenza per docenti della scuola dell\'infanzia, primaria e secondaria di primo grado, e due incontri online per genitori, dedicati al gesto grafico, alle difficoltà di scrittura e all\'autostima. Offerti gratuitamente dalla Dott.ssa Cristina Sabbadini.'
       ]
     },
+    sara: {
+      name: 'Dott.ssa Sara Innocenti',
+      qualification: 'Educatrice e docente di Scuola primaria',
+      summary: "Educatrice e docente di Scuola primaria, con una formazione filosofica e pedagogica che le ha consentito di coltivare una profonda passione per il mondo dell'infanzia e delle arti figurative.",
+      biography: [
+        "Educatrice e docente di Scuola primaria, con una formazione filosofica e pedagogica che le ha consentito di coltivare una profonda passione per il mondo dell'infanzia e delle arti figurative.",
+        "Il suo percorso professionale e umano si è sviluppato intorno alla pedagogia di ispirazione steineriana che ha avuto modo di conoscere, approfondire e soprattutto vivere concretamente attraverso l'esperienza decennale presso la Scuola Arcobaleno di Roma.",
+        "Questo percorso ha rappresentato una tappa fondamentale della sua crescita, consolidando la convinzione che l'educazione debba rivolgersi al bambino nella sua interezza, rispettandone i tempi, le peculiarità e le potenzialità.",
+        "Attualmente svolge la sua attività di docente presso l'Istituto Comprensivo Ennio Quirino Visconti di Roma, dove continua a coltivare e a sviluppare una visione pedagogica che trova nell'arte il suo principale strumento educativo.",
+        "La sua idea di insegnamento si fonda su una dimensione artistica, ritmica e immaginativa. Il bambino nei primi anni della sua crescita pensa e comprende il mondo soprattutto attraverso le immagini, le esperienze e la dimensione simbolica. Gli strumenti didattici da privilegiare sono l'acquerello, la lettura a voce alta degli albi illustrati e le attività manuali.",
+        "In questa prospettiva l'arte non è semplicemente una disciplina o un'attività complementare, ma un vero e proprio linguaggio educativo: un ponte capace di mettere in relazione i diversi ambiti dell'apprendimento e di accompagnare armoniosamente lo sviluppo del bambino, coinvolgendone la dimensione cognitiva, emotiva, creativa e relazionale.",
+        "La scuola diviene in questo modo il luogo per eccellenza dove nutrire l'immaginazione, risvegliare la meraviglia e offrire esperienze significative, perché educare non significa soltanto trasmettere conoscenze, ma creare le condizioni affinché ogni bambino possa scoprire ed esprimere pienamente se stesso."
+      ]
+    },
     
   };
 
@@ -278,7 +292,8 @@
       { name: 'Jin Shin Jyutsu', profiles: ['heike'] },
         { name: 'Platone in barca a vela', profiles: ['platonebarca'] },
         { name: 'Grafologia - Educazione del gesto grafico per bambini, docenti e genitori', profiles: ['sabbadini'], pdf: 'docs/proposta_grafologia.pdf' },
-        { name: 'Grafologia' }
+        { name: 'Grafologia' },
+        { name: 'Educatrice e docente di Scuola primaria', profiles: ['sara'] }
     ]
   };
 

@@ -2898,15 +2898,134 @@ html { scroll-behavior: smooth; }
 .cf-vp-name { margin: 0 0 .2rem; }
 .cf-vp-arrow { color: #5a1f2e; font-size: 1.4rem; line-height: 1; transition: transform .35s ease; align-self: center; }
 .cf-vp-toggle[aria-expanded="true"] .cf-vp-arrow { transform: rotate(90deg); }
-.cf-vp-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; overflow: hidden; }
-.cf-vp-panel.is-open { grid-template-rows: 1fr; }
+.cf-vp-panel { height: auto; max-height: 0; overflow: hidden; transition: max-height .4s cubic-bezier(.22, .61, .36, 1); }
 .cf-vp-panel-inner { overflow: hidden; padding: 0; text-align: justify; }
 .cf-vp-panel-inner p { color: #4F4F4F; font-size: .9rem; line-height: 1.5; margin: 0 0 8px; }
 .cf-vp-panel-inner p:last-child { margin-bottom: 16px; }
 @media (max-width: 48rem) {
   .cf-equipe-top { grid-template-columns: 1fr; gap: 1.5rem; }
 }
+
 .cf-home .cf-test-wave { display: block !important; transform: translateX(-50%) scaleX(-1) translateY(35%); }
+
+/* Comitato Scientifico — blocco superiore (intro + immagine) e inferiore (elenco) */
+/* Icone bordeaux in cerchio rosa cipria (come Équipe) */
+.cf-home .cf-comitato-section .cf-equipe-area-icon {
+  background: #FBEDEB;
+  color: #7A1F3D;
+}
+/* Nomi professionisti */
+.cf-home .cf-comitato-section .cf-vp-name {
+  color: var(--bordeaux);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+.cf-home .cf-comitato-columns { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 3vw, 2.5rem); align-items: start; }
+.cf-home .cf-comitato-column { display: flex; flex-direction: column; min-width: 0; }
+.cf-home .cf-comitato-column .cf-vp { margin-bottom: clamp(1rem, 2vw, 1.5rem); }
+/* Wrapper card: su desktop trasparente, su mobile card bianca arrotondata */
+.cf-home .cf-comitato-card {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  .cf-home .cf-comitato-card {
+    background: #FFFFFF;
+    border: none;
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    box-shadow: 0 8px 24px rgba(66, 27, 43, 0.08);
+  }
+  .cf-home .cf-comitato-list-area {
+    padding-top: 1.5rem;
+  }
+}
+/* Titolo introduttivo sotto l'etichetta rossa */
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-title {
+  margin: .5rem 0 1.05rem;
+  color: var(--bordeaux);
+  font-size: clamp(1.7rem, 2.6vw, 2.35rem);
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  text-align: left;
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-text .cf-label { margin: 0 0 .3rem; }
+/* Allineamento in alto di testo e immagine */
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-bottom {
+  align-items: start;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  margin-top: 0;
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-list-area {
+  margin-top: clamp(1.75rem, 3.2vw, 2.5rem);
+}
+/* Titolo elenco + etichetta "In ordine alfabetico" */
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-list-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .45rem .85rem;
+  margin-bottom: .8rem;
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-list-title {
+  margin: 0;
+  color: var(--bordeaux);
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  line-height: 1.15;
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-subtitle {
+  margin: 0;
+  padding: .28rem .7rem;
+  border-radius: 99rem;
+  background: #FAEAEC;
+  color: #8A4A58;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .05em;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+/* Blocco coordinatore (sotto entrambe le colonne) */
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-coord {
+  margin-top: clamp(1.5rem, 2.6vw, 2rem);
+  padding: .95rem 1.2rem;
+  background: #FDF4F5;
+  border-left: 3px solid var(--bordeaux);
+  border-radius: .35rem .9rem .9rem .35rem;
+}
+.cf-home .cf-comitato-profile { border-bottom: 1px solid #e6ddd5; padding: 0; }
+.cf-home .cf-comitato-coord-title { margin: 0 0 .25rem; font-size: .75rem; letter-spacing: .08em; color: var(--bordeaux); font-weight: 700; text-transform: uppercase; }
+.cf-home .cf-comitato-coord-names { margin: 0; color: #4F4F4F; }
+@media (max-width: 48rem) {
+  .cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-list-area { margin-top: 0; }
+  .cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-list-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .4rem;
+  }
+  .cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-coord {
+    margin-top: 1.5rem;
+    padding: .85rem 1rem;
+  }
+}
+@media (max-width: 48rem) {
+  .cf-home .cf-comitato-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"
+      "image"
+      "list";
+  }
+  .cf-home .cf-comitato-media { max-width: 100%; }
+}
+
+@media (max-width: 48rem) {
+  .cf-home .cf-comitato-columns { grid-template-columns: 1fr; }
+}
 .cf-equipe-curve-test {
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -3020,8 +3139,7 @@ html { scroll-behavior: smooth; }
 }
 
 @media (max-width: 767px) {
-  .cf-home #centro-studi,
-  .cf-home .cf-comitato-bottom {
+  .cf-home #centro-studi {
     background: #FFFFFF;
     border: none;
     border-radius: var(--radius);
