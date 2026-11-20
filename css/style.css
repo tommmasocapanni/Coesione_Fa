@@ -2954,9 +2954,9 @@ html { scroll-behavior: smooth; }
   text-align: left;
 }
 .cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-text .cf-label { margin: 0 0 .3rem; }
-/* Allineamento in alto di testo e immagine */
+/* Allineamento centrato verticalmente di testo e immagine */
 .cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-bottom {
-  align-items: start;
+  align-items: center;
   gap: clamp(1.75rem, 4vw, 3rem);
   margin-top: 0;
 }
