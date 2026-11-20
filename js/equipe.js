@@ -221,11 +221,11 @@
       ]
     },
     galli: {
-      name: 'Dott.ssa Federica Galli',
+      name: 'Prof. ssa Federica Galli',
       qualification: 'Psicologa clinica e psicoterapeuta',
       summary: 'Psicologa clinica e psicoterapeuta, professoressa associata presso l’Università Sapienza di Roma, esperta del ruolo dei fattori psicologici in relazione a patologie mediche.',
       biography: [
-        'Dott.ssa Federica Galli, psicologa clinica e psicoterapeuta, professoressa associata presso l’Università Sapienza di Roma, esperta del ruolo dei fattori psicologici in relazione a patologie mediche.'
+        'Prof. ssa Federica Galli, psicologa clinica e psicoterapeuta, professoressa associata presso l’Università Sapienza di Roma, esperta del ruolo dei fattori psicologici in relazione a patologie mediche.'
       ]
     },
     malvezzi: {
@@ -256,14 +256,14 @@
     medico: [
       { name: 'Avvocato', profiles: ['schettino', 'spasari'] },
       { name: 'Mediatore familiare', profiles: ['rosalba'] },
-      { name: 'Consulente familiare', profiles: ['livia', 'malvezzi'] },
       { name: 'Psicologo e Psicoterapeuta', profiles: ['galli', 'francesca', 'psicologa'] },
-      { name: 'Psichiatra', profiles: ['rossana'] },
-      { name: 'Pedagogista', profiles: ['rosalba'] },
-      { name: 'Gastroenterologo', profiles: ['franco', 'rita'] },
       { name: 'Internista / Gastroenterologo', profiles: ['zocco'] },
-      { name: 'Ginecologo' },
+      { name: 'Pedagogista', profiles: ['rosalba'] },
+      { name: 'Consulente familiare', profiles: ['livia', 'malvezzi'] },
+      { name: 'Gastroenterologo', profiles: ['franco', 'rita'] },
       { name: 'Neurologo', profiles: ['bruno'] },
+      { name: 'Psichiatra', profiles: ['rossana'] },
+      { name: 'Ginecologo' },
       { name: 'Cardiologo' },
       { name: 'Geriatra', profiles: ['antonic'] },
       { name: 'Pediatra' }
