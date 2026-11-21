@@ -3190,3 +3190,12 @@ html { scroll-behavior: smooth; }
 .mobile-menu-panel a[aria-current] { font-weight: 700; }
 
 .cf-header nav a:not(.cf-button)[aria-current] { color: #7A1F3D; }
+
+@media (min-width: 48rem) {
+  .cf-home .cf-collab-action { flex-wrap: nowrap !important; }
+  .cf-home .cf-collab-action a { flex-shrink: 0; white-space: nowrap; }
+}
+
+@media (max-width: 56rem) {
+  .cf-home .cf-collab-action .cf-collab-btn { order: 3; }
+}
