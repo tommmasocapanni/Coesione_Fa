@@ -2899,6 +2899,7 @@ html { scroll-behavior: smooth; }
 .cf-vp-arrow { color: #5a1f2e; font-size: 1.4rem; line-height: 1; transition: transform .35s ease; align-self: center; }
 .cf-vp-toggle[aria-expanded="true"] .cf-vp-arrow { transform: rotate(90deg); }
 .cf-vp-panel { height: auto; max-height: 0; overflow: hidden; transition: max-height .4s cubic-bezier(.22, .61, .36, 1); }
+.cf-vp-panel.is-open { max-height: 1000px; }
 .cf-vp-panel-inner { overflow: hidden; padding: 0; text-align: justify; }
 .cf-vp-panel-inner p { color: #4F4F4F; font-size: .9rem; line-height: 1.5; margin: 0 0 8px; }
 .cf-vp-panel-inner p:last-child { margin-bottom: 16px; }
@@ -2998,6 +2999,14 @@ html { scroll-behavior: smooth; }
   border-radius: .35rem .9rem .9rem .35rem;
 }
 .cf-home .cf-comitato-profile { border-bottom: 1px solid #e6ddd5; padding: 0; }
+/* Pannelli del Comitato: max-height (accordion gestito da comitato.js) */
+.cf-home .cf-comitato-profile .cf-vp-panel {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s cubic-bezier(.22, .61, .36, 1);
+  height: auto;
+}
 .cf-home .cf-comitato-coord-title { margin: 0 0 .25rem; font-size: .75rem; letter-spacing: .08em; color: var(--bordeaux); font-weight: 700; text-transform: uppercase; }
 .cf-home .cf-comitato-coord-names { margin: 0; color: #4F4F4F; }
 @media (max-width: 48rem) {
