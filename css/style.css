@@ -704,6 +704,7 @@ html { scroll-behavior: smooth; }
   }
   .cf-home .cf-famiglie-head,
   .cf-home .cf-famiglie-body { align-self: start; }
+  .cf-home .cf-famiglie-link { padding-top: 16px; padding-left: 16px; text-decoration: underline; }
   .cf-home .cf-famiglie-head h2 {
     font-size: clamp(2.2rem, 6vw, 3.3rem);
     margin-bottom: clamp(1.2rem, 3vw, 1.6rem);
