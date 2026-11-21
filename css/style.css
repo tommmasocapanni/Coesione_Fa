@@ -3263,13 +3263,35 @@ html { scroll-behavior: smooth; }
 .cf-home .cf-chess-flipped .cf-chess-intro { grid-area: intro; }
 .cf-home .cf-chess-flipped .cf-chess-info { grid-area: info; }
 .cf-home .cf-chess-flipped .cf-chess-actions { grid-area: actions; }
-@media (max-width: 767px) {
+@media (max-width: 56rem) {
   .cf-home .cf-chess-flipped {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
       "intro"
       "media"
       "info"
       "actions";
+    row-gap: clamp(1.4rem, 4vw, 2rem);
+    align-items: start;
   }
+  .cf-home .cf-chess-flipped .cf-chess-media {
+    width: min(100%, 28rem);
+    margin: 0 auto !important;
+    aspect-ratio: 1587 / 2246 !important;
+    max-height: 70vh;
+    overflow: hidden !important;
+    border-radius: 1rem !important;
+    justify-self: center;
+  }
+  .cf-home .cf-chess-flipped .cf-chess-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+  .cf-home .cf-chess-flipped .cf-chess-info {
+    padding: clamp(1.5rem, 4vw, 2rem) 0 0;
+    border-top: 1px solid rgba(122, 31, 61, .14);
+    border-left: 0;
+  }
+  .cf-home .cf-chess-flipped .cf-chess-actions a { margin-left: .75rem; }
 }
