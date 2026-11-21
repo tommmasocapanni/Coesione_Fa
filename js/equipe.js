@@ -275,6 +275,7 @@
       { name: 'Consulente familiare', profiles: ['livia', 'malvezzi'] },
       { name: 'Gastroenterologo', profiles: ['franco', 'rita'] },
       { name: 'Neurologo', profiles: ['bruno'] },
+      { name: 'Fenomenologia dello sguardo' },
       { name: 'Psichiatra', profiles: ['rossana'] },
       { name: 'Ginecologo' },
       { name: 'Cardiologo' },
