@@ -147,10 +147,17 @@
 
     // Scrollspy: evidenzia la voce di menu della sezione attualmente visibile
     const header = document.querySelector('.cf-header, .site-header');
-    const navLinks = Array.from(document.querySelectorAll('header nav a'));
+    const navLinks = Array.from(document.querySelectorAll('header nav a, #mobile-menu a'));
+    const seen = new Set();
+    const uniqueLinks = navLinks.filter((a) => {
+      const href = a.getAttribute('href') || '';
+      if (seen.has(href)) return false;
+      seen.add(href);
+      return true;
+    });
     const targets = [];
 
-    navLinks.forEach((a) => {
+    uniqueLinks.forEach((a) => {
       const href = a.getAttribute('href') || '';
       if (href.length > 1 && href.charAt(0) === '#') {
         const el = document.querySelector(href);

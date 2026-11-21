@@ -3199,3 +3199,28 @@ html { scroll-behavior: smooth; }
 @media (max-width: 56rem) {
   .cf-home .cf-collab-action .cf-collab-btn { order: 3; }
 }
+
+
+/* Programma 2027: foto a sinistra, contenuto a destra */
+.cf-home .cf-chess-flipped {
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  grid-template-areas:
+    "media intro"
+    "media info"
+    "media actions";
+  align-items: center;
+}
+.cf-home .cf-chess-flipped .cf-chess-media { grid-area: media; }
+.cf-home .cf-chess-flipped .cf-chess-intro { grid-area: intro; }
+.cf-home .cf-chess-flipped .cf-chess-info { grid-area: info; }
+.cf-home .cf-chess-flipped .cf-chess-actions { grid-area: actions; }
+@media (max-width: 767px) {
+  .cf-home .cf-chess-flipped {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "intro"
+      "media"
+      "info"
+      "actions";
+  }
+}
