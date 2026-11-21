@@ -60,8 +60,7 @@
       qualification: 'Gastroenterologa',
       summary: 'Dirigente medico presso la UOC di Gastroenterologia dell’Ospedale San Camillo di Roma.',
       biography: [
-        'Dirigente medico presso la UOC di Gastroenterologia dell’Ospedale San Camillo di Roma. Si occupa delle patologie del tratto gastrointestinale, con particolare attenzione alle malattie infiammatorie croniche intestinali e alle patologie funzionali come la sindrome del colon irritabile.',
-        'Quando possibile predilige trattare i sintomi attraverso l’alimentazione e la medicina complementare, mantenendo un approccio olistico.'
+        "Dottoressa Rita Monterubbianesi, dirigente medico presso la UOC di Gastroenterologia dell'Ospedale San Camillo di Roma. Dottorato di ricerca in fisiopatologia funzionale presso Ospedale di Tor Vergata. Master in Nutrizione. Mi occupo di tutte le patologie del tratto gastro intestinale con un'attenzione particolare alle malattie infiammatorie croniche intestinali e alle patologie funzionali come la sindrome del colon irritabile. Quando possibile preferisco trattare i sintomi con l'alimentazione e la medicina complementare, e comunque sempre con un approccio olistico."
       ]
     },
     rosalba: {
