@@ -79,4 +79,31 @@
     const slice = profiles.slice(ci * half, (ci + 1) * half);
     slice.forEach((profile) => col.append(createProfile(profile)));
   });
+
+  // Accordion: apri/chiudi l'elenco dei componenti del Comitato
+  const trigger = document.querySelector('.cf-comitato-accordion-trigger');
+  const panel = document.querySelector('.cf-comitato-accordion-panel');
+  if (trigger && panel) {
+    panel.style.maxHeight = '0px';
+    trigger.addEventListener('click', () => {
+      const open = trigger.getAttribute('aria-expanded') !== 'true';
+      trigger.setAttribute('aria-expanded', String(open));
+      if (open) {
+        panel.style.maxHeight = '0px';
+        void panel.offsetHeight;
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        const onEnd = (e) => {
+          if (e.propertyName === 'max-height') {
+            panel.style.maxHeight = 'none';
+            panel.removeEventListener('transitionend', onEnd);
+          }
+        };
+        panel.addEventListener('transitionend', onEnd);
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        void panel.offsetHeight;
+        panel.style.maxHeight = '0px';
+      }
+    });
+  }
 })();

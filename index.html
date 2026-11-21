@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=87">
+  <link rel="stylesheet" href="css/style.css?v=88">
 </head>
 <body class="cf-home intro-lock">
   <div id="intro-loader" class="intro-loader"><div class="mask"><img src="img/logo.svg" alt="Coesione fa."></div></div>
@@ -450,20 +450,24 @@
           <img class="cf-art cf-art-studies" src="img/gatto_sveglio.webp" alt="Comitato Scientifico" style="border-radius:16px;object-fit:cover;object-position:bottom;width:100%;aspect-ratio:1.25;">
         </div>
 
-        <div class="cf-comitato-list-area" hidden>
-          <div class="cf-comitato-list-head">
-            <h3 class="cf-comitato-list-title">I componenti del Comitato</h3>
-            <p class="cf-comitato-subtitle">In ordine alfabetico</p>
+        <div class="cf-comitato-list-area">
+          <button class="cf-comitato-accordion-trigger" type="button" aria-expanded="false" aria-controls="comitato-list-panel">
+            <div class="cf-comitato-list-head">
+              <h3 class="cf-comitato-list-title">I componenti del Comitato</h3>
+              <p class="cf-comitato-subtitle">In ordine alfabetico</p>
+            </div>
+            <span class="cf-comitato-accordion-arrow" aria-hidden="true">›</span>
+          </button>
+          <div class="cf-comitato-accordion-panel" id="comitato-list-panel">
+            <div class="cf-comitato-columns" data-comitato-profiles>
+              <div class="cf-comitato-column" data-comitato-col="1"></div>
+              <div class="cf-comitato-column" data-comitato-col="2"></div>
+            </div>
+            <div class="cf-comitato-coord">
+              <p class="cf-comitato-coord-title">Coordinatore e Responsabile Scientifico</p>
+              <p class="cf-comitato-coord-names">Prof. Franco Scaldaferri ed Avv. Maria Antonietta Schettino</p>
+            </div>
           </div>
-          <div class="cf-comitato-columns" data-comitato-profiles>
-            <div class="cf-comitato-column" data-comitato-col="1"></div>
-            <div class="cf-comitato-column" data-comitato-col="2"></div>
-          </div>
-        </div>
-
-        <div class="cf-comitato-coord" hidden>
-          <p class="cf-comitato-coord-title">Coordinatore e Responsabile Scientifico</p>
-          <p class="cf-comitato-coord-names">Prof. Franco Scaldaferri ed Avv. Maria Antonietta Schettino</p>
         </div>
       </div>
     </section>

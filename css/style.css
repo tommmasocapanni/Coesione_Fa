@@ -2991,6 +2991,55 @@ html { scroll-behavior: smooth; }
   line-height: 1.2;
   white-space: nowrap;
 }
+/* Accordion "I componenti del Comitato" */
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-accordion-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  margin: 0;
+  padding: .85rem 1.15rem;
+  background: var(--rose);
+  border: 1px solid rgba(122, 31, 61, .18);
+  border-radius: .85rem;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  transition: background .2s ease, border-color .2s ease;
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-accordion-trigger:hover {
+  background: #F3E3E0;
+  border-color: rgba(122, 31, 61, .28);
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-accordion-trigger:focus-visible {
+  outline: 3px solid var(--wine);
+  outline-offset: 2px;
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-list-head {
+  margin-bottom: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-accordion-arrow {
+  color: var(--wine);
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: transform .35s ease;
+  flex-shrink: 0;
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-accordion-trigger[aria-expanded="true"] .cf-comitato-accordion-arrow {
+  transform: rotate(90deg);
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .45s cubic-bezier(.22, .61, .36, 1);
+}
+.cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-accordion-panel .cf-comitato-columns {
+  margin-top: 1rem;
+}
 /* Blocco coordinatore (sotto entrambe le colonne) */
 .cf-home .cf-comitato-section .cf-comitato-card .cf-comitato-coord {
   margin-top: clamp(1.5rem, 2.6vw, 2rem);
