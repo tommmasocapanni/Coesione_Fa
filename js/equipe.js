@@ -288,7 +288,7 @@
       { name: 'Fenomenologia dello sguardo', profiles: ['artemediatrice'] },
       { name: 'Psichiatria', profiles: ['rossana'] },
       { name: 'Ginecologia' },
-      { name: 'Cardiologo' },
+      { name: 'Cardiologia' },
       { name: 'Geriatria', profiles: ['antonic'] },
       { name: 'Pediatria', profiles: ['teresa'] }
     ],
