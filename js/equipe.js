@@ -277,20 +277,20 @@
 
   const areas = {
     medico: [
-      { name: 'Avvocato', profiles: ['schettino', 'spasari'] },
-      { name: 'Mediatore familiare', profiles: ['rosalba'] },
-      { name: 'Psicologo e Psicoterapeuta', profiles: ['galli', 'francesca', 'psicologa'] },
-      { name: 'Internista / Gastroenterologo', profiles: ['zocco'] },
-      { name: 'Pedagogista', profiles: ['rosalba'] },
+      { name: 'Avvocatura', profiles: ['schettino', 'spasari'] },
+      { name: 'Mediazione Familiare', profiles: ['rosalba'] },
+      { name: 'Psicologia e Psicoterapia', profiles: ['galli', 'francesca', 'psicologa'] },
+      { name: 'Internisti / Gastroenterologia', profiles: ['zocco'] },
+      { name: 'Pedagogia', profiles: ['rosalba'] },
       { name: 'Consulente familiare', profiles: ['livia', 'malvezzi'] },
-      { name: 'Gastroenterologo', profiles: ['franco', 'rita'] },
-      { name: 'Neurologo', profiles: ['bruno'] },
+      { name: 'Gastroenterologia', profiles: ['franco', 'rita'] },
+      { name: 'Neurologia', profiles: ['bruno'] },
       { name: 'Fenomenologia dello sguardo', profiles: ['artemediatrice'] },
-      { name: 'Psichiatra', profiles: ['rossana'] },
-      { name: 'Ginecologo' },
+      { name: 'Psichiatria', profiles: ['rossana'] },
+      { name: 'Ginecologia' },
       { name: 'Cardiologo' },
-      { name: 'Geriatra', profiles: ['antonic'] },
-      { name: 'Pediatra', profiles: ['teresa'] }
+      { name: 'Geriatria', profiles: ['antonic'] },
+      { name: 'Pediatria', profiles: ['teresa'] }
     ],
     educativa: [
       { name: 'Maestri di scacchi', profiles: ['michele', 'carla'] },
