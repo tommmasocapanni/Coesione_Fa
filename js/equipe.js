@@ -280,7 +280,7 @@
       { name: 'Avvocatura', profiles: ['schettino', 'spasari'] },
       { name: 'Mediazione Familiare', profiles: ['rosalba'] },
       { name: 'Psicologia e Psicoterapia', profiles: ['galli', 'francesca', 'psicologa'] },
-      { name: 'Internisti / Gastroenterologia', profiles: ['zocco'] },
+      { name: 'Internista / Gastroenterologia', profiles: ['zocco'] },
       { name: 'Pedagogia', profiles: ['rosalba'] },
       { name: 'Consulenza Familiare', profiles: ['livia', 'malvezzi'] },
       { name: 'Gastroenterologia', profiles: ['franco', 'rita'] },
