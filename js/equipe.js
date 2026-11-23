@@ -282,7 +282,7 @@
       { name: 'Psicologia e Psicoterapia', profiles: ['galli', 'francesca', 'psicologa'] },
       { name: 'Internisti / Gastroenterologia', profiles: ['zocco'] },
       { name: 'Pedagogia', profiles: ['rosalba'] },
-      { name: 'Consulente familiare', profiles: ['livia', 'malvezzi'] },
+      { name: 'Consulenza Familiare', profiles: ['livia', 'malvezzi'] },
       { name: 'Gastroenterologia', profiles: ['franco', 'rita'] },
       { name: 'Neurologia', profiles: ['bruno'] },
       { name: 'Fenomenologia dello sguardo', profiles: ['artemediatrice'] },
