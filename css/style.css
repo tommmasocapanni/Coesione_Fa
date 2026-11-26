@@ -255,10 +255,12 @@ p { margin: 0 0 1rem; }
 /* Footer */
 .site-footer { background: var(--bordeaux-dark); color: #fff; padding: 80px 0 32px; }
 .site-footer h4 { color: #fff; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; }
-.site-footer a { color: rgba(255,255,255,.75); }
-.site-footer a:hover { color: #fff; }
+.site-footer a { color: rgba(255,255,255,.75); transition: color .2s ease; }
+.cf-home .site-footer a { color: rgba(255,255,255,.75); }
+.site-footer a:hover,
+.cf-home .site-footer a:hover { color: #fff; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
-.footer-bottom { margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.12); font-size: .85rem; opacity: .6; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.footer-bottom { margin-top: 56px; padding-top: 24px; font-size: .85rem; opacity: .6; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px; }
 @media (max-width: 600px) { .footer-grid { grid-template-columns: 1fr; } }
 
 /* Intro loader */
